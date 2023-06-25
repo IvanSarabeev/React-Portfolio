@@ -10,19 +10,19 @@ const ProfileCard = () => {
 
   return (
     <section className="sticky top-44 mb-6 mt-[180px] min-h-screen w-[300px]  lg:block lg:w-[400px]">
-      <div className=" w-full rounded-[20px] bg-white px-6 text-center lg:mb-0 lg:mt-0">
+      <div className="w-full rounded-[20px] bg-slate-300 px-6 text-center lg:mb-0 lg:mt-0">
         <img
           alt="avatar"
-          src="/images/avatar.jpg"
+          src="/images/profile.jpg"
           className="absolute top-[-20%] h-[240px] w-[220px] translate-x-[30%] rounded-[20px] drop-shadow-xl"
         />
         <div className="pb-8 pt-[100px]">
-          <h1 className="mb-1 mt-6 text-[26px] font-semibold">Ivan Sarabeev</h1>
-          <h3 className="mb-4 inline-block rounded-lg px-5 py-1.5 text-[#7B7B7B]  ">
+          <h1 className="mb-1 mt-6  font-heading text-[26px]">Ivan Sarabeev</h1>
+          <h3 className="mb-4 inline-block rounded-lg px-5 py-1.5 text-[#2686976]  ">
             Full Stack Web Developer
           </h3>
           <SocialButtons />
-          <article className="mt-7 rounded-2xl bg-[#F3F6F6] p-7">
+          <article className="mt-7 rounded-2xl bg-slate-100 p-7">
             {data.personalInfo.map((item, index) => {
               const Icons = item.icon;
               return (
@@ -48,21 +48,21 @@ const ProfileCard = () => {
           <button
             type="button"
             onClick={() => downloadCV()}
-            className="mb-2 mr-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800"
+            className="mb-2 mr-2 mt-6 inline-flex gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-800"
           >
             <Download />
             Download CV
           </button>
-          <button
+          {/* <button
             type="button"
             onClick={() => downloadCV()}
             className="mx-auto mt-6 flex w-fit items-center rounded-[35px]
              bg-gradient-to-tr from-[#DD2476] to-[#fa5252ef] px-8 py-3 text-xl text-white
              hover:bg-gradient-to-tr hover:from-[#fa5252ef] hover:to-[#DD2476]"
           >
-            {/* #6AB5B9 */}
             <Download /> Download CV
-          </button>
+          </button> */}
+          {/* #6AB5B9 */}
         </div>
       </div>
     </section>

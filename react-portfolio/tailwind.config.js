@@ -14,9 +14,9 @@ module.exports = {
       }
     },
     fontFamily: {
-      display: ['Source Serif Pro', 'Georgia', 'serif'],
-      body: ['Synonym', 'system-ui', 'sans-serif'],
-    }
+      heading: ['Source Serif Pro', 'Georgia', 'serif'],
+      pargraph: ['Synonym', 'system-ui', 'sans-serif'],
+    },
   },
   plugins: [
     require('flowbite/plugin')

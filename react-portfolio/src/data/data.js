@@ -11,8 +11,23 @@ import {
     UilVisualStudio,
     UilBracketsCurly,
     UilSlidersVAlt,
-    UilPagelines
+    UilPagelines,
+
 } from '@iconscout/react-unicons'
+
+import Html from "../icons/Html"
+import Css from "../icons/Css"
+import Tailwind from "../icons/Tailwind"
+import JavaScript from "../icons/JavaScript"
+import ReactJS from "../icons/React"
+import PHP from "../icons/PHP"
+import MySQL from "../icons/MySQL"
+import Firebase from "../icons/Firebase"
+import Git from "../icons/Git"
+import FramerMotion from "../icons/FrameMotion"
+import vsCode from "../icons/vsCode"
+import PowerBI from "../icons/PowerBI"
+import Postman from "../icons/Postman"
 
 const data = {
     headerLinks: [
@@ -81,7 +96,7 @@ const data = {
         {
             title: "Phone",
             text: "+359 894 415 621",
-            href: "callto:+359894415621",
+            href: "tel:+359894415621",
             color: "text-[#E93B81]",
             icon: UilMobileAndroid
         },
@@ -126,72 +141,72 @@ const data = {
     tech: [
         {
             title: "HTML",
-            icon: {},
+            icon: <Html />,
             area: "Front-end",
         },
         {
             title: "CSS",
-            icon: {},
+            icon: <Css />,
             area: "Front-end",
         },
         {
             title: "JavaScript",
-            icon: {},
+            icon: <JavaScript />,
             area: "Front-end",
         },
         {
             title: "React.JS",
-            icon: {},
+            icon: <ReactJS />,
             area: "Front-end",
         },
         {
             title: "Tailwind",
-            icon: {},
+            icon: <Tailwind />,
             area: "Front-end",
         },
         {
             title: "FrameMotion",
-            icon: {},
+            icon: <FramerMotion />,
             area: "Front-end",
         },
         {
             title: "PHP",
-            icon: {},
+            icon: <PHP />,
             area: "Back-end",
         },
         {
             title: "Firebase",
-            icon: {},
+            icon: <Firebase />,
             area: "Back-end",
         },
         {
             title: "SQL",
-            icon: {},
+            icon: <MySQL />,
             area: "Back-end",
         },
         {
             title: "Git",
-            icon: {},
+            icon: <Git />,
             area: "Other",
         },
         {
             title: "VS code",
-            icon: {},
+            icon: <vsCode />,
             area: "Other",
         },
         {
             title: "GitHub",
-            icon: {},
+            icon: UilGithub,
             area: "Other",
         },
         {
             title: "Postman",
-            icon: {},
+            icon: <Postman />,
             area: "Other",
         },
         {
             title: "Power BI",
-            icon: {},
+            icon: <PowerBI />,
             area: "Other",
         },
     ],
@@ -199,16 +214,19 @@ const data = {
         {
             title: "Master's degree",
             year: "2022 - present",
+            color: "bg-[#fcf4ff]",
             establishment: "University of Economics - Varna",
         },
         {
             title: "Bachelor's degree",
             year: "2018 - 2022",
+            color: "bg-[#fefaf0]",
             establishment: "University of Economics - Varna"
         },
         {
             title: "High school",
             year: "2014 - 2018",
+            color: "bg-[#f3faff]",
             establishment: 'Sports school - "G. Benkovsk", Varna'
         }
     ],
@@ -217,16 +235,21 @@ const data = {
             title: "Ice skates instructor",
             period: "2020 - present",
             location: "Varna",
+            bgColor: "bg-[#fefaf0]",
             company: "Municipality",
-        }, {
+        },
+        {
             title: "Ice hockey coach",
             period: "2021 - present",
             location: "Varna",
+            bgColor: "bg-[#f3faff]",
             company: "HC-Varna",
-        }, {
+        },
+        {
             title: "Cook",
             period: "2019 - 2020",
             location: "Varna",
+            bgColor: "bg-[#fcf4ff]",
             company: "Stella ltd.",
         }
     ]
