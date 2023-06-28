@@ -25,6 +25,7 @@ import MySQL from "../icons/MySQL"
 import Firebase from "../icons/Firebase"
 import Git from "../icons/Git"
 import FramerMotion from "../icons/FrameMotion"
+import GitHub from "../icons/GitHub"
 import vsCode from "../icons/vsCode"
 import PowerBI from "../icons/PowerBI"
 import Postman from "../icons/Postman"
@@ -196,7 +197,7 @@ const data = {
         },
         {
             title: "GitHub",
-            icon: UilGithub,
+            icon: <GitHub />,
             area: "Other",
         },
         {
@@ -252,6 +253,43 @@ const data = {
             bgColor: "bg-[#fcf4ff]",
             company: "Stella ltd.",
         }
+    ],
+    personalSkills: [
+        {
+            num: 1,
+            btnIndex: 1,
+            btnVisibility: true,
+            title: "Cooperation & teamworker",
+            description: "I have been working on a project for 'IT-Masterclass #10', in collaboration with other fellow programmers, in particularly developing functional specifications, through APIs and other react libraries."
+        },
+        {
+            num: 2,
+            btnIndex: 2,
+            btnVisibility: true,
+            title: "Adaptability & flexibility",
+            description: "I have had to use new techs or libraries, according to the goals of the project. In addition I've worked with several people in developing in feature in the same branch and others..."
+        },
+        {
+            num: 3,
+            btnIndex: 3,
+            btnVisibility: true,
+            title: "Interested in learning and self-improvment",
+            description: "Since the beginning of 2023, I have been proatively engaged in learing new technologies such as: React.js, some advance Javascripts funcionalities & concepts and other UI libraries."
+        },
+        {
+            num: 4,
+            btnIndex: 4,
+            btnVisibility: true,
+            title: "Proactive & initiative",
+            description: "I'am a person who is ready to take an initiative and to never give up. I would easily say that it's thanks to my sports career."
+        },
+        {
+            num: 5,
+            btnIndex: 5,
+            btnVisibility: true,
+            title: "Organization",
+            description: "I'am organized person who is always prepared in advance, regardless of the occacion and the event.",
+        },
     ]
 }
 export default data;

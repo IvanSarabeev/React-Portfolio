@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../components/Layout";
 import Location from "../components/Location";
 import data from "../data/data";
-import ReactSvg from "../icons/React";
+import PersonalSkills from "../components/PersonalSkills";
 import { UilSuitcase, UilGraduationCap } from "@iconscout/react-unicons";
 
 const Resume = () => {
+  const [activeIndex, setActiveIndex] = useState(1);
+
   return (
     <div className="flex min-h-screen w-full bg-techDark-background bg-cover bg-fixed bg-no-repeat">
       <Layout />
@@ -73,10 +75,24 @@ const Resume = () => {
               </div>
             </div>
             <div>
+                <h3 className="relative flex items-center text-4xl font-bold after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#FA5252] after:to-[#DD2476]">
+                  Tech Stack
+                </h3>
+            </div>
+            <div>
               <h3 className="relative flex items-center text-4xl font-bold after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#FA5252] after:to-[#DD2476]">
-              Tech Stack
-            </h3>
-              <ReactSvg />
+                Resume
+              </h3>
+              <article className="mt-4 flex flex-auto flex-wrap rounded-[16px] p-4 shadow-2xl">
+                {data.personalSkills.map((item, index) => (
+                  <PersonalSkills
+                    key={index}
+                    item={item}
+                    activeIndex={activeIndex}
+                    setActiveIndex={setActiveIndex}
+                  />
+                ))}
+              </article>
             </div>
           </article>
         </section>
