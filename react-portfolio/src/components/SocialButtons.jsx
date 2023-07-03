@@ -7,7 +7,7 @@ function SocialButtons() {
         const Icons = links.icon;
         return (
           <a key={index} href={links.href} target="_blank" rel="noreferrer">
-            <span className="group flex h-10 w-10 items-center justify-center rounded-lg bg-[#f3f6f6] from-[#FA5252] to-[#DD2476]  hover:bg-gradient-to-r">
+            <span className="group flex h-10 w-10 items-center justify-center rounded-lg bg-[#f3f6f6] from-[#26df] to-[#f7f4f2]  hover:bg-gradient-to-r">
               <Icons className={links.color} />
             </span>
           </a>

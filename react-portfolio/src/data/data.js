@@ -26,7 +26,7 @@ import Firebase from "../icons/Firebase"
 import Git from "../icons/Git"
 import FramerMotion from "../icons/FrameMotion"
 import GitHub from "../icons/GitHub"
-import vsCode from "../icons/vsCode"
+import VSCode from "../icons/vsCode"
 import PowerBI from "../icons/PowerBI"
 import Postman from "../icons/Postman"
 
@@ -144,71 +144,85 @@ const data = {
             title: "HTML",
             icon: <Html />,
             area: "Front-end",
+            color: "text-[#ff5733]"
         },
         {
             title: "CSS",
             icon: <Css />,
             area: "Front-end",
+            color: "text-[#619be8]"
         },
         {
             title: "JavaScript",
             icon: <JavaScript />,
             area: "Front-end",
+            color: "text-[#ead41c]"
         },
         {
             title: "React.JS",
             icon: <ReactJS />,
             area: "Front-end",
+            color: "text-[#5ccfee]"
         },
         {
             title: "Tailwind",
             icon: <Tailwind />,
             area: "Front-end",
+            color: "text-[#35b3eb]"
         },
         {
             title: "FrameMotion",
             icon: <FramerMotion />,
             area: "Front-end",
+            color: "text-[#e742ed]"
         },
         {
             title: "PHP",
             icon: <PHP />,
             area: "Back-end",
+            color: "text-[#7175aa]"
         },
         {
             title: "Firebase",
             icon: <Firebase />,
             area: "Back-end",
+            color: "text-[#f29800]"
         },
         {
             title: "SQL",
             icon: <MySQL />,
             area: "Back-end",
+            color: "text-[#005c83]"
         },
         {
             title: "Git",
             icon: <Git />,
             area: "Other",
+            color: "text-[#e44c30]"
         },
         {
             title: "VS code",
-            icon: <vsCode />,
+            icon: <VSCode />,
             area: "Other",
+            color: "text-[#3ba1e6]"
         },
         {
             title: "GitHub",
             icon: <GitHub />,
             area: "Other",
+            color: "text-[#000000]"
         },
         {
             title: "Postman",
             icon: <Postman />,
             area: "Other",
+            color: "text-[#f06732]"
         },
         {
             title: "Power BI",
             icon: <PowerBI />,
             area: "Other",
+            color: "text-[#da9f08]"
         },
     ],
     education: [

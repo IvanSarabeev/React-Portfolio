@@ -9,7 +9,7 @@ const SocialSkills = ({ item, activeIndex, setActiveIndex }) => {
     <>
       <div
         key={item.num}
-        className={`relative mt-4 px-4 py-2 text-white shadow-2xl ${
+        className={`relative mt-4 w-full px-4 py-2 text-black shadow-2xl ${
           item.btnVisibility ? "visible" : "hidden"
         }`}
       >
@@ -35,7 +35,11 @@ const SocialSkills = ({ item, activeIndex, setActiveIndex }) => {
               d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"
             />
           </svg>
-          {activeIndex === item.num && <p>{item.description}</p>}
+          {activeIndex === item.num && (
+            <p className="break-words text-justify font-pargraph text-[16px] font-normal leading-6">
+              {item.description}
+            </p>
+          )}
         </button>
       </div>
     </>
