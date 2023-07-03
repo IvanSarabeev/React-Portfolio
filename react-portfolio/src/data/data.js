@@ -41,7 +41,7 @@ const data = {
         {
             id: 2,
             title: "Resume",
-            href: "/Resume.jsx",
+            href: "/resume",
             icon: UilFileShareAlt
 
         },
