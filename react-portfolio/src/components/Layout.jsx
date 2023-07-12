@@ -5,7 +5,7 @@ import ProfileCard from "./ProfileCard";
 const Layout = () => {
   return (
     <div className="flex min-h-screen w-fit">
-      <div className="ml-16 w-[400px] ">
+      <div className="ml-16 flex w-[400px] flex-1 flex-col ">
         <Header />
         <ProfileCard />
       </div>

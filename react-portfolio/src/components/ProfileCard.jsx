@@ -2,6 +2,7 @@ import React from "react";
 import data from "../data/data";
 import SocialButtons from "./SocialButtons";
 import Download from "../icons/Download";
+import { Link } from "react-router-dom";
 
 const ProfileCard = () => {
   function downloadCV() {
@@ -9,16 +10,16 @@ const ProfileCard = () => {
   }
 
   return (
-    <section className="sticky top-44 mb-6 mt-[180px] min-h-screen w-[300px]  lg:block lg:w-[400px]">
-      <div className="w-full rounded-[20px] bg-slate-300 px-6 text-center lg:mb-0 lg:mt-0">
+    <section className="sticky top-44 mb-6 mt-[180px] min-h-screen w-[400px] lg:w-[400px]">
+      <div className="relative w-full rounded-3xl bg-slate-300 px-6 text-center lg:mb-0 lg:mt-0">
         <img
           alt="avatar"
           src="/images/profile.jpg"
-          className="absolute top-[-20%] h-[240px] w-[220px] translate-x-[30%] rounded-[20px] drop-shadow-xl"
+          className="absolute inset-x-0 top-[-20%] mx-auto h-[240px] w-[220px] rounded-[20px] drop-shadow-xl"
         />
-        <div className="pb-8 pt-[100px]">
-          <h1 className="mb-1 mt-6  font-heading text-[26px]">Ivan Sarabeev</h1>
-          <h3 className="mb-4 inline-block rounded-lg px-5 py-1.5 text-[#2686976]  ">
+        <div className="pb-8 pt-24">
+          <h1 className="mb-1 mt-6  font-heading text-[32px]">Ivan Sarabeev</h1>
+          <h3 className="mb-4 px-5 py-1.5 font-text text-[#2686976]  ">
             Full Stack Web Developer
           </h3>
           <SocialButtons />
@@ -37,9 +38,9 @@ const ProfileCard = () => {
                     <p className="text[#44566C] text-xs dark:text-[#A6A6A6]">
                       {item.title}
                     </p>
-                    <a href={item.href} className=" text-black ">
+                    <Link to={item.href} className="break-words text-black">
                       {item.text}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               );

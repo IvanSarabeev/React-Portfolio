@@ -12,6 +12,7 @@ import {
     UilBracketsCurly,
     UilSlidersVAlt,
     UilPagelines,
+    UilGraduationCap
 
 } from '@iconscout/react-unicons'
 
@@ -230,27 +231,31 @@ const data = {
             title: "Master's degree",
             year: "2022 - present",
             color: "bg-[#fcf4ff]",
+            icon: UilGraduationCap,
             establishment: "University of Economics - Varna",
         },
         {
             title: "Bachelor's degree",
             year: "2018 - 2022",
             color: "bg-[#fefaf0]",
+            icon: UilGraduationCap,
             establishment: "University of Economics - Varna"
         },
         {
             title: "High school",
             year: "2014 - 2018",
             color: "bg-[#f3faff]",
+            icon: UilGraduationCap,
             establishment: 'Sports school - "G. Benkovsk", Varna'
         }
     ],
     experience: [
         {
-            title: "Ice skates instructor",
+            title: "Skates instructor",
             period: "2020 - present",
             location: "Varna",
             bgColor: "bg-[#fefaf0]",
+            icon: "",
             company: "Municipality",
         },
         {
@@ -258,6 +263,7 @@ const data = {
             period: "2021 - present",
             location: "Varna",
             bgColor: "bg-[#f3faff]",
+            icon: "../images/hc-varna.png",
             company: "HC-Varna",
         },
         {
@@ -265,6 +271,7 @@ const data = {
             period: "2019 - 2020",
             location: "Varna",
             bgColor: "bg-[#fcf4ff]",
+            icon: "",
             company: "Stella ltd.",
         }
     ],
@@ -304,6 +311,89 @@ const data = {
             title: "Organization",
             description: "I'am organized person who is always prepared in advance, regardless of the occacion and the event.",
         },
+    ],
+    projects: [
+        {
+            title: "Hello-UE",
+            description: "I was participaiting in a project for \"IT-Masterclass №10\", in collaboration with other fellow programmers, we were developing functional specifications, through many API request and react libraries and many more JavaScript functionalities.",
+            usedTech: "React, Tailwind, Node",
+            Imgs: [
+                {
+                    id: 1,
+                    url: "../images/ue-one.png",
+                },
+                {
+                    id: 2,
+                    url: "../images/ue-two.png",
+                },
+                {
+                    id: 3,
+                    url: "../images/ue-three.png"
+                }
+            ],
+            codeLink: "https://github.com/IvanSarabeev/hello-ue",
+        },
+        {
+            title: "Weather-Application",
+            description: "I have developed \"React Weather Forecast Application\" which provides current weather information and weather forecasts. I've used React.js and fetched data from open weather API providers.",
+            usedTech: "React, Tailwind, OpenWeatherMapApi",
+            Imgs: [
+                {
+                    id: 1,
+                    url: "../images/estate-one.png",
+                },
+                {
+                    id: 2,
+                    url: "../images/estate-two.png",
+                },
+                {
+                    id: 3,
+                    url: "../images/estate-three.png"
+                }
+            ],
+            codeLink: "https://github.com/IvanSarabeev/React-Weather-Forecast-Application"
+        },
+        {
+            title: "HC - Varna",
+            description: "I am happy to share that I've developed the website - http://www.hcvarna.bg/. I have created it with a focus on interactive design and a friendly interface that makes it easy to navigate and use for any user. The website provides information about the club and its events, supporting communication between the fans.",
+            usedTech: "HTML & CSS, Vanilla JS, AnimationCss, Swiper",
+            codeLink: "http://www.hcvarna.bg/",
+            Imgs: [
+                {
+                    id: 1,
+                    url: "../images/hc-one.png",
+                },
+                {
+                    id: 2,
+                    url: "../images/hc-two.png",
+                },
+                {
+                    id: 3,
+                    url: "../images/hc-three.png"
+                }
+            ],
+            href: "http://www.hcvarna.bg/",
+        },
+        {
+            title: "Real Estate",
+            description: "I have developed this mockup template, because in near future I would like to try new tech languagues with - Node.js & MongoDB.",
+            usedTech: "React, Tailwind, Motion",
+            Imgs: [
+                {
+                    id: 1,
+                    url: "../images/estate-one.png",
+                },
+                {
+                    id: 2,
+                    url: "../images/estate-two.png",
+                },
+                {
+                    id: 3,
+                    url: "../images/estate-three.png"
+                }
+            ],
+            codeLink: "https://github.com/IvanSarabeev/RealEstate-web-starterpack",
+        }
     ]
 }
 export default data;

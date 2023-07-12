@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import data from "../data/data";
 import Layout from "../components/Layout";
 import Location from "../components/Location";
-import data from "../data/data";
+import Education from "../components/Education";
+import Experience from "../components/Experience";
 import PersonalSkills from "../components/PersonalSkills";
+import Footer from "../components/Footer";
 import { UilSuitcase, UilGraduationCap } from "@iconscout/react-unicons";
 
 const Resume = () => {
@@ -16,13 +19,13 @@ const Resume = () => {
       : data.tech;
 
   return (
-    <div className="flex min-h-screen w-full bg-dark-background bg-cover bg-fixed bg-no-repeat">
+    <div className="flex min-h-screen w-full bg-exp3-background bg-cover bg-fixed bg-no-repeat">
       <Layout />
       <div className="mx-auto mt-[220px] flex flex-col">
         <Location />
-        <section className="mb-8 min-h-screen w-[700px] bg-slate-200 pb-6 lg:w-[850px] lg:rounded-2xl">
+        <section className="mb-8 min-h-screen w-[700px] rounded-3xl bg-white pb-6 lg:w-[850px]">
           <div className="px-2 pt-12 sm:px-5 md:px-10 lg:px-14">
-            <h2 className="relative flex items-center text-4xl font-bold after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#FA5252] after:to-[#DD2476]">
+            <h2 className="relative flex items-center font-heading text-4xl after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#FA5252] after:to-[#DD2476]">
               Resume
             </h2>
           </div>
@@ -34,24 +37,8 @@ const Resume = () => {
                   Education
                 </span>
                 {data.education.map((edu, index) => {
-                  return (
-                    <div
-                      key={index}
-                      className={`${edu.color} my-4 flex flex-col rounded-[0.75rem]`}
-                    >
-                      <div className="flex flex-col rounded-[0.75rem] p-6">
-                        <h4 className="my-2 leading-8 text-[#2686976]">
-                          {edu.year}
-                        </h4>
-                        <h3 className="mt-2 flex gap-4 text-[22px] font-semibold capitalize">
-                          {edu.title}
-                        </h3>
-                        <p className="my-2 leading-8 text-[#2686976]">
-                          {edu.establishment}
-                        </p>
-                      </div>
-                    </div>
-                  );
+                  const Icon = edu.icon;
+                  return <Education key={index} edu={edu} icon={<Icon />} />;
                 })}
               </div>
               <div>
@@ -60,29 +47,12 @@ const Resume = () => {
                   Experience
                 </span>
                 {data.experience.map((exp, index) => {
-                  return (
-                    <div
-                      key={index}
-                      className={`${exp.bgColor} my-4 flex flex-col rounded-[0.75rem]`}
-                    >
-                      <div className="flex flex-col rounded-[0.75rem] p-6">
-                        <h4 className="my-2 leading-8 text-[#2686976]">
-                          {exp.period}
-                        </h4>
-                        <h3 className="mt-2 flex gap-4 text-[22px] font-semibold capitalize">
-                          {`${exp.company}`}
-                        </h3>
-                        <h3 className="my-2 mt-2 flex gap-4 capitalize leading-8 text-[#2686976]">
-                          Position: {exp.title}
-                        </h3>
-                      </div>
-                    </div>
-                  );
+                  return <Experience key={index} exp={exp} />;
                 })}
               </div>
             </div>
             <div className="my-16">
-              <h3 className="relative flex items-center text-4xl font-bold after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#FA5252] after:to-[#DD2476]">
+              <h3 className="relative flex items-center font-heading text-4xl after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#FA5252] after:to-[#DD2476]">
                 Tech Stack
               </h3>
               <div className="mt-4 flex flex-auto flex-wrap rounded-[16px] p-4 shadow-2xl">
@@ -114,8 +84,8 @@ const Resume = () => {
                 </div>
               </div>
             </div>
-            <div className="my-16">
-              <h3 className="relative flex items-center text-4xl font-bold after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#FA5252] after:to-[#DD2476]">
+            <div className="mt-16">
+              <h3 className="relative flex items-center font-heading text-4xl after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#FA5252] after:to-[#DD2476]">
                 Soft Skills
               </h3>
               <article className="mt-4 flex flex-auto flex-wrap rounded-[16px] p-4 shadow-2xl">
@@ -130,6 +100,7 @@ const Resume = () => {
               </article>
             </div>
           </article>
+          <Footer />
         </section>
       </div>
     </div>

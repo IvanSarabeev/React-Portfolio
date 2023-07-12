@@ -6,22 +6,22 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="flex min-h-screen w-full bg-techDark-background bg-cover bg-fixed bg-no-repeat">
+    <div className="flex min-h-screen w-full flex-col gap-4 bg-exp3-background bg-cover bg-fixed bg-no-repeat lg:flex-row">
       <Layout />
       <div className="mx-auto mt-[220px] flex flex-col">
         <Location />
-        <section className="mb-8 min-h-screen w-[700px] bg-slate-200 pb-6 lg:w-[850px] lg:rounded-2xl">
+        <section className="mb-8 flex min-h-screen w-[700px] flex-col justify-center rounded-3xl bg-slate-200 pb-6 lg:w-[850px]">
           <div className="px-2 pt-12 sm:px-5 md:px-10 lg:px-14">
-            <h2 className="relative flex items-center text-4xl font-bold after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#FA5252] after:to-[#DD2476]">
+            <h2 className="relative flex items-center font-heading text-4xl after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#FA5252] after:to-[#DD2476]">
               About Me
             </h2>
-            <div className="space-y-2.5 pt-4 text-left md:pt-[30px] lg:mr-16">
-              <p className=" leading-7 text-[#2686976]">
+            <div className="space-y-2.5 pt-4 text-left font-pargraph md:pt-[30px] lg:mr-16">
+              <p className="indent-2 leading-7 text-[#2686976]">
                 I'm Creative Director and UI/UX Designer from Sydney, Australia,
                 working in web development and print media. I enjoy turning
                 complex problems into simple, beautiful and intuitive designs.
               </p>
-              <p className=" mt-2.5 leading-7 text-[#2686976]">
+              <p className="mt-2.5 leading-7 text-[#2686976]">
                 My aim is to bring across your message and identity in the most
                 creative way. I created web design for many famous brand
                 companies.
@@ -29,7 +29,7 @@ const Home = () => {
             </div>
           </div>
           <article className="px-2 pb-12 sm:px-5 md:px-10 lg:mt-10 lg:px-14">
-            <h3 className="font-robotoSlab pb-5 text-[35px] font-bold">
+            <h3 className="pb-5 font-text text-[35px] font-semibold">
               What I do!
             </h3>
             <div className="grid grid-cols-2 justify-center gap-8">
@@ -41,14 +41,13 @@ const Home = () => {
                     className={`${item.color} flex flex-col rounded-[0.75rem] p-6`}
                   >
                     <div className="space-y-2">
-                      <h3 className="flex gap-4 text-[22px] font-semibold">
+                      <h3 className="flex gap-4 font-title text-[22px] font-semibold">
                         <Icons
                           className={`${item.textColor} h-10 w-10 object-contain`}
                         />
                         {item.title}
                       </h3>
-                      <p className="my-2 leading-8 text-[#2686976]">
-                        {" "}
+                      <p className="my-2 text-left font-pargraph leading-8 text-[#2686976] antialiased">
                         {item.text}
                       </p>
                     </div>
