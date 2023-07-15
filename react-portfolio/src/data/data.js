@@ -12,7 +12,6 @@ import {
     UilBracketsCurly,
     UilSlidersVAlt,
     UilPagelines,
-    UilGraduationCap
 
 } from '@iconscout/react-unicons'
 
@@ -25,11 +24,14 @@ import PHP from "../icons/PHP"
 import MySQL from "../icons/MySQL"
 import Firebase from "../icons/Firebase"
 import Git from "../icons/Git"
-import FramerMotion from "../icons/FrameMotion"
+import Motion from "../icons/Motion"
+import NodeJS from "../icons/NodeJS"
 import GitHub from "../icons/GitHub"
 import VSCode from "../icons/vsCode"
 import PowerBI from "../icons/PowerBI"
 import Postman from "../icons/Postman"
+import Swiper from "../icons/Swiper"
+import API from "../icons/API"
 
 const data = {
     headerLinks: [
@@ -60,7 +62,7 @@ const data = {
         },
         {
             id: 5,
-            title: "Achievments",
+            title: "Goals",
             href: "/achievments",
             icon: UilEnglishToChinese
         }
@@ -145,85 +147,83 @@ const data = {
             title: "HTML",
             icon: <Html />,
             area: "Front-end",
-            color: "text-[#ff5733]"
         },
         {
             title: "CSS",
             icon: <Css />,
             area: "Front-end",
-            color: "text-[#619be8]"
-        },
-        {
-            title: "JavaScript",
-            icon: <JavaScript />,
-            area: "Front-end",
-            color: "text-[#ead41c]"
-        },
-        {
-            title: "React.JS",
-            icon: <ReactJS />,
-            area: "Front-end",
-            color: "text-[#5ccfee]"
         },
         {
             title: "Tailwind",
             icon: <Tailwind />,
             area: "Front-end",
-            color: "text-[#35b3eb]"
+        },
+        {
+            title: "JavaScript",
+            icon: <JavaScript />,
+            area: "Front-end",
+        },
+        {
+            title: "React.JS",
+            icon: <ReactJS />,
+            area: "Front-end",
         },
         {
             title: "FrameMotion",
-            icon: <FramerMotion />,
+            icon: <Motion />,
             area: "Front-end",
-            color: "text-[#e742ed]"
         },
         {
             title: "PHP",
             icon: <PHP />,
             area: "Back-end",
-            color: "text-[#7175aa]"
+        },
+        {
+            title: "NodeJS",
+            icon: <NodeJS />,
+            area: "Back-end",
         },
         {
             title: "Firebase",
             icon: <Firebase />,
             area: "Back-end",
-            color: "text-[#f29800]"
         },
         {
             title: "SQL",
             icon: <MySQL />,
             area: "Back-end",
-            color: "text-[#005c83]"
+        },
+        {
+            title: "API",
+            icon: <API />,
+            area: "Other",
         },
         {
             title: "Git",
             icon: <Git />,
             area: "Other",
-            color: "text-[#e44c30]"
+        },
+
+        {
+            title: "GitHub",
+            icon: <GitHub />,
+            area: "Other",
+        },
+
+        {
+            title: "Postman",
+            icon: <Postman />,
+            area: "Other",
         },
         {
             title: "VS code",
             icon: <VSCode />,
             area: "Other",
-            color: "text-[#3ba1e6]"
-        },
-        {
-            title: "GitHub",
-            icon: <GitHub />,
-            area: "Other",
-            color: "text-[#000000]"
-        },
-        {
-            title: "Postman",
-            icon: <Postman />,
-            area: "Other",
-            color: "text-[#f06732]"
         },
         {
             title: "Power BI",
             icon: <PowerBI />,
             area: "Other",
-            color: "text-[#da9f08]"
         },
     ],
     education: [
@@ -231,21 +231,21 @@ const data = {
             title: "Master's degree",
             year: "2022 - present",
             color: "bg-[#fcf4ff]",
-            icon: UilGraduationCap,
+            icon: "../images/uni-logo.png",
             establishment: "University of Economics - Varna",
         },
         {
             title: "Bachelor's degree",
             year: "2018 - 2022",
             color: "bg-[#fefaf0]",
-            icon: UilGraduationCap,
+            icon: "../images/uni-logo.png",
             establishment: "University of Economics - Varna"
         },
         {
             title: "High school",
             year: "2014 - 2018",
             color: "bg-[#f3faff]",
-            icon: UilGraduationCap,
+            icon: "../images/sports-school.jpg",
             establishment: 'Sports school - "G. Benkovsk", Varna'
         }
     ],
@@ -255,7 +255,7 @@ const data = {
             period: "2020 - present",
             location: "Varna",
             bgColor: "bg-[#fefaf0]",
-            icon: "",
+            icon: "../images/hc-varna.png",
             company: "Municipality",
         },
         {
@@ -263,16 +263,16 @@ const data = {
             period: "2021 - present",
             location: "Varna",
             bgColor: "bg-[#f3faff]",
-            icon: "../images/hc-varna.png",
+            icon: "../images/avatar.jpg",
             company: "HC-Varna",
         },
         {
-            title: "Cook",
+            title: "Currency Cashier",
             period: "2019 - 2020",
             location: "Varna",
             bgColor: "bg-[#fcf4ff]",
-            icon: "",
-            company: "Stella ltd.",
+            icon: "../images/currency.png",
+            company: "Briella",
         }
     ],
     personalSkills: [
@@ -280,35 +280,39 @@ const data = {
             num: 1,
             btnIndex: 1,
             btnVisibility: true,
-            title: "Cooperation & teamworker",
-            description: "I have been working on a project for 'IT-Masterclass #10', in collaboration with other fellow programmers, in particularly developing functional specifications, through APIs and other react libraries."
+            title: "Teamworker",
+            //Cooperation teamworker
+            description: "I have been working on a project for \"IT-Masterclass №10\", in collaboration with other fellow programmers, in particularly developing functional specifications, through APIs and other react libraries."
         },
         {
             num: 2,
             btnIndex: 2,
             btnVisibility: true,
-            title: "Adaptability & flexibility",
+            title: "Adaptable",
+            // Flexibility adaptability 
             description: "I have had to use new techs or libraries, according to the goals of the project. In addition I've worked with several people in developing in feature in the same branch and others..."
         },
         {
             num: 3,
             btnIndex: 3,
             btnVisibility: true,
-            title: "Interested in learning and self-improvment",
+            title: "Learner",
+            //Learning self-improving
             description: "Since the beginning of 2023, I have been proatively engaged in learing new technologies such as: React.js, some advance Javascripts funcionalities & concepts and other UI libraries."
         },
         {
             num: 4,
             btnIndex: 4,
             btnVisibility: true,
-            title: "Proactive & initiative",
+            title: "Proactive",
+            //Proactive & initiative
             description: "I'am a person who is ready to take an initiative and to never give up. I would easily say that it's thanks to my sports career."
         },
         {
             num: 5,
             btnIndex: 5,
             btnVisibility: true,
-            title: "Organization",
+            title: "Organized",
             description: "I'am organized person who is always prepared in advance, regardless of the occacion and the event.",
         },
     ],
@@ -317,6 +321,7 @@ const data = {
             title: "Hello-UE",
             description: "I was participaiting in a project for \"IT-Masterclass №10\", in collaboration with other fellow programmers, we were developing functional specifications, through many API request and react libraries and many more JavaScript functionalities.",
             usedTech: "React, Tailwind, Node",
+            tech: [<ReactJS />, <Tailwind />, <API />, <NodeJS />],
             Imgs: [
                 {
                     id: 1,
@@ -334,29 +339,10 @@ const data = {
             codeLink: "https://github.com/IvanSarabeev/hello-ue",
         },
         {
-            title: "Weather-Application",
-            description: "I have developed \"React Weather Forecast Application\" which provides current weather information and weather forecasts. I've used React.js and fetched data from open weather API providers.",
-            usedTech: "React, Tailwind, OpenWeatherMapApi",
-            Imgs: [
-                {
-                    id: 1,
-                    url: "../images/estate-one.png",
-                },
-                {
-                    id: 2,
-                    url: "../images/estate-two.png",
-                },
-                {
-                    id: 3,
-                    url: "../images/estate-three.png"
-                }
-            ],
-            codeLink: "https://github.com/IvanSarabeev/React-Weather-Forecast-Application"
-        },
-        {
             title: "HC - Varna",
-            description: "I am happy to share that I've developed the website - http://www.hcvarna.bg/. I have created it with a focus on interactive design and a friendly interface that makes it easy to navigate and use for any user. The website provides information about the club and its events, supporting communication between the fans.",
+            description: "I am happy to share that I've developed the website - http://www.hcvarna.bg/. I have created it with a focus on interactive design and a friendly interface that makes it easy to navigate and use for any user. The website provides information about the club and its events, supporting communication between the fans. \n I'm planning on changing the entire website by using React, Tailwind and Flowbite for the UI",
             usedTech: "HTML & CSS, Vanilla JS, AnimationCss, Swiper",
+            tech: [<Html />, <Css />, <JavaScript />, <Swiper />,],
             codeLink: "http://www.hcvarna.bg/",
             Imgs: [
                 {
@@ -375,9 +361,31 @@ const data = {
             href: "http://www.hcvarna.bg/",
         },
         {
+            title: "Weather-Application",
+            description: "I have developed \"React Weather Forecast Application\" which provides current weather information and weather forecasts. I've used React.js and fetched data from open weather API providers.",
+            usedTech: "React, Tailwind, OpenWeatherMapApi",
+            tech: [<ReactJS />, <Tailwind />, <API />],
+            Imgs: [
+                {
+                    id: 1,
+                    url: "../images/estate-one.png",
+                },
+                {
+                    id: 2,
+                    url: "../images/estate-two.png",
+                },
+                {
+                    id: 3,
+                    url: "../images/estate-three.png"
+                }
+            ],
+            codeLink: "https://github.com/IvanSarabeev/React-Weather-Forecast-Application"
+        },
+        {
             title: "Real Estate",
-            description: "I have developed this mockup template, because in near future I would like to try new tech languagues with - Node.js & MongoDB.",
+            description: "I have developed this mockup template, because in near future I would like to try new tech languagues like - Node.js & MongoDB.",
             usedTech: "React, Tailwind, Motion",
+            tech: [<ReactJS />, <Tailwind />, <Motion />],
             Imgs: [
                 {
                     id: 1,
@@ -394,6 +402,9 @@ const data = {
             ],
             codeLink: "https://github.com/IvanSarabeev/RealEstate-web-starterpack",
         }
+    ],
+    certificate: [
+        {}, {}, {}
     ]
 }
 export default data;

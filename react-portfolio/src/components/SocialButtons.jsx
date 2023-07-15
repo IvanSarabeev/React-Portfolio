@@ -7,11 +7,11 @@ function SocialButtons() {
       {data.socialLinks.map((links, index) => {
         const Icons = links.icon;
         return (
-          <Link key={index} to={links.href} target="_blank" rel="noreferrer">
+          <Link key={index} to={links.href} target="_blank">
             <span
-              className={`group flex h-10 w-10 items-center justify-center rounded-lg bg-[#f3f6f6] from-[#2aa6ac] to-[#f7f4f2]  hover:bg-gradient-to-b`}
+              className={`${links.color} flex h-10 w-10 items-center justify-center rounded-lg bg-[#f3f6f6] hover:bg-[#1d8cf8] hover:text-white`}
             >
-              <Icons className={links.color} />
+              <Icons />
             </span>
           </Link>
         );

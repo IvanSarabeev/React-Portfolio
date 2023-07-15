@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Experience = (props) => {
   return (
@@ -15,13 +14,11 @@ const Experience = (props) => {
         <h3 className="my-2 mt-2 flex gap-4 capitalize leading-8 text-[#2686976]">
           Position: {props.exp.title}
         </h3>
-        <Link to="http://www.hcvarna.bg/" target="_blank">
-          <img
-            src={props.exp.icon}
-            alt={props.exp.title}
-            className="absolute right-[5%] top-[5%] h-[140px] w-[140px]"
-          />
-        </Link>
+        <img
+          src={props.exp.icon}
+          alt={props.exp.title}
+          className="absolute right-[5%] top-[5%] h-[100px] w-[100px] rounded-full"
+        />
       </div>
     </div>
   );

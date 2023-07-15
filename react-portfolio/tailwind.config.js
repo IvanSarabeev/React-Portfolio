@@ -7,7 +7,6 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        // 'Light-background': "url('../public/images/bgLightTech.jpg')",
         'Dark-background': "url('../public/images/bgTech.jpg')",
         'light-background': "url('../public/images/bgLight.jpg')",
         'dark-background': "url('../public/images/bgDark.jpg')",
@@ -23,6 +22,10 @@ module.exports = {
       title: ['Times New Roman', 'serif'],
       text: ['Roboto', 'Halvetica Neue', 'sans-serif'],
       pargraph: ['Synonym', 'system-ui', 'sans-serif'],
+    },
+    animation: {
+      'spin-slow': 'spin 10s linear infinite',
+      'bounce': "bounce 2s linear infinite"
     },
   },
   plugins: [

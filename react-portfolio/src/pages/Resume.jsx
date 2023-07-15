@@ -19,7 +19,7 @@ const Resume = () => {
       : data.tech;
 
   return (
-    <div className="flex min-h-screen w-full bg-exp3-background bg-cover bg-fixed bg-no-repeat">
+    <div className="flex min-h-screen w-full bg-exp8-background bg-cover bg-fixed bg-no-repeat">
       <Layout />
       <div className="mx-auto mt-[220px] flex flex-col">
         <Location />
@@ -37,8 +37,7 @@ const Resume = () => {
                   Education
                 </span>
                 {data.education.map((edu, index) => {
-                  const Icon = edu.icon;
-                  return <Education key={index} edu={edu} icon={<Icon />} />;
+                  return <Education key={index} edu={edu} />;
                 })}
               </div>
               <div>
@@ -63,22 +62,18 @@ const Resume = () => {
                         key={index}
                         className={`${
                           selectedSkill === item
-                            ? "text-[#fa5252]"
-                            : "text-slate-700 hover:text-[#fa5252]"
-                        } cursor-pointer  font-semibold`}
+                            ? "text-[#1d8cf8]"
+                            : "text-slate-800 opacity-80 hover:text-[#fa5252]"
+                        } cursor-pointer font-title text-xl font-semibold`}
                         onClick={() => setSelectedSkill(item)}
                       >
                         {item}
                       </span>
                     );
                   })}
-                  <div className="flex flex-wrap items-center justify-center gap-5">
+                  <div className="flex flex-wrap items-center justify-center gap-4">
                     {filterSkills.map((skill, index) => {
-                      return (
-                        <div key={index} className={`${skill.color}`}>
-                          {skill.icon}
-                        </div>
-                      );
+                      return <div key={index}>{skill.icon}</div>;
                     })}
                   </div>
                 </div>
@@ -88,7 +83,7 @@ const Resume = () => {
               <h3 className="relative flex items-center font-heading text-4xl after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#FA5252] after:to-[#DD2476]">
                 Soft Skills
               </h3>
-              <article className="mt-4 flex flex-auto flex-wrap rounded-[16px] p-4 shadow-2xl">
+              <article className="mt-4 flex flex-auto flex-wrap rounded-[16px] p-4 shadow-xl">
                 {data.personalSkills.map((item, index) => (
                   <PersonalSkills
                     key={index}

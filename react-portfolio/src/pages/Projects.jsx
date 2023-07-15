@@ -30,7 +30,7 @@ function Projects() {
               Projects
             </h2>
           </div>
-          <article className="mx-4 flex flex-col gap-x-4 rounded-2xl px-2 pb-12 shadow-2xl sm:px-5 md:px-10 lg:mt-10 lg:px-14">
+          <article className="mx-4 flex flex-col gap-x-4 rounded-2xl px-2 pb-12 shadow-xl sm:px-5 md:px-10 lg:mt-10 lg:px-10">
             <div className="flex flex-col justify-center gap-x-4">
               {data.projects.map((item, index) => {
                 const currentImg = item.Imgs[activeIndex];
@@ -54,8 +54,8 @@ function Projects() {
                         </p>
                         <h4 className="text-center font-heading text-[18px]">
                           Technologies:
-                          <span className="mb-2 mt-2 flex items-center justify-center gap-2 font-heading text-[16px]">
-                            {item.usedTech}
+                          <span className="my-2 flex items-center justify-center gap-x-1">
+                            {item.tech}
                           </span>
                         </h4>
                         <span className="flex items-center justify-center gap-x-4">

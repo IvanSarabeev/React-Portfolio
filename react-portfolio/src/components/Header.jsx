@@ -10,7 +10,7 @@ const Header = () => {
           <img
             src="../images/star.png"
             alt="logo"
-            className="h-[46px] w-[46px] animate-bounce"
+            className=" h-[46px] w-[46px] animate-bounce"
           />
           <img
             src="../images/title.png"
