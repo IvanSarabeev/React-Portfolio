@@ -1,35 +1,23 @@
 import React from "react";
-import Sun from "../icons/Sun";
-import Moon from "../icons/Moon";
+import Navbar from "../Navbar";
 
 const Header = () => {
   return (
-    <header className="mx-auto flex w-full bg-transparent px-0 pb-[1.25rem] pt-[50px] md:w-[992px]">
-      <div className="flex w-full items-center justify-between px-4">
+    <header className="mx-auto flex w-11/12 bg-transparent px-0 pb-[1.25rem] pt-[50px] md:w-[992px] ">
+      <div className="flex w-full items-center justify-between pl-2 pr-4">
         <span className="flex items-center gap-2">
           <img
             src="../images/star.png"
             alt="logo"
-            className=" h-[46px] w-[46px] animate-bounce"
+            className="h-[36px] w-[36px] animate-bounce md:h-[46px] md:w-[46px]"
           />
           <img
             src="../images/title.png"
             alt="title"
-            className="h-[48px] w-[226px]"
+            className="h-[36px] w-[200px] md:h-[48px] md:w-[226px]"
           />
         </span>
-        <span className="flex items-center justify-end gap-x-4">
-          <button
-            type="button"
-            id="light-theme"
-            className="h-6 w-6 rounded-full opacity-100"
-          >
-            <Sun />
-          </button>
-          <button type="button" id="dark-theme" className="hidden">
-            <Moon />
-          </button>
-        </span>
+        <Navbar />
       </div>
     </header>
   );

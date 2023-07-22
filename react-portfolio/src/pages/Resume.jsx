@@ -7,10 +7,12 @@ import Experience from "../components/Experience";
 import PersonalSkills from "../components/PersonalSkills";
 import Footer from "../components/Footer";
 import { UilSuitcase, UilGraduationCap } from "@iconscout/react-unicons";
+import "flowbite/dist//flowbite.turbo";
 
 const Resume = () => {
   const [activeIndex, setActiveIndex] = useState(1);
   const [selectedSkill, setSelectedSkill] = useState("All");
+  const [hoveredSkill, setHoveredSkill] = useState(null);
 
   const filterNames = ["All", "Front-end", "Back-end", "Other"];
   const filterSkills =
@@ -23,17 +25,17 @@ const Resume = () => {
       <Layout />
       <div className="mx-auto mt-[220px] flex flex-col">
         <Location />
-        <section className="mb-8 min-h-screen w-[700px] rounded-3xl bg-white pb-6 lg:w-[850px]">
+        <section className="mb-8 min-h-screen w-[700px] rounded-3xl bg-slate-200 pb-6 lg:w-[850px]">
           <div className="px-2 pt-12 sm:px-5 md:px-10 lg:px-14">
-            <h2 className="relative flex items-center font-heading text-4xl after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#FA5252] after:to-[#DD2476]">
+            <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476]">
               Resume
             </h2>
           </div>
           <article className="px-2 pb-12 sm:px-5 md:px-10 lg:mt-10 lg:px-14">
             <div className="grid grid-cols-2 justify-center gap-8">
               <div>
-                <span className="flex items-center gap-x-2 text-2xl">
-                  <UilGraduationCap className="h-8 w-8" />
+                <span className="flex items-center gap-x-2 font-title text-2xl">
+                  <UilGraduationCap className="h-8 w-8 text-[#8dc4c8]" />
                   Education
                 </span>
                 {data.education.map((edu, index) => {
@@ -41,8 +43,8 @@ const Resume = () => {
                 })}
               </div>
               <div>
-                <span className="flex items-center gap-x-2 text-2xl">
-                  <UilSuitcase className="h-8 w-8" />
+                <span className="flex items-center gap-x-2 font-title text-2xl">
+                  <UilSuitcase className="h-8 w-8 text-[#362f78]" />
                   Experience
                 </span>
                 {data.experience.map((exp, index) => {
@@ -51,7 +53,7 @@ const Resume = () => {
               </div>
             </div>
             <div className="my-16">
-              <h3 className="relative flex items-center font-heading text-4xl after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#FA5252] after:to-[#DD2476]">
+              <h3 className="flex items-center font-text text-4xl font-medium ">
                 Tech Stack
               </h3>
               <div className="mt-4 flex flex-auto flex-wrap rounded-[16px] p-4 shadow-2xl">
@@ -71,16 +73,33 @@ const Resume = () => {
                       </span>
                     );
                   })}
-                  <div className="flex flex-wrap items-center justify-center gap-4">
+                  <div className="flex flex-wrap items-center justify-around gap-x-6 gap-y-4 ">
                     {filterSkills.map((skill, index) => {
-                      return <div key={index}>{skill.icon}</div>;
+                      return (
+                        <div
+                          key={index}
+                          onMouseEnter={() => setHoveredSkill(skill)}
+                          onMouseLeave={() => setHoveredSkill(null)}
+                        >
+                          <div className="fb-popover flex flex-col items-center justify-self-center">
+                            <div>{skill.icon}</div>
+                            {hoveredSkill === skill && (
+                              <div className="fb-popover-content">
+                                <div className="fb-popover-body font-title text-[16px] font-medium">
+                                  {skill.title}
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      );
                     })}
                   </div>
                 </div>
               </div>
             </div>
             <div className="mt-16">
-              <h3 className="relative flex items-center font-heading text-4xl after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#FA5252] after:to-[#DD2476]">
+              <h3 className="flex items-center font-text text-4xl font-medium">
                 Soft Skills
               </h3>
               <article className="mt-4 flex flex-auto flex-wrap rounded-[16px] p-4 shadow-xl">

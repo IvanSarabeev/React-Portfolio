@@ -24,9 +24,9 @@ function Projects() {
       <Layout />
       <div className="mx-auto mt-[220px] flex flex-col">
         <Location />
-        <section className="bg-gray mb-8 min-h-screen w-[700px] rounded-3xl bg-gray-200 pb-6 lg:w-[850px]">
+        <section className="bg-gray mb-8 min-h-screen w-[700px] rounded-3xl bg-slate-200 pb-6 lg:w-[850px]">
           <div className="px-2 pt-12 sm:px-5 md:px-10 lg:px-14">
-            <h2 className="relative flex items-center font-heading text-4xl after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#FA5252] after:to-[#DD2476]">
+            <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476]">
               Projects
             </h2>
           </div>
@@ -40,10 +40,7 @@ function Projects() {
                       <img
                         src={currentImg.url}
                         alt={item.title}
-                        className="h-[300px] translate-x-[0%] rounded-e-lg rounded-s-3xl object-fill transition-all ease-in-out sm:max-w-full lg:w-[350px]"
-                        initial={{ opacity: 0, x: -100 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5, ease: "easeInOut" }}
+                        className="h-[300px] translate-x-[0%] rounded-e-lg rounded-s-3xl object-fill opacity-80 transition-all ease-in-out hover:opacity-100 sm:max-w-full lg:w-[350px]"
                       />
                       <div>
                         <h3 className="my-4 text-center font-heading text-xl font-semibold leading-6">
@@ -53,8 +50,8 @@ function Projects() {
                           {item.description}
                         </p>
                         <h4 className="text-center font-heading text-[18px]">
-                          Technologies:
-                          <span className="my-2 flex items-center justify-center gap-x-1">
+                          Used technologies:
+                          <span className="my-2 flex items-center justify-center gap-x-1 transition-all duration-300 ease-in-out hover:scale-105">
                             {item.tech}
                           </span>
                         </h4>

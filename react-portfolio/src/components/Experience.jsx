@@ -4,7 +4,7 @@ const Experience = (props) => {
   return (
     <div
       key={props.index}
-      className={`${props.exp.bgColor} my-4 flex flex-col rounded-[0.75rem]`}
+      className={`${props.exp.bgColor} my-4 flex flex-col rounded-[0.75rem] opacity-80 transition-all duration-300 ease-in-out hover:scale-105  hover:rounded-2xl hover:opacity-100 hover:ring-2 hover:ring-neutral-200`}
     >
       <div className="relative flex flex-col rounded-[0.75rem] p-6">
         <h4 className="my-2 leading-8 text-[#2686976]">{props.exp.period}</h4>

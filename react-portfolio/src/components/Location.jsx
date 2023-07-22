@@ -6,9 +6,9 @@ const Location = () => {
   const locationPath = useLocation();
 
   return (
-    <header className="mb-10 ml-auto hidden h-[144px] rounded-[16px] bg-slate-300 p-[30px] dark:bg-slate-900 lg:block lg:w-[560px]">
+    <header className="mx-auto hidden h-[144px] rounded-[16px] bg-slate-300 p-[30px] dark:bg-slate-900 md:mb-8 md:block lg:mb-10 lg:mr-0 lg:w-[480px]">
       <nav className="lg:block">
-        <ul className="flex">
+        <ul className="flex items-center justify-between">
           {data.headerLinks.map((item, index) => {
             const Icons = item.icon;
             return (

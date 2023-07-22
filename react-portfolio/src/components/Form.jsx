@@ -8,7 +8,6 @@ const Form = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
-
     const form = e.target;
     const formData = new FormData(form);
     const formJSON = Object.fromEntries(formData.entries());
@@ -18,10 +17,11 @@ const Form = () => {
   return (
     <>
       <form
-        name="contact"
+        name="contacts"
+        action="/contacts"
         method="POST"
         data-netlify="true"
-        onSubmit={handleSubmit}
+        // onSubmit={handleSubmit}
         className="flex flex-col items-start justify-center"
       >
         <input type="hidden" name="form-name" value="contact" />

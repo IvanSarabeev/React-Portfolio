@@ -5,7 +5,7 @@ const Education = (props) => {
     <div>
       <div
         key={props.index}
-        className={`${props.edu.color} my-4 flex flex-col rounded-[0.75rem]`}
+        className={`${props.edu.color} my-4 flex flex-col rounded-[0.75rem] opacity-80 transition-all duration-300 ease-in-out hover:scale-105  hover:rounded-2xl hover:opacity-100 hover:ring-2 hover:ring-neutral-200`}
       >
         <div className="relative flex flex-col rounded-[0.75rem] p-6">
           <h4 className="my-2 leading-8 text-[#2686976]">{props.edu.year}</h4>

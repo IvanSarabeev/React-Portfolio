@@ -35,7 +35,7 @@ const SocialSkills = ({ item, activeIndex, setActiveIndex }) => {
             onClick={() => toggleDescription(item.num)}
             className={`${activeIndex === item.num ? "active text-white" : ""}`}
           >
-            <ArrowDown />
+            {!isActive && <ArrowDown />}
             {activeIndex === item.num && (
               <p className="mb-2 cursor-text space-x-2 break-words px-2 text-justify indent-2 font-pargraph leading-6 text-white opacity-80">
                 {item.description}

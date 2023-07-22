@@ -7,8 +7,7 @@ import {
     UilMobileAndroid, UilFileShareAlt,
     UilSuitcase,
     UilLocationPinAlt,
-    UilEnglishToChinese,
-    UilVisualStudio,
+    UilTrophy,
     UilBracketsCurly,
     UilSlidersVAlt,
     UilPagelines,
@@ -32,6 +31,7 @@ import PowerBI from "../icons/PowerBI"
 import Postman from "../icons/Postman"
 import Swiper from "../icons/Swiper"
 import API from "../icons/API"
+// import IconCertificate from "../icons/Certificate";
 
 const data = {
     headerLinks: [
@@ -60,12 +60,6 @@ const data = {
             href: "/contacts",
             icon: UilMobileAndroid
         },
-        {
-            id: 5,
-            title: "Goals",
-            href: "/achievments",
-            icon: UilEnglishToChinese
-        }
     ],
     socialLinks: [
         {
@@ -115,27 +109,27 @@ const data = {
     mainOccupations: [
         {
             title: "UI/UX Design",
-            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat. ",
+            text: "I am drawn to the art of creating visually captivating interfaces that not only look beautiful but also enhance usability, making technology more intuitive and accessible for users. This is the main reason why I decided to pursue web development, rather than software engineering.",
             icon: UilPagelines,
             color: "bg-[#fcf4ff]",
             textColor: "text-[#6AB5B9]"
         },
         {
             title: "Hobbies",
-            text: "I'm ice hockey coach & competative player.\n Have numerous awards & championships behind my back",
-            icon: UilVisualStudio,
+            text: "Ever since I was young, I have been drawn to the fast-paced and dynamic nature of the sport. Spending time on the ice, honing my skills and strategizing with teammates, brings me immense joy and fulfillment. It has taught me valuable lessons in teamwork, perseverance, and discipline, which I apply both on and off the ice.",
+            icon: UilTrophy,
             color: "bg-[#fefaf0]",
             textColor: "text-[#C17CEB]"
         }, {
-            title: "Management",
-            text: "As an innovator, I bring a strategic mindset and hands-on approach to every project. I have experience leading small initiatives, ensuring seamless coordination and alignment with organizational goals.",
+            title: "Time Management",
+            text: "I am striving in optimizing productivity and achieving goals by organizing tasks, setting priorities, and maintaining a balanced schedule to ensure efficient use of time.",
             icon: UilSlidersVAlt,
             color: "bg-[#fff0f8]",
             textColor: "text-[#E93B81]"
         },
         {
             title: "Web Development",
-            text: "In today's world, I'm constatntly following the new tendentions on the web",
+            text: "Web development allows me to combine my creativity and technical skills to build visually appealing and functional websites that enhance user experiences.",
             icon: UilBracketsCurly,
             color: "bg-[#f3faff]",
             textColor: "text-[#1773EA]"
@@ -164,12 +158,12 @@ const data = {
             area: "Front-end",
         },
         {
-            title: "React.JS",
+            title: "React",
             icon: <ReactJS />,
             area: "Front-end",
         },
         {
-            title: "FrameMotion",
+            title: "Motion",
             icon: <Motion />,
             area: "Front-end",
         },
@@ -179,44 +173,32 @@ const data = {
             area: "Back-end",
         },
         {
-            title: "NodeJS",
-            icon: <NodeJS />,
-            area: "Back-end",
-        },
-        {
             title: "Firebase",
             icon: <Firebase />,
             area: "Back-end",
         },
         {
-            title: "SQL",
+            title: "MySQL",
             icon: <MySQL />,
             area: "Back-end",
-        },
-        {
-            title: "API",
-            icon: <API />,
-            area: "Other",
         },
         {
             title: "Git",
             icon: <Git />,
             area: "Other",
         },
-
         {
             title: "GitHub",
             icon: <GitHub />,
             area: "Other",
         },
-
         {
             title: "Postman",
             icon: <Postman />,
             area: "Other",
         },
         {
-            title: "VS code",
+            title: "VScode",
             icon: <VSCode />,
             area: "Other",
         },
@@ -237,14 +219,14 @@ const data = {
         {
             title: "Bachelor's degree",
             year: "2018 - 2022",
-            color: "bg-[#fefaf0]",
+            color: "bg-[#f3faff]",
             icon: "../images/uni-logo.png",
             establishment: "University of Economics - Varna"
         },
         {
             title: "High school",
             year: "2014 - 2018",
-            color: "bg-[#f3faff]",
+            color: "bg-[#fcf4ff]",
             icon: "../images/sports-school.jpg",
             establishment: 'Sports school - "G. Benkovsk", Varna'
         }
@@ -254,15 +236,15 @@ const data = {
             title: "Skates instructor",
             period: "2020 - present",
             location: "Varna",
-            bgColor: "bg-[#fefaf0]",
-            icon: "../images/hc-varna.png",
+            bgColor: "bg-[#f3faff]",
+            icon: "../images/og-varna.jpg",
             company: "Municipality",
         },
         {
             title: "Ice hockey coach",
             period: "2021 - present",
             location: "Varna",
-            bgColor: "bg-[#f3faff]",
+            bgColor: "bg-[#fcf4ff]",
             icon: "../images/avatar.jpg",
             company: "HC-Varna",
         },
@@ -270,8 +252,8 @@ const data = {
             title: "Currency Cashier",
             period: "2019 - 2020",
             location: "Varna",
-            bgColor: "bg-[#fcf4ff]",
-            icon: "../images/currency.png",
+            bgColor: "bg-[#f3faff]",
+            icon: "../images/tourisum.jpg",
             company: "Briella",
         }
     ],
@@ -281,7 +263,6 @@ const data = {
             btnIndex: 1,
             btnVisibility: true,
             title: "Teamworker",
-            //Cooperation teamworker
             description: "I have been working on a project for \"IT-Masterclass №10\", in collaboration with other fellow programmers, in particularly developing functional specifications, through APIs and other react libraries."
         },
         {
@@ -289,7 +270,6 @@ const data = {
             btnIndex: 2,
             btnVisibility: true,
             title: "Adaptable",
-            // Flexibility adaptability 
             description: "I have had to use new techs or libraries, according to the goals of the project. In addition I've worked with several people in developing in feature in the same branch and others..."
         },
         {
@@ -297,7 +277,6 @@ const data = {
             btnIndex: 3,
             btnVisibility: true,
             title: "Learner",
-            //Learning self-improving
             description: "Since the beginning of 2023, I have been proatively engaged in learing new technologies such as: React.js, some advance Javascripts funcionalities & concepts and other UI libraries."
         },
         {
@@ -305,7 +284,6 @@ const data = {
             btnIndex: 4,
             btnVisibility: true,
             title: "Proactive",
-            //Proactive & initiative
             description: "I'am a person who is ready to take an initiative and to never give up. I would easily say that it's thanks to my sports career."
         },
         {
@@ -340,10 +318,10 @@ const data = {
         },
         {
             title: "HC - Varna",
-            description: "I am happy to share that I've developed the website - http://www.hcvarna.bg/. I have created it with a focus on interactive design and a friendly interface that makes it easy to navigate and use for any user. The website provides information about the club and its events, supporting communication between the fans. \n I'm planning on changing the entire website by using React, Tailwind and Flowbite for the UI",
+            description: "I am happy to share that I've developed the website - http://www.hcvarna.bg/. I have created it with a focus on interactive design and a friendly interface that makes it easy to navigate and use for any user. The website provides information about the club and its events, supporting communication between the fans. \n I'm planning on changing the entire website by using React, Tailwind and Flowbite for the UI.",
             usedTech: "HTML & CSS, Vanilla JS, AnimationCss, Swiper",
             tech: [<Html />, <Css />, <JavaScript />, <Swiper />,],
-            codeLink: "http://www.hcvarna.bg/",
+            codeLink: ".",
             Imgs: [
                 {
                     id: 1,
@@ -383,7 +361,7 @@ const data = {
         },
         {
             title: "Real Estate",
-            description: "I have developed this mockup template, because in near future I would like to try new tech languagues like - Node.js & MongoDB.",
+            description: "I have developed this mockup template, because in near future I would like to try new tech languagues like - Node.js & MongoDB or Next.js.",
             usedTech: "React, Tailwind, Motion",
             tech: [<ReactJS />, <Tailwind />, <Motion />],
             Imgs: [
@@ -404,7 +382,21 @@ const data = {
         }
     ],
     certificate: [
-        {}, {}, {}
+        {
+            title: "IT Master Class №10",
+            text: "Upcoming",
+            icon: "../images/certificate.jpg",
+        },
+        {
+            title: "Computer Literacy",
+            text: "Mon - 2018",
+            icon: "../images/mon-logo.png",
+        },
+        {
+            title: "Tournament 22/23",
+            text: "International Champ",
+            icon: "../images/trophy.png",
+        }
     ]
 }
 export default data;
