@@ -21,21 +21,21 @@ const Resume = () => {
       : data.tech;
 
   return (
-    <div className="flex min-h-screen w-full bg-exp8-background bg-cover bg-fixed bg-no-repeat">
+    <div className="flex min-h-screen w-full flex-col bg-exp8-background bg-cover bg-fixed bg-no-repeat lg:flex-row">
       <Layout />
-      <div className="mx-auto mt-[220px] flex flex-col">
+      <div className="mx-auto mt-6 flex flex-col lg:mt-[220px]">
         <Location />
-        <section className="mb-8 min-h-screen w-[700px] rounded-3xl bg-slate-200 pb-6 lg:w-[850px]">
-          <div className="px-2 pt-12 sm:px-5 md:px-10 lg:px-14">
-            <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476]">
+        <section className="mx-auto mb-8 min-h-screen w-11/12 rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[850px]">
+          <div className="px-5 pt-12 sm:px-5 md:px-10 lg:px-14">
+            <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[0rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem]">
               Resume
             </h2>
           </div>
-          <article className="px-2 pb-12 sm:px-5 md:px-10 lg:mt-10 lg:px-14">
-            <div className="grid grid-cols-2 justify-center gap-8">
+          <article className="px-5 pb-2 sm:px-5 md:px-10 lg:mt-10 lg:px-6">
+            <div className="mt-6 grid grid-cols-2 justify-center gap-4 lg:gap-8">
               <div>
                 <span className="flex items-center gap-x-2 font-title text-2xl">
-                  <UilGraduationCap className="h-8 w-8 text-[#8dc4c8]" />
+                  <UilGraduationCap className="h-6 w-6 text-[#8dc4c8] md:h-8 md:w-8" />
                   Education
                 </span>
                 {data.education.map((edu, index) => {
@@ -52,12 +52,12 @@ const Resume = () => {
                 })}
               </div>
             </div>
-            <div className="my-16">
-              <h3 className="flex items-center font-text text-4xl font-medium ">
+            <section className="mt-16">
+              <h3 className="flex items-center pb-4 pl-4 font-text text-4xl font-medium ">
                 Tech Stack
               </h3>
-              <div className="mt-4 flex flex-auto flex-wrap rounded-[16px] p-4 shadow-2xl">
-                <div className="mb-5 flex flex-wrap justify-start gap-4">
+              <div className="mt-4 flex flex-auto flex-wrap rounded-[16px] p-1 shadow-xl lg:p-4">
+                <div className="mb-5 flex flex-wrap justify-start gap-6 ">
                   {filterNames.map((item, index) => {
                     return (
                       <span
@@ -66,14 +66,14 @@ const Resume = () => {
                           selectedSkill === item
                             ? "text-[#1d8cf8]"
                             : "text-slate-800 opacity-80 hover:text-[#fa5252]"
-                        } cursor-pointer font-title text-xl font-semibold`}
+                        } mx-auto cursor-pointer font-title text-[18px] font-semibold md:mx-1 md:text-[20px]`}
                         onClick={() => setSelectedSkill(item)}
                       >
                         {item}
                       </span>
                     );
                   })}
-                  <div className="flex flex-wrap items-center justify-around gap-x-6 gap-y-4 ">
+                  <div className="flex flex-wrap items-center justify-evenly gap-x-5 gap-y-2 p-2 md:justify-around md:gap-x-6 md:gap-y-4 ">
                     {filterSkills.map((skill, index) => {
                       return (
                         <div
@@ -85,7 +85,7 @@ const Resume = () => {
                             <div>{skill.icon}</div>
                             {hoveredSkill === skill && (
                               <div className="fb-popover-content">
-                                <div className="fb-popover-body font-title text-[16px] font-medium">
+                                <div className="fb-popover-body font-title text-[14px] font-medium md:text-[16px]">
                                   {skill.title}
                                 </div>
                               </div>
@@ -97,12 +97,12 @@ const Resume = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="mt-16">
-              <h3 className="flex items-center font-text text-4xl font-medium">
+            </section>
+            <section className="mt-16">
+              <h3 className="pl-4 pt-5 font-text text-4xl font-medium lg:pt-0">
                 Soft Skills
               </h3>
-              <article className="mt-4 flex flex-auto flex-wrap rounded-[16px] p-4 shadow-xl">
+              <article className="mt-4 flex flex-auto flex-wrap rounded-[16px] p-2 lg:p-4">
                 {data.personalSkills.map((item, index) => (
                   <PersonalSkills
                     key={index}
@@ -112,7 +112,7 @@ const Resume = () => {
                   />
                 ))}
               </article>
-            </div>
+            </section>
           </article>
           <Footer />
         </section>

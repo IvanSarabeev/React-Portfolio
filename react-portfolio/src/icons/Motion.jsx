@@ -5,7 +5,7 @@ const framerMotion = () => {
     <>
       <svg
         viewBox="3.7 3.7 43.6 43.6"
-        className="h-14 w-14"
+        className="h-11 w-11 md:h-14 md:w-14"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path

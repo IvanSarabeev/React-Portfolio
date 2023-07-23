@@ -20,52 +20,52 @@ function Projects() {
   }, [activeIndex]);
 
   return (
-    <div className="flex min-h-screen w-full bg-exp8-background bg-cover bg-fixed bg-no-repeat">
+    <div className="flex min-h-screen w-full flex-col bg-exp8-background bg-cover bg-fixed bg-no-repeat lg:flex-row">
       <Layout />
-      <div className="mx-auto mt-[220px] flex flex-col">
+      <div className="mx-auto mt-6 flex w-11/12 flex-col lg:mt-[220px]">
         <Location />
-        <section className="bg-gray mb-8 min-h-screen w-[700px] rounded-3xl bg-slate-200 pb-6 lg:w-[850px]">
-          <div className="px-2 pt-12 sm:px-5 md:px-10 lg:px-14">
-            <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[12rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476]">
+        <section className="mx-auto mb-8 min-h-screen w-11/12 rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[850px]">
+          <div className="px-5 pt-12 sm:px-5 md:px-10 lg:px-14">
+            <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[0rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem]">
               Projects
             </h2>
           </div>
-          <article className="mx-4 flex flex-col gap-x-4 rounded-2xl px-2 pb-12 shadow-xl sm:px-5 md:px-10 lg:mt-10 lg:px-10">
+          <article className="mx-4 flex flex-col gap-x-4 rounded-2xl px-5 pb-2 shadow-xl sm:px-5 md:px-10 lg:mt-10 lg:px-6 lg:pb-6">
             <div className="flex flex-col justify-center gap-x-4">
               {data.projects.map((item, index) => {
                 const currentImg = item.Imgs[activeIndex];
                 return (
                   <div key={index}>
-                    <div className="my-4 flex items-center justify-center gap-x-4">
+                    <div className="my-4 flex flex-col-reverse items-center justify-center gap-x-4 lg:flex-row">
                       <img
                         src={currentImg.url}
                         alt={item.title}
-                        className="h-[300px] translate-x-[0%] rounded-e-lg rounded-s-3xl object-fill opacity-80 transition-all ease-in-out hover:opacity-100 sm:max-w-full lg:w-[350px]"
+                        className="mb-8 mt-4 h-[200px] translate-x-[0%] rounded-e-lg rounded-s-3xl object-fill opacity-80 transition-all ease-in-out hover:opacity-100 sm:max-w-full lg:mt-0 lg:h-[300px] lg:w-[350px]"
                       />
                       <div>
-                        <h3 className="my-4 text-center font-heading text-xl font-semibold leading-6">
+                        <h3 className="my-4 text-center font-heading text-[20px] font-semibold leading-6 lg:text-[22px]">
                           {item.title}
                         </h3>
-                        <p className="font-paragraph mb-6 text-justify indent-3 text-[16px] leading-6 antialiased">
+                        <p className="font-paragraph mb-6 text-justify indent-2 text-[16px] leading-6 antialiased lg:indent-3">
                           {item.description}
                         </p>
-                        <h4 className="text-center font-heading text-[18px]">
+                        <h4 className="text-center font-title text-[18px] font-medium">
                           Used technologies:
-                          <span className="my-2 flex items-center justify-center gap-x-1 transition-all duration-300 ease-in-out hover:scale-105">
+                          <span className="mx-auto my-1 flex justify-center gap-x-1 transition-all duration-300 ease-in-out hover:scale-105">
                             {item.tech}
                           </span>
                         </h4>
-                        <span className="flex items-center justify-center gap-x-4">
+                        <span className="flex items-center justify-center gap-x-1 lg:gap-x-4">
                           <button
                             type="button"
-                            className="mb-2 mr-2 flex gap-x-2 rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                            className="mb-2 mr-2 flex gap-x-1 rounded-full border border-gray-300 bg-white px-3 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700 md:gap-x-2 md:px-5"
                           >
                             <UilEye />
                             Live Demo
                           </button>
                           <button className="group relative mb-2 mr-2 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-green-400 to-blue-600 p-0.5 text-sm font-medium text-gray-900 hover:text-white focus:outline-none focus:ring-4 focus:ring-green-200 group-hover:from-green-400 group-hover:to-blue-600 dark:text-white dark:focus:ring-green-800">
                             <Link to={item.codeLink} target="_blank">
-                              <span className="relative flex gap-x-2 rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900">
+                              <span className="relative flex gap-x-1 rounded-md bg-white px-2 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900 md:gap-x-2 md:px-5">
                                 <UilGithub />
                                 Source Code
                               </span>
