@@ -37,7 +37,7 @@ const SocialSkills = ({ item, activeIndex, setActiveIndex }) => {
           >
             {!isActive && <ArrowDown />}
             {activeIndex === item.num && (
-              <p className="mb-2 cursor-text space-x-2 break-words px-2 text-center indent-1 font-pargraph text-[14px] leading-6 text-white opacity-80 sm:text-[16px] md:text-justify md:indent-2">
+              <p className="mb-2 cursor-text space-x-2 break-words px-2 text-center indent-1 font-pargraph text-[14px] leading-6 tracking-normal text-white opacity-80 sm:text-[16px] md:text-justify md:indent-2">
                 {item.description}
               </p>
             )}

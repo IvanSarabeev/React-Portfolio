@@ -81,7 +81,7 @@ const Form = () => {
         </div>
         <button
           type="submit"
-          className="mr-2 mt-4 flex items-center gap-x-2 rounded-lg bg-gradient-to-br from-green-400 to-blue-600 px-6 py-2.5 text-center text-[16px] font-medium text-white hover:bg-gradient-to-bl focus:outline-none focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800"
+          className="mb-2 mr-2 mt-6 inline-flex items-center gap-x-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2.5 text-center text-[16px] font-medium text-white hover:bg-gradient-to-bl focus:outline-none focus:ring-2 focus:ring-cyan-300 aria-checked:bg-sky-600"
         >
           <UilEnvelopeAdd />
           Submit

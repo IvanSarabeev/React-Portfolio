@@ -23,6 +23,7 @@ import PHP from "../icons/PHP"
 import MySQL from "../icons/MySQL"
 import Firebase from "../icons/Firebase"
 import Git from "../icons/Git"
+import Vite from "../icons/Vite"
 import Motion from "../icons/Motion"
 import NodeJS from "../icons/NodeJS"
 import GitHub from "../icons/GitHub"
@@ -31,7 +32,6 @@ import PowerBI from "../icons/PowerBI"
 import Postman from "../icons/Postman"
 import Swiper from "../icons/Swiper"
 import API from "../icons/API"
-// import IconCertificate from "../icons/Certificate";
 
 const data = {
     headerLinks: [
@@ -296,6 +296,7 @@ const data = {
     ],
     projects: [
         {
+            index: 1,
             title: "Hello-UE",
             description: "I was participaiting in a project for \"IT-Masterclass №10\", in collaboration with other fellow programmers, we were developing functional specifications, through many API request and react libraries and many more JavaScript functionalities.",
             usedTech: "React, Tailwind, Node",
@@ -314,14 +315,15 @@ const data = {
                     url: "../images/ue-three.png"
                 }
             ],
+            demoLink: "not avaible due to MIT License & Permissions",
             codeLink: "https://github.com/IvanSarabeev/hello-ue",
         },
         {
+            index: 2,
             title: "HC - Varna",
-            description: "I am happy to share that I've developed the website - http://www.hcvarna.bg/. I have created it with a focus on interactive design and a friendly interface that makes it easy to navigate and use for any user. The website provides information about the club and its events, supporting communication between the fans. \n I'm planning on changing the entire website by using React, Tailwind and Flowbite for the UI.",
+            description: "I am happy to share that I've developed the website of our hockey club. I had the idea to focus on interactive design and a friendly interface that makes it easy to navigate and use for any user. The website provides information about the club and its events, supporting communication between the fans. \n I'm planning on changing the entire website by using React, Tailwind and Flowbite for the UI.",
             usedTech: "HTML & CSS, Vanilla JS, AnimationCss, Swiper",
             tech: [<Html />, <Css />, <JavaScript />, <Swiper />,],
-            codeLink: ".",
             Imgs: [
                 {
                     id: 1,
@@ -336,9 +338,11 @@ const data = {
                     url: "../images/hc-three.png"
                 }
             ],
-            href: "http://www.hcvarna.bg/",
+            demoLink: "http://www.hcvarna.bg/",
+            codeLink: "https://github.com/IvanSarabeev/Hockey-Club-Varna",
         },
         {
+            index: 3,
             title: "Weather-Application",
             description: "I have developed \"React Weather Forecast Application\" which provides current weather information and weather forecasts. I've used React.js and fetched data from open weather API providers.",
             usedTech: "React, Tailwind, OpenWeatherMapApi",
@@ -357,13 +361,15 @@ const data = {
                     url: "../images/estate-three.png"
                 }
             ],
+            demoLink: "not avaible",
             codeLink: "https://github.com/IvanSarabeev/React-Weather-Forecast-Application"
         },
         {
+            index: 4,
             title: "Real Estate",
             description: "I have developed this mockup template, because in near future I would like to try new tech languagues like - Node.js & MongoDB or Next.js.",
             usedTech: "React, Tailwind, Motion",
-            tech: [<ReactJS />, <Tailwind />, <Motion />],
+            tech: [<ReactJS />, <Tailwind />, <Motion />, <Vite />],
             Imgs: [
                 {
                     id: 1,
@@ -378,13 +384,14 @@ const data = {
                     url: "../images/estate-three.png"
                 }
             ],
+            demoLink: "https://real-estates-ood.netlify.app/",
             codeLink: "https://github.com/IvanSarabeev/RealEstate-web-starterpack",
         }
     ],
     certificate: [
         {
             title: "IT Master Class №10",
-            text: "Upcoming",
+            text: "Upcoming . .",
             icon: "../images/certificate.jpg",
         },
         {

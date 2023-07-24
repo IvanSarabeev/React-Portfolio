@@ -17,19 +17,20 @@
   <form name="contacts" netlify netlify-honeypot="bot-field" hidden>
     <input type="hidden" name="form-name" value="contact" />
     <div>
-      <input id="name" type="text" name="name" placeholder="" required={true} value={name} />
+      <input id="name" type="text" name="name" required />
       <label htmlFor="name"> Name * </label>
     </div>
     <div>
-      <input id="name" type="email" name="name" value={email} placeholder="" required={true} />
-      <label htmlFor="name" Email * </label>
+      <input id="name" type="email" name="name" required />
+      <label htmlFor="name"> Email * </label>
     </div>
     <div>
-      <input id="name" type="text" name="name" value={content} placeholder="" required={true} />
-      <label htmlFor="name" Message * </label>
+      <input id="name" type="text" name="name" required />
+      <label htmlFor="name"> Message * </label>
     </div>
     <button type="submit"> Submit </button>
   </form>
+
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 </body>

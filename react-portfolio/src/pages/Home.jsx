@@ -13,11 +13,11 @@ const Home = () => {
         <Location />
         <section className="mx-auto mb-8 flex min-h-screen w-11/12 flex-col justify-center rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[850px]">
           <div className="px-5 pt-12 sm:px-5 md:px-10 lg:px-14">
-            <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[0] after:bg-gradient-to-tr  after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem]">
+            <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[10rem] after:h-[0.125rem] after:w-[6rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem] md:after:left-[13rem]">
               About Me
             </h2>
-            <div className="space-y-2.5 pt-4 text-left font-pargraph text-[14px] text-[#2686976] sm:text-[16px] md:pt-[30px] lg:mr-16">
-              <p className="text-justify indent-2 leading-7">
+            <div className="space-y-2.5 pt-4 text-justify font-pargraph text-[14px] leading-7 tracking-normal text-[#2686976] sm:text-[16px] md:pt-[30px] lg:mr-16">
+              <p className="indent-2">
                 Hello, I'm Ivan Sarabeev, a passionate Software Developer and
                 Assistant Ice Hockey coach from Varna, Bulgaria. I am
                 enthusiastic about embarking on my proffessional journey in web
@@ -26,7 +26,7 @@ const Home = () => {
                 elegant and user-friednly solutions, driven by my passion for
                 creating beautiful and intuitive web experience.
               </p>
-              <p className="mt-2.5 text-justify leading-7">
+              <p className="mt-2.5">
                 I am dedicated to effectively communicating your message and
                 brand identity through creative and innovative web solutions. I
                 take pride in my work, such as the development of{" "}
@@ -62,7 +62,7 @@ const Home = () => {
                         />
                         {item.title}
                       </h3>
-                      <p className="my-2 text-left indent-1 font-pargraph text-[14px] leading-7 text-[#2686976] antialiased sm:text-[16px] md:indent-2">
+                      <p className="my-2 text-justify indent-1 font-pargraph text-[14px] leading-7 tracking-normal text-[#2686976] antialiased sm:text-[16px] md:text-left md:indent-2">
                         {item.text}
                       </p>
                     </div>

@@ -14,10 +14,10 @@ const ProfileCard = () => {
       <div className="relative w-full rounded-3xl bg-slate-300 px-6 text-center lg:mb-0 lg:mt-0">
         <img
           alt="avatar"
-          src="/images/profile.jpg"
+          src="/images/profile.png"
           className="absolute inset-x-0 top-[-20%] mx-auto h-[200px] w-[190px] rounded-[20px] object-cover drop-shadow-xl md:h-[220px] md:w-[200px] lg:h-[240px] lg:w-[220px]"
         />
-        <div className="pb-8 pt-24">
+        <div className="pb-8 pt-16 md:pt-24">
           <h1 className="mb-1 mt-6 font-heading text-[32px] md:text-[30px]">
             Ivan Sarabeev
           </h1>

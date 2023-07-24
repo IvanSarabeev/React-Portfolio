@@ -17,14 +17,14 @@ function Contacts() {
             className="absolute right-[-10%] top-[20%] -z-10 motion-safe:animate-spin-slow lg:right-[5%] lg:top-[5%]"
           />
           <div className="px-5 pt-12 sm:px-5 md:px-10 lg:px-14">
-            <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[13rem] after:h-[0.125rem] after:w-[0rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem]">
+            <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[10rem] after:h-[0.125rem] after:w-[6rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem] md:after:left-[13rem]">
               Contact
             </h2>
           </div>
-          <article className="mx-4 p-4 dark:border-2 dark:border-[#212425] dark:bg-[#111111] md:mx-[60px] md:mb-[60px] md:p-16">
+          <article className="mx-4 p-4 dark:border-2 dark:border-[#212425] dark:bg-[#111111] md:mx-[60px] md:mb-[10px] md:p-12">
             <Form />
-            <Footer />
           </article>
+          <Footer />
         </section>
       </div>
     </div>
