@@ -228,7 +228,7 @@ const data = {
             year: "2014 - 2018",
             color: "bg-[#fcf4ff]",
             icon: "../images/sports-school.jpg",
-            establishment: 'Sports school - "G. Benkovsk", Varna'
+            establishment: 'Sport school - "G. Benkovski"'
         }
     ],
     experience: [

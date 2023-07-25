@@ -10,7 +10,7 @@ function Contacts() {
       <Layout />
       <div className="mx-auto mt-6 flex flex-col lg:mt-[220px]">
         <Location />
-        <section className="relative z-10 mx-auto mb-8 min-h-screen w-11/12 rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[850px]">
+        <section className="relative z-10 mx-auto mb-8 min-h-screen w-11/12 rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[750px] xl:w-[850px]">
           <img
             src="../images/blob-haikei.png"
             alt="blob"

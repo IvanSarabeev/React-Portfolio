@@ -25,14 +25,14 @@ const Resume = () => {
       <Layout />
       <div className="mx-auto mt-6 flex flex-col lg:mt-[220px]">
         <Location />
-        <section className="mx-auto mb-8 flex min-h-screen w-11/12 flex-col justify-center rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[850px]">
+        <section className="mx-auto mb-8 flex min-h-screen w-11/12 flex-col justify-center rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[750px] xl:w-[850px]">
           <div className="px-5 pt-12 sm:px-5 md:px-10 lg:px-14">
             <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[10rem] after:h-[0.125rem] after:w-[6rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem] md:after:left-[13rem]">
               Resume
             </h2>
           </div>
           <article className="px-5 pb-2 sm:px-5 md:px-10 lg:mt-10 lg:px-14 lg:pb-6">
-            <div className="mt-6 grid grid-cols-2 justify-center gap-4 align-middle lg:gap-8">
+            <div className="mt-6 grid grid-cols-1 justify-center gap-4 align-middle sm:grid-cols-2 lg:gap-8">
               <div>
                 <span className="flex items-center gap-x-2 font-title text-2xl">
                   <UilGraduationCap className="h-6 w-6 text-[#8dc4c8] md:h-8 md:w-8" />

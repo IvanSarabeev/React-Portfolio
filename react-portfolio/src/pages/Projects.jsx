@@ -24,7 +24,7 @@ function Projects() {
       <Layout />
       <div className="mx-auto mt-6 flex w-11/12 flex-col lg:mt-[220px]">
         <Location />
-        <section className="mx-auto mb-8 min-h-screen w-11/12 rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[850px]">
+        <section className="mx-auto mb-8 min-h-screen w-11/12 rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[750px] xl:w-[850px]">
           <div className="px-5 pt-12 sm:px-5 md:px-10 lg:px-14">
             <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[10rem] after:h-[0.125rem] after:w-[6rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem] md:after:left-[13rem]">
               Projects
