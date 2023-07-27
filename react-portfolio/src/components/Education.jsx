@@ -20,7 +20,7 @@ const Education = ({ edu }) => {
           <img
             src={edu.icon}
             alt={edu.title}
-            className="absolute right-[2%] top-[2%] h-[60px] w-[60px] rounded-full md:right-[5%] md:top-[5%] md:h-[100px] md:w-[100px]"
+            className="absolute right-[2%] top-[2%] h-[70px] w-[70px] rounded-full sm:h-[80px] sm:w-[80px] md:right-[5%] md:top-[5%] md:h-[90px] md:w-[90px]"
           />
         </div>
       </div>

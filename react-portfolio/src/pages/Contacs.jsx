@@ -21,7 +21,7 @@ function Contacts() {
               Contact
             </h2>
           </div>
-          <article className="mx-4 p-4 dark:border-2 dark:border-[#212425] dark:bg-[#111111] md:mx-[60px] md:mb-[10px] md:p-12">
+          <article className="mx-4 p-2 dark:border-2 dark:border-[#212425] dark:bg-[#111111] md:mx-auto md:mb-[10px] md:p-12 lg:mx-10">
             <Form />
           </article>
           <Footer />

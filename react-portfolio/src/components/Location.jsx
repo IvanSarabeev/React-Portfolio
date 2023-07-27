@@ -6,7 +6,7 @@ const Location = () => {
   const locationPath = useLocation();
 
   return (
-    <header className="hidden h-[144px] rounded-[16px] bg-slate-300 p-[30px] dark:bg-slate-900 sm:mx-auto md:mb-8 md:block lg:mb-10 lg:mr-0 lg:w-[480px]">
+    <header className="hidden h-[144px] rounded-[16px] bg-slate-300 p-[30px] sm:mx-auto md:mb-8 md:block lg:mb-10 lg:mr-0 lg:w-[480px]">
       <nav className="lg:block">
         <ul className="flex items-center justify-between">
           {data.headerLinks.map((item, index) => {

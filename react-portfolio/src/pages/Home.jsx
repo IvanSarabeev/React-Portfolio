@@ -9,14 +9,14 @@ const Home = () => {
   return (
     <div className="flex min-h-screen w-full flex-col gap-4 bg-exp8-background bg-cover bg-fixed bg-no-repeat lg:flex-row">
       <Layout />
-      <div className="mx-auto mt-6 flex flex-col lg:mt-[220px]">
+      <div className="mx-auto mt-6 flex flex-col lg:mt-[220px] 2xl:justify-center">
         <Location />
-        <section className="mx-auto mb-8 flex min-h-screen w-11/12 flex-col justify-center rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[750px] xl:w-[850px]">
+        <section className="mx-auto mb-8 flex min-h-screen w-11/12 flex-col justify-center rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[750px] xl:w-[850px] 2xl:w-[950px]">
           <div className="px-5 pt-12 sm:px-5 md:px-10 lg:px-14">
             <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[10rem] after:h-[0.125rem] after:w-[6rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem] md:after:left-[13rem]">
               About Me
             </h2>
-            <div className="space-y-2.5 pt-4 text-justify font-pargraph text-[14px] leading-7 tracking-normal text-[#2686976] sm:text-[16px] md:pt-[30px] lg:mr-16">
+            <div className="flex flex-col justify-center space-y-2.5 px-6 pt-4 text-justify font-pargraph text-[14px] leading-7 tracking-normal text-[#2686976] sm:text-[16px] md:pt-[30px] xl:text-justify">
               <p className="indent-2">
                 Hello, I'm Ivan Sarabeev, a passionate Software Developer and
                 Assistant Ice Hockey coach from Varna, Bulgaria. I am
@@ -44,7 +44,7 @@ const Home = () => {
             </div>
           </div>
           <article className="px-5 pb-2 sm:px-5 md:px-10 lg:mt-10 lg:px-14 lg:pb-6">
-            <h3 className="py-5 font-text text-4xl font-medium lg:pt-0">
+            <h3 className="py-5 pl-2 font-text text-4xl font-medium lg:pl-5 lg:pt-0">
               What I do!
             </h3>
             <div className="grid grid-cols-1 justify-center gap-8 px-2 sm:px-4 md:grid-cols-2">
@@ -70,15 +70,15 @@ const Home = () => {
                 );
               })}
             </div>
-            <div className="px-5 pb-0 sm:px-5 md:px-10 lg:mt-10 lg:px-14">
+            <div className="px-2 pb-0 sm:px-5 md:px-10 lg:mt-10 lg:px-7">
               <h3 className="py-5 font-text text-4xl font-medium lg:pt-0">
                 Awards & Certificates
               </h3>
-              <div className="mt-2 flex flex-col flex-wrap items-center justify-between gap-x-10 sm:mt-4 sm:flex-row sm:justify-center sm:gap-y-6 lg:flex-nowrap">
+              <div className="mt-2 flex flex-col flex-wrap items-center justify-center gap-x-10 sm:mt-4 sm:flex-row sm:justify-center sm:gap-y-6 lg:flex-nowrap">
                 {data.certificate.map((item, index) => {
                   return (
                     <div key={index}>
-                      <div className="mt-4 flex flex-col items-center justify-center sm:mt-0">
+                      <div className="mt-4 flex flex-col items-center justify-between sm:mt-0">
                         <img
                           src={item.icon}
                           alt={item.title}
