@@ -9,14 +9,14 @@ const Home = () => {
   return (
     <div className="flex min-h-screen w-full flex-col gap-4 bg-exp8-background bg-cover bg-fixed bg-no-repeat lg:flex-row">
       <Layout />
-      <div className="mx-auto mt-6 flex flex-col lg:mt-[220px] 2xl:justify-center">
+      <div className="mx-auto mt-6 flex flex-col lg:mt-56 2xl:justify-center">
         <Location />
         <section className="mx-auto mb-8 flex min-h-screen w-11/12 flex-col justify-center rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[750px] xl:w-[850px] 2xl:w-[950px]">
           <div className="px-5 pt-12 sm:px-5 md:px-10 lg:px-14">
-            <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[10rem] after:h-[0.125rem] after:w-[6rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem] md:after:left-[13rem]">
+            <h2 className="relative flex items-center font-heading text-3xl font-semibold after:absolute after:left-[10rem] after:h-[0.125rem] after:w-[6rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem] md:after:left-[13rem]">
               About Me
             </h2>
-            <div className="flex flex-col justify-center space-y-2.5 px-6 pt-4 text-justify font-pargraph text-[14px] leading-7 tracking-normal text-[#2686976] sm:text-[16px] md:pt-[30px] xl:text-justify">
+            <div className="flex flex-col justify-center space-y-2.5 px-6 pt-4 text-justify font-pargraph text-sm leading-7 tracking-normal text-[#2686976] sm:text-base md:pt-[30px] xl:text-justify">
               <p className="indent-2">
                 Hello, I'm Ivan Sarabeev, a passionate Software Developer and
                 Assistant Ice Hockey coach from Varna, Bulgaria. I am
@@ -56,7 +56,7 @@ const Home = () => {
                     className={`${item.color} flex flex-col rounded-[0.75rem] p-6 opacity-80 transition-all duration-500 ease-in-out hover:scale-105 hover:rounded-2xl hover:opacity-100 hover:ring-2 hover:ring-neutral-200`}
                   >
                     <div className="space-y-2">
-                      <h3 className="flex items-center gap-4 font-title text-[22px] font-semibold">
+                      <h3 className="flex items-center gap-4 font-title text-xl font-semibold">
                         <Icons
                           className={`${item.textColor} h-8 w-8 object-contain`}
                         />
@@ -78,16 +78,16 @@ const Home = () => {
                 {data.certificate.map((item, index) => {
                   return (
                     <div key={index}>
-                      <div className="mt-4 flex flex-col items-center justify-between sm:mt-0">
+                      <div className="mt-4 flex flex-col items-center justify-between leading-6 sm:mt-0">
                         <img
                           src={item.icon}
                           alt={item.title}
-                          className="object-fit h-[150px] w-[200px]"
+                          className="object-fit h-36 w-52"
                         />
-                        <h6 className="mb-1 mt-3 font-heading text-[14px] font-medium leading-6 text-[#2686976]">
+                        <h6 className="mb-1 mt-3 font-heading text-sm font-medium text-[#2686976]">
                           {item.text}
                         </h6>
-                        <h5 className="font-heading text-[16px] font-semibold leading-6 text-[#2686976]">
+                        <h5 className="font-heading text-base font-semibold text-[#2686976]">
                           {item.title}
                         </h5>
                       </div>

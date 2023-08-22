@@ -22,11 +22,11 @@ function Projects() {
   return (
     <div className="flex min-h-screen w-full flex-col bg-exp8-background bg-cover bg-fixed bg-no-repeat lg:flex-row">
       <Layout />
-      <div className="mx-auto mt-6 flex flex-col lg:mt-[220px] 2xl:justify-center">
+      <div className="mx-auto mt-6 flex flex-col lg:mt-52 2xl:justify-center">
         <Location />
         <section className="mx-auto mb-8 flex min-h-screen w-11/12 flex-col justify-center rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[750px] xl:w-[850px] 2xl:w-[950px]">
           <div className="px-5 pt-12 sm:px-5 md:px-10 lg:px-14">
-            <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[10rem] after:h-[0.125rem] after:w-[6rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem] md:after:left-[13rem]">
+            <h2 className="relative flex items-center font-heading text-3xl font-semibold after:absolute after:left-[10rem] after:h-[0.125rem] after:w-[6rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem] md:after:left-[13rem]">
               Projects
             </h2>
           </div>
@@ -40,16 +40,16 @@ function Projects() {
                       <img
                         src={currentImg.url}
                         alt={item.title}
-                        className="mb-8 mt-4 h-[220px] translate-x-[0%] rounded-2xl object-fill opacity-80 transition-all ease-in-out hover:opacity-100 sm:max-w-full lg:mt-0 lg:h-[300px] lg:w-[350px] lg:rounded-e-lg lg:rounded-s-3xl"
+                        className="mb-8 mt-4 h-52 translate-x-[0%] rounded-2xl object-fill opacity-80 transition-all ease-in-out hover:opacity-100 sm:max-w-full lg:mt-0 lg:h-[300px] lg:w-[350px] lg:rounded-e-lg lg:rounded-s-3xl"
                       />
                       <div className="flex w-full flex-col space-y-3 md:w-2/3">
-                        <h3 className="my-1 text-center font-heading text-[20px] font-semibold leading-6 lg:text-[22px]">
+                        <h3 className="my-1 text-center font-heading text-xl font-semibold leading-6 lg:text-2xl">
                           {item.title}
                         </h3>
-                        <p className="font-paragraph mb-0 text-justify indent-2 text-[16px] leading-6 antialiased lg:indent-3">
+                        <p className="font-paragraph mb-0 text-justify indent-2 text-base leading-6 antialiased lg:indent-3">
                           {item.description}
                         </p>
-                        <h4 className="text-center font-title text-[18px] font-medium">
+                        <h4 className="text-center font-title text-lg font-medium">
                           Used technologies:
                           <span className="mx-auto my-1 flex justify-center gap-x-1 transition-all duration-300 ease-in-out hover:scale-105">
                             {item.tech}

@@ -7,7 +7,6 @@ import Experience from "../components/Experience";
 import PersonalSkills from "../components/PersonalSkills";
 import Footer from "../components/Footer";
 import { UilSuitcase, UilGraduationCap } from "@iconscout/react-unicons";
-import "flowbite/dist//flowbite.turbo";
 
 const Resume = () => {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -27,7 +26,7 @@ const Resume = () => {
         <Location />
         <section className="mx-auto mb-8 flex min-h-screen w-11/12 flex-col justify-center rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[750px] xl:w-[850px] 2xl:w-[950px]">
           <div className="px-5 pt-12 sm:px-5 md:px-10 lg:px-14">
-            <h2 className="relative flex items-center font-heading text-[32px] font-semibold after:absolute after:left-[10rem] after:h-[0.125rem] after:w-[6rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem] md:after:left-[13rem]">
+            <h2 className="relative flex items-center font-heading text-3xl font-semibold after:absolute after:left-[10rem] after:h-[0.125rem] after:w-[6rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem] md:after:left-[13rem]">
               Resume
             </h2>
           </div>
@@ -53,11 +52,11 @@ const Resume = () => {
               </div>
             </div>
             <section className="mt-16">
-              <h3 className="flex items-center pb-4 pl-4 font-text text-4xl font-medium ">
+              <h3 className="flex items-center pb-4 pl-4 font-text text-4xl font-medium">
                 Tech Stack
               </h3>
               <div className="mt-4 flex flex-auto flex-wrap rounded-[16px] p-1 shadow-xl lg:p-4">
-                <div className="mb-5 flex flex-wrap justify-start gap-2 md:gap-6   ">
+                <div className="mb-5 flex flex-wrap justify-start gap-2 md:gap-6">
                   {filterNames.map((item, index) => {
                     return (
                       <span
@@ -66,7 +65,7 @@ const Resume = () => {
                           selectedSkill === item
                             ? "text-[#1d8cf8]"
                             : "text-slate-800 opacity-80 hover:text-[#fa5252]"
-                        } mx-auto cursor-pointer font-title text-[18px] font-semibold md:mx-1 md:text-[20px]`}
+                        } mx-auto cursor-pointer font-title text-lg font-semibold md:mx-1 md:text-xl`}
                         onClick={() => setSelectedSkill(item)}
                       >
                         {item}
@@ -84,8 +83,8 @@ const Resume = () => {
                           <div className="fb-popover flex flex-col items-center justify-self-center">
                             <div>{skill.icon}</div>
                             {hoveredSkill === skill && (
-                              <div className="fb-popover-content">
-                                <div className="fb-popover-body font-title text-[14px] font-medium md:text-[16px]">
+                              <div>
+                                <div className="font-title text-sm font-medium md:text-base">
                                   {skill.title}
                                 </div>
                               </div>
