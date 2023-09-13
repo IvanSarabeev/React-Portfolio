@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import ProfileCard from "./ProfileCard";
+import ProfileCard from "./Profile/ProfileCard";
 
 const Layout = () => {
   return (

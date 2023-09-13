@@ -13,25 +13,52 @@ import {
     UilPagelines,
 
 } from '@iconscout/react-unicons'
+//Images
+import UniLogo from "../assets/images/uni-logo.png"
+import HighSchool from "../assets/images/sports-school.jpg"
+import MunicipalityLogo from "../assets/images/og-varna.jpg"
+import HockeyAvatar from "../assets/images/avatar.jpg"
+import TourisumLogo from "../assets/images/tourisum.jpg"
+//Project Images
+import MishMashProject from "../assets/images/mish-mash-one.png"
+import MishMashProject2 from "../assets/images/mish-mash-two.png"
+import MishMashProject3 from "../assets/images/mish-mash-three.png"
+import StoreProject from "../assets/images/e-store.png";
+import StoreProject2 from "../assets/images/e-store-two.png";
+import StoreProject3 from "../assets/images/e-store-three.png";
+import UeVarnaProject from "../assets/images/ue-one.png"
+import UeVarnaProject2 from "../assets/images/ue-two.png"
+import UeVarnaProject3 from "../assets/images/ue-three.png"
+import HcVarnaProject from "../assets/images/hc-one.png"
+import HcVarnaProject2 from "../assets/images/hc-two.png"
+import HcVarnaProject3 from "../assets/images/hc-three.png"
+import EstateProject from "../assets/images/estate-one.png"
+import EstateProject2 from "../assets/images/estate-two.png"
+import EstateProject3 from "../assets/images/estate-three.png"
+//Certificate Images
+import Certificate from "../assets/images/certificate.jpg"
+import MonCertificate from "../assets/images/mon-logo.png"
+import Trophy from "../assets/images/trophy.png"
 
-import Html from "../icons/Html"
-import Css from "../icons/Css"
-import Tailwind from "../icons/Tailwind"
-import JavaScript from "../icons/JavaScript"
-import ReactJS from "../icons/React"
-import PHP from "../icons/PHP"
-import MySQL from "../icons/MySQL"
-import Firebase from "../icons/Firebase"
-import Git from "../icons/Git"
-import Vite from "../icons/Vite"
-import Motion from "../icons/Motion"
-import NodeJS from "../icons/NodeJS"
-import GitHub from "../icons/GitHub"
-import VSCode from "../icons/vsCode"
-import PowerBI from "../icons/PowerBI"
-import Postman from "../icons/Postman"
-import Swiper from "../icons/Swiper"
-import API from "../icons/API"
+//Icons
+import Html from "../assets/icons/Html"
+import Css from "../assets/icons/Css"
+import Tailwind from "../assets/icons/Tailwind"
+import JavaScript from "../assets/icons/JavaScript"
+import ReactJS from "../assets/icons/React"
+import PHP from "../assets/icons/PHP"
+import MySQL from "../assets/icons/MySQL"
+import Firebase from "../assets/icons/Firebase"
+import Git from "../assets/icons/Git"
+import Vite from "../assets/icons/Vite"
+import Motion from "../assets/icons/Motion"
+import NodeJS from "../assets/icons/NodeJS"
+import GitHub from "../assets/icons/GitHub"
+import VSCode from "../assets/icons/vsCode"
+import PowerBI from "../assets/icons/PowerBI"
+import Postman from "../assets/icons/Postman"
+import API from "../assets/icons/API"
+import { ReactComponent as ReactRouter } from "../assets/svgs/react-router-stacked-color.svg"
 
 const data = {
     headerLinks: [
@@ -69,7 +96,7 @@ const data = {
         },
         {
             icon: UilGithub,
-            color: "#121212",
+            color: "text-[#010409]",
             href: "https://github.com/IvanSarabeev",
         },
         {
@@ -213,21 +240,21 @@ const data = {
             title: "Master's degree",
             year: "2022 - present",
             color: "bg-[#fcf4ff]",
-            icon: "../images/uni-logo.png",
+            icon: UniLogo,
             establishment: "University of Economics - Varna",
         },
         {
             title: "Bachelor's degree",
             year: "2018 - 2022",
             color: "bg-[#f3faff]",
-            icon: "../images/uni-logo.png",
+            icon: UniLogo,
             establishment: "University of Economics - Varna"
         },
         {
             title: "High school",
             year: "2014 - 2018",
             color: "bg-[#fcf4ff]",
-            icon: "../images/sports-school.jpg",
+            icon: HighSchool,
             establishment: 'Sport school - "G. Benkovski"'
         }
     ],
@@ -237,7 +264,7 @@ const data = {
             period: "2020 - present",
             location: "Varna",
             bgColor: "bg-[#f3faff]",
-            icon: "../images/og-varna.jpg",
+            icon: MunicipalityLogo,
             company: "Municipality",
         },
         {
@@ -245,7 +272,7 @@ const data = {
             period: "2021 - present",
             location: "Varna",
             bgColor: "bg-[#fcf4ff]",
-            icon: "../images/avatar.jpg",
+            icon: HockeyAvatar,
             company: "HC-Varna",
         },
         {
@@ -253,7 +280,7 @@ const data = {
             period: "2019 - 2020",
             location: "Varna",
             bgColor: "bg-[#f3faff]",
-            icon: "../images/tourisum.jpg",
+            icon: TourisumLogo,
             company: "Briella",
         }
     ],
@@ -296,93 +323,82 @@ const data = {
     ],
     projects: [
         {
-            index: 1,
+            title: "Mish-Mash",
+            description: "I was contacted by a client from the UK, ho expressed interest in my developments. After extensive discussions and communication with the customer, we have finally reached this result.",
+            tech: [<ReactJS />, <ReactRouter />, <Tailwind />, <Motion />],
+            Imgs: [
+                { id: 1, url: MishMashProject },
+                { id: 2, url: MishMashProject2 },
+                { id: 3, url: MishMashProject3 },
+            ],
+            demoLink: "https://mishmashgrillmeal.com/",
+            codeLink: "https://github.com/IvanSarabeev/Mish-Mash",
+        },
+        {
+            title: "E-Commerce",
+            description: "I created the project with the goal of being able to practice without the usage of state managment libraries. This is a project that I would like to re-write by using a diffrent API and at the same time using state managment library like (MobX or Redux Toolkit). ",
+            tech: [<ReactJS />, <Tailwind />, <API />, <ReactRouter />],
+            Imgs: [
+                { id: 1, url: StoreProject },
+                { id: 2, url: StoreProject2 },
+                { id: 3, url: StoreProject3 },
+            ],
+            demoLink: "https://mishmashgrillmeal.com/",
+            codeLink: "https://github.com/IvanSarabeev/E-Commerce",
+        },
+        {
             title: "Hello-UE",
             description: "I was participaiting in a project for \"IT-Masterclass №10\", in collaboration with other fellow programmers, we were developing functional specifications, through many API request and react libraries and many more JavaScript functionalities.",
-            usedTech: "React, Tailwind, Node",
-            tech: [<ReactJS />, <Tailwind />, <API />, <NodeJS />],
+            tech: [<ReactJS />, <Tailwind />, <API />, <ReactRouter />, <NodeJS />],
             Imgs: [
-                {
-                    id: 1,
-                    url: "../images/ue-one.png",
-                },
-                {
-                    id: 2,
-                    url: "../images/ue-two.png",
-                },
-                {
-                    id: 3,
-                    url: "../images/ue-three.png"
-                }
+                { id: 1, url: UeVarnaProject },
+                { id: 2, url: UeVarnaProject2 },
+                { id: 3, url: UeVarnaProject3 }
             ],
             demoLink: "not avaible due to MIT License & Permissions",
             codeLink: "https://github.com/IvanSarabeev/hello-ue",
         },
         {
-            index: 2,
             title: "HC - Varna",
             description: "I am happy to share that I've developed the website of our hockey club. I had the idea to focus on interactive design and a friendly interface that makes it easy to navigate and use for any user. The website provides information about the club and its events, supporting communication between the fans. \n I'm planning on changing the entire website by using React, Tailwind and Flowbite for the UI.",
-            usedTech: "HTML & CSS, Vanilla JS, AnimationCss, Swiper",
-            tech: [<Html />, <Css />, <JavaScript />, <Swiper />,],
+            tech: [<Html />, <Css />, <JavaScript />,],
             Imgs: [
-                {
-                    id: 1,
-                    url: "../images/hc-one.png",
-                },
-                {
-                    id: 2,
-                    url: "../images/hc-two.png",
-                },
-                {
-                    id: 3,
-                    url: "../images/hc-three.png"
-                }
+                { id: 1, url: HcVarnaProject },
+                { id: 2, url: HcVarnaProject2 },
+                { id: 3, url: HcVarnaProject3 }
             ],
             demoLink: "http://www.hcvarna.bg/",
             codeLink: "https://github.com/IvanSarabeev/Hockey-Club-Varna",
         },
+        // {
+        //     title: "Weather-Application",
+        //     description: "I have developed \"React Weather Forecast Application\" which provides current weather information and weather forecasts. I've used React.js and fetched data from open weather API provider.",
+        //     tech: [<ReactJS />, <Tailwind />, <API />],
+        //     Imgs: [
+        //         {
+        //             id: 1,
+        //             url: "../images/estate-one.png",
+        //         },
+        //         {
+        //             id: 2,
+        //             url: "../images/estate-two.png",
+        //         },
+        //         {
+        //             id: 3,
+        //             url: "../images/estate-three.png"
+        //         }
+        //     ],
+        //     demoLink: "not avaible",
+        //     codeLink: "https://github.com/IvanSarabeev/React-Weather-Forecast-Application"
+        // },
         {
-            index: 3,
-            title: "Weather-Application",
-            description: "I have developed \"React Weather Forecast Application\" which provides current weather information and weather forecasts. I've used React.js and fetched data from open weather API providers.",
-            usedTech: "React, Tailwind, OpenWeatherMapApi",
-            tech: [<ReactJS />, <Tailwind />, <API />],
-            Imgs: [
-                {
-                    id: 1,
-                    url: "../images/estate-one.png",
-                },
-                {
-                    id: 2,
-                    url: "../images/estate-two.png",
-                },
-                {
-                    id: 3,
-                    url: "../images/estate-three.png"
-                }
-            ],
-            demoLink: "not avaible",
-            codeLink: "https://github.com/IvanSarabeev/React-Weather-Forecast-Application"
-        },
-        {
-            index: 4,
             title: "Real Estate",
             description: "I have developed this mockup template, because in near future I would like to try new tech languagues like - Node.js & MongoDB or Next.js.",
-            usedTech: "React, Tailwind, Motion",
-            tech: [<ReactJS />, <Tailwind />, <Motion />, <Vite />],
+            tech: [<ReactJS />, <Css />, <Motion />, <Vite />],
             Imgs: [
-                {
-                    id: 1,
-                    url: "../images/estate-one.png",
-                },
-                {
-                    id: 2,
-                    url: "../images/estate-two.png",
-                },
-                {
-                    id: 3,
-                    url: "../images/estate-three.png"
-                }
+                { id: 1, url: EstateProject },
+                { id: 2, url: EstateProject2 },
+                { id: 3, url: EstateProject3 }
             ],
             demoLink: "https://real-estates-ood.netlify.app/",
             codeLink: "https://github.com/IvanSarabeev/RealEstate-web-starterpack",
@@ -391,18 +407,18 @@ const data = {
     certificate: [
         {
             title: "IT Master Class №10",
-            text: "Upcoming . .",
-            icon: "../images/certificate.jpg",
+            text: "Upcoming ...",
+            icon: Certificate,
         },
         {
             title: "Computer Literacy",
             text: "Mon - 2018",
-            icon: "../images/mon-logo.png",
+            icon: MonCertificate,
         },
         {
             title: "Tournament 22/23",
             text: "International Champ",
-            icon: "../images/trophy.png",
+            icon: Trophy,
         }
     ]
 }

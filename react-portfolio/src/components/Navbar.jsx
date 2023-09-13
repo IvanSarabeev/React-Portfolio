@@ -1,12 +1,33 @@
 import data from "../data/data";
 import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
+
+const menuVariables = {
+  initial: {
+    scaleY: 0,
+  },
+  animate: {
+    scaleY: 1,
+    transition: { duration: 0.2 },
+  },
+  exit: {
+    scaleY: 0,
+    transition: { duration: 0.2 },
+  },
+};
 
 const Navbar = () => {
   const locationPath = useLocation();
 
   return (
     <>
-      <ul className="mt-2 w-full rounded-md border border-gray-200 bg-slate-900 py-1 md:hidden">
+      <motion.ul
+        variants={menuVariables}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        className="mt-2 w-full rounded-md border border-gray-200 bg-slate-900 py-1 md:hidden"
+      >
         {data.headerLinks.map((link, index) => {
           return (
             <li key={index}>
@@ -23,7 +44,7 @@ const Navbar = () => {
             </li>
           );
         })}
-      </ul>
+      </motion.ul>
     </>
   );
 };

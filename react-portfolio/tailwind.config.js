@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'exp8-background': "url('../public/images/ex8.avif')",
+        'exp8-background': "url('../src/assets/images/ex8.avif')",
       }
     },
     fontFamily: {

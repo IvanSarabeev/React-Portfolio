@@ -8,6 +8,7 @@ const Form = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
+
     const form = e.target;
     const formData = new FormData(form);
     const formJSON = Object.fromEntries(formData.entries());

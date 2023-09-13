@@ -4,19 +4,49 @@ import data from "../data/data";
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import TransitionEffect from "../components/TransitionEffect";
+import AwardGallery from "../components/AwardGallery/AwardGallery";
+import Occupation from "../components/Occupation/Occupation";
 
 const Home = () => {
+  const opacityAnimation = {
+    initial: { opacity: 0, x: "100%" },
+    animate: { opacity: 1, x: "0%" },
+    transition: {
+      delay: 1.2,
+      type: "spring",
+      ease: "easeInOut",
+      bounce: 0.3,
+    },
+  };
+
   return (
     <div className="flex min-h-screen w-full flex-col gap-4 bg-exp8-background bg-cover bg-fixed bg-no-repeat lg:flex-row">
+      <TransitionEffect />
       <Layout />
       <div className="mx-auto mt-6 flex flex-col lg:mt-56 2xl:justify-center">
         <Location />
-        <section className="mx-auto mb-8 flex min-h-screen w-11/12 flex-col justify-center rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[750px] xl:w-[850px] 2xl:w-[950px]">
+        <section className="container">
           <div className="px-5 pt-12 sm:px-5 md:px-10 lg:px-14">
-            <h2 className="relative flex items-center font-heading text-3xl font-semibold after:absolute after:left-[10rem] after:h-[0.125rem] after:w-[6rem] after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-[12rem] md:after:left-[13rem]">
+            <motion.h2
+              initial={{ opacity: 0, y: "100%" }}
+              animate={{ opacity: 1, y: "0%" }}
+              transition={{
+                delay: 1.2,
+                ease: "easeInOut",
+                type: "spring",
+              }}
+              className="sub-heading"
+            >
               About Me
-            </h2>
-            <div className="flex flex-col justify-center space-y-2.5 px-6 pt-4 text-justify font-pargraph text-sm leading-7 tracking-normal text-[#2686976] sm:text-base md:pt-[30px] xl:text-justify">
+            </motion.h2>
+            <motion.div
+              initial={opacityAnimation.initial}
+              animate={opacityAnimation.animate}
+              transition={opacityAnimation.transition}
+              className="flex flex-col justify-center space-y-2.5 px-6 pt-4 text-justify font-pargraph text-sm leading-7 tracking-normal text-[#2686976] sm:text-base md:pt-8 xl:text-justify"
+            >
               <p className="indent-2">
                 Hello, I'm Ivan Sarabeev, a passionate Software Developer and
                 Assistant Ice Hockey coach from Varna, Bulgaria. I am
@@ -33,7 +63,7 @@ const Home = () => {
                 <Link
                   to="http://www.hcvarna.bg/"
                   target="_blank"
-                  className="font-bold hover:text-[#1d8cf8] hover:underline hover:underline-offset-4"
+                  className="font-bold underline hover:text-[#1d8cf8] hover:underline-offset-4"
                 >
                   HCVarna
                 </Link>
@@ -41,33 +71,21 @@ const Home = () => {
                 team's achievments and fostering strong connections within the
                 community.
               </p>
-            </div>
+            </motion.div>
           </div>
           <article className="px-5 pb-2 sm:px-5 md:px-10 lg:mt-10 lg:px-14 lg:pb-6">
-            <h3 className="py-5 pl-2 font-text text-4xl font-medium lg:pl-5 lg:pt-0">
+            <motion.h3
+              initial={opacityAnimation.initial}
+              animate={opacityAnimation.animate}
+              transition={opacityAnimation.transition}
+              className="py-5 pl-5 font-text text-3xl font-medium lg:pt-0"
+            >
               What I do!
-            </h3>
+            </motion.h3>
             <div className="grid grid-cols-1 justify-center gap-8 px-2 sm:px-4 md:grid-cols-2">
               {data.mainOccupations.map((item, index) => {
                 const Icons = item.icon;
-                return (
-                  <div
-                    key={index}
-                    className={`${item.color} flex flex-col rounded-[0.75rem] p-6 opacity-80 transition-all duration-500 ease-in-out hover:scale-105 hover:rounded-2xl hover:opacity-100 hover:ring-2 hover:ring-neutral-200`}
-                  >
-                    <div className="space-y-2">
-                      <h3 className="flex items-center gap-4 font-title text-xl font-semibold">
-                        <Icons
-                          className={`${item.textColor} h-8 w-8 object-contain`}
-                        />
-                        {item.title}
-                      </h3>
-                      <p className="my-2 text-justify indent-1 font-pargraph text-[14px] leading-7 tracking-normal text-[#2686976] antialiased sm:text-[16px] md:text-left md:indent-2">
-                        {item.text}
-                      </p>
-                    </div>
-                  </div>
-                );
+                return <Occupation key={index} item={item} Icons={Icons} />;
               })}
             </div>
             <div className="px-2 pb-0 sm:px-5 md:px-10 lg:mt-10 lg:px-7">
@@ -76,23 +94,7 @@ const Home = () => {
               </h3>
               <div className="mt-2 flex flex-col flex-wrap items-center justify-center gap-x-10 sm:mt-4 sm:flex-row sm:justify-center sm:gap-y-6 lg:flex-nowrap">
                 {data.certificate.map((item, index) => {
-                  return (
-                    <div key={index}>
-                      <div className="mt-4 flex flex-col items-center justify-between leading-6 sm:mt-0">
-                        <img
-                          src={item.icon}
-                          alt={item.title}
-                          className="object-fit h-36 w-52"
-                        />
-                        <h6 className="mb-1 mt-3 font-heading text-sm font-medium text-[#2686976]">
-                          {item.text}
-                        </h6>
-                        <h5 className="font-heading text-base font-semibold text-[#2686976]">
-                          {item.title}
-                        </h5>
-                      </div>
-                    </div>
-                  );
+                  return <AwardGallery key={index} item={item} />;
                 })}
               </div>
             </div>

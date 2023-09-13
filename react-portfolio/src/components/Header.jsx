@@ -1,27 +1,52 @@
 import React, { useState } from "react";
-import IconNavbar from "../icons/Navbar";
-import IconXMark from "../icons/Xmark";
+import NameImg from "../assets/images/title.png";
+import StarLogo from "../assets/images/star.png";
+import IconNavbar from "../assets/icons/Navbar";
+import IconXMark from "../assets/icons/Xmark";
 import Navbar from "./Navbar";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 const Header = () => {
+  const { scrollY } = useScroll();
   const [isOpen, setIsOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previousLocation = scrollY.getPrevious();
+
+    if (latest > previousLocation) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <header className="fixed z-50 w-full items-center justify-between border-b-2 border-gray-600 bg-exp8-background bg-cover bg-no-repeat px-5 py-4 transition-all delay-1000 ease-in-out md:static md:flex md:border-none md:bg-none md:px-8">
+    <motion.header
+      variants={{
+        visibility: { y: 0 },
+        hidden: { y: "-100%" },
+      }}
+      transition={{ duration: 0.35, type: "spring", ease: "easeInOut" }}
+      animate={hidden ? "hidden" : "visible"}
+      className="fixed z-50 w-full items-center justify-between border-b-2 border-gray-600 bg-exp8-background bg-cover bg-no-repeat px-5 py-4 transition-all delay-1000 ease-in-out md:static md:flex md:border-none md:bg-none md:px-8"
+    >
       <span className="flex items-center gap-2">
         <img
-          src="../images/star.png"
+          src={StarLogo}
           alt="logo"
-          className="h-9 w-9 animate-bounce md:h-12 md:w-12"
+          loading="lazy"
+          className="aspect-auto h-9 w-9 animate-bounce object-contain md:h-12 md:w-12"
         />
         <img
-          src="../images/title.png"
+          src={NameImg}
           alt="title"
-          className="h-9 w-52 md:h-12 md:w-56"
+          loading="lazy"
+          className="aspect-auto h-9 w-52 object-contain md:h-12 md:w-56"
         />
       </span>
       <button
@@ -32,7 +57,7 @@ const Header = () => {
         {isOpen ? <IconXMark /> : <IconNavbar />}
       </button>
       {isOpen && <Navbar />}
-    </header>
+    </motion.header>
   );
 };
 
