@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacs";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { inject } from "@vercel/analytics";
 
 const App = () => {
   const location = useLocation();
@@ -32,5 +33,7 @@ const App = () => {
     </AnimatePresence>
   );
 };
+
+inject();
 
 export default App;

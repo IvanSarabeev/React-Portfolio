@@ -30,9 +30,9 @@ const ProfileCard = () => {
           <motion.h1 className="mb-1 mt-6 font-pageheading text-2xl md:text-3xl">
             Ivan Sarabeev
           </motion.h1>
-          <h4 className="mb-4 px-5 py-1.5 font-title capitalize text-[#2686976] lg:text-lg">
+          <h2 className="mb-4 px-5 py-1.5 font-title capitalize text-[#2686976] lg:text-lg">
             Front-End Web Developer
-          </h4>
+          </h2>
           <SocialButtons />
           <article className="mt-7 rounded-2xl bg-slate-100 p-4 lg:p-7">
             {data.personalInfo.map((item, index) => {
