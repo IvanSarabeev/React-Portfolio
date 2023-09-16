@@ -11,10 +11,10 @@ module.exports = {
       }
     },
     fontFamily: {
-      heading: ['Source Serif Pro', 'Georgia', 'serif'],
+      pageheading: ['Zilla Slab', "serif"],
       title: ['Times New Roman', 'serif'],
       text: ['Roboto', 'Halvetica Neue', 'sans-serif'],
-      pargraph: ['Synonym', 'system-ui', 'sans-serif'],
+      paragraph: ['Synonym', 'system-ui', 'sans-serif'],
     },
     animation: {
       'spin-slow': 'spin 10s linear infinite',

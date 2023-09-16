@@ -9,7 +9,7 @@ const CardBox = ({ item, Icons }) => {
           <Icons className={item.color} />
         </span>
         <div className="ml-2.5 flex flex-col text-left">
-          <h5 className="cursor-default font-heading text-sm font-extrabold text-[#011117] md:text-sm">
+          <h5 className="cursor-default font-title text-sm font-extrabold text-[#011117] md:text-sm">
             {item.title}
           </h5>
           <Link

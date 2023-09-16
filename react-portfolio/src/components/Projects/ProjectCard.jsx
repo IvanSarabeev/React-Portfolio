@@ -27,7 +27,7 @@ const ProjectCard = ({ item, currentImg }) => {
   return (
     <>
       <AnimatePresence>
-        <div className="my-4 flex flex-col-reverse items-center justify-center gap-x-4 space-x-2 lg:flex-row lg:space-x-10">
+        <div className="my-4 flex flex-col items-center justify-center gap-x-4 space-x-2 lg:flex-row lg:space-x-10">
           <motion.img
             src={currentImg.url}
             alt={item.title}
@@ -45,7 +45,7 @@ const ProjectCard = ({ item, currentImg }) => {
               initial="initial"
               animate="animate"
               transition={{ delay: 1.35, bounce: 0.4 }}
-              className="my-1 text-center font-heading text-xl font-semibold leading-6 lg:text-2xl"
+              className="my-1 text-center font-pageheading text-xl font-semibold leading-6 lg:text-2xl"
             >
               {item.title}
             </motion.h3>
@@ -54,7 +54,7 @@ const ProjectCard = ({ item, currentImg }) => {
               initial="initial"
               animate="animate"
               transition={{ delay: 1.5, bounce: 0.4 }}
-              className="font-paragraph mb-0 text-justify indent-2 text-base leading-6 antialiased lg:indent-3"
+              className="mb-0 text-justify indent-2 font-paragraph text-base leading-6 antialiased lg:indent-3"
             >
               {item.description}
             </motion.p>
@@ -63,16 +63,16 @@ const ProjectCard = ({ item, currentImg }) => {
               initial="initial"
               animate="animate"
               transition={{ delay: 1.65, bounce: 0.4 }}
-              className="text-center font-title text-lg font-medium"
+              className="text-center font-title text-base font-medium lg:text-lg"
             >
-              Used technologies:
+              Тechnology used
             </motion.h5>
             <motion.div
               variants={context}
               initial="initial"
               animate="animate"
               transition={{ delay: 1.7, bounce: 0.6 }}
-              className="mx-auto flex justify-center gap-x-1"
+              className="mx-auto flex flex-wrap justify-center gap-x-1"
             >
               {item.tech}
             </motion.div>

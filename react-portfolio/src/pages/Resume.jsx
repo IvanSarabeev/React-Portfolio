@@ -1,17 +1,15 @@
-import React, { useState } from "react";
-import data from "../data/data";
+import React from "react";
 import Layout from "../components/Layout";
 import Location from "../components/Location";
 import PersonalInfo from "../components/Education_Work/index";
 import MainFilter from "../components/Filter/MainFilter";
-import PersonalSkills from "../components/Skills/PersonalSkills";
+import SectionAccordion from "../components/AccordionSkills/index";
 import TransitionEffect from "../components/TransitionEffect";
+import { UilAtom, UilIllustration } from "@iconscout/react-unicons";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 
 const Resume = () => {
-  const [activeIndex, setActiveIndex] = useState(1);
-
   return (
     <div className="flex min-h-screen w-full flex-col gap-4 bg-exp8-background bg-cover bg-fixed bg-no-repeat lg:flex-row">
       <TransitionEffect />
@@ -31,27 +29,29 @@ const Resume = () => {
           </div>
           <section className="px-5 pb-2 sm:px-5 md:px-10 lg:mt-10 lg:px-14 lg:pb-6">
             <PersonalInfo />
-            <aside className="mt-16">
-              <h3 className="pb-4 pl-4 font-text text-4xl font-medium lg:pt-0">
-                Tech Stack
-              </h3>
+            <aside className="mx-auto mt-16">
+              <motion.span
+                initial={{ opacity: 0, x: "-100%" }}
+                animate={{ opacity: 1, x: "0%" }}
+                transition={{ delay: 1.06, type: "spring", bounce: 0.2 }}
+                className="flex items-center gap-x-2"
+              >
+                <UilAtom className="h-6 w-6 animate-spin-slow text-[#5ccfee] md:h-8 md:w-8" />
+                <h3 className="font-paragraph text-xl font-semibold lg:pt-0 lg:text-2xl">
+                  Tech Stack
+                </h3>
+              </motion.span>
               <MainFilter />
             </aside>
-            <article className="mt-16">
-              <h3 className="pl-4 pt-5 font-text text-4xl font-medium lg:pt-0">
-                Soft Skills
-              </h3>
-              <aside className="mt-4 flex flex-row flex-wrap rounded-2xl p-2 lg:p-4">
-                {data.personalSkills.map((item, index) => (
-                  <PersonalSkills
-                    key={index}
-                    item={item}
-                    activeIndex={activeIndex}
-                    setActiveIndex={setActiveIndex}
-                  />
-                ))}
-              </aside>
-            </article>
+            <aside className="mx-auto mt-16">
+              <span className="flex items-center gap-x-2">
+                <UilIllustration className="h-6 w-6 animate-bounce text-[#3ba1e6] md:h-8 md:w-8" />
+                <h3 className="font-paragraph text-xl font-semibold lg:pt-0 lg:text-2xl">
+                  Soft Skills
+                </h3>
+              </span>
+              <SectionAccordion />
+            </aside>
           </section>
           <Footer />
         </section>

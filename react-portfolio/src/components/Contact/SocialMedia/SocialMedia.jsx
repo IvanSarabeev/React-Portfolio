@@ -1,9 +1,10 @@
-import data from "../../data/data";
+import React from "react";
+import data from "../../../data/data";
 import { Link } from "react-router-dom";
 
-function SocialButtons() {
+const SocialMedia = () => {
   return (
-    <div className="flex justify-center space-x-3">
+    <div className="absolute bottom-[2%] right-[5%] mb-2 flex justify-center space-x-2">
       {data.socialLinks.map((links, index) => {
         const Icons = links.icon;
         return (
@@ -14,7 +15,7 @@ function SocialButtons() {
             aria-label="social-media navigation"
           >
             <span
-              className={`${links.color} flex h-10 w-10 items-center justify-center rounded-lg bg-[#f3f6f6] hover:bg-[#1d8cf8] hover:text-white`}
+              className={`${links.color} flex h-8 w-8 items-center justify-center rounded-full bg-[#f3f6f6] hover:bg-[#1d8cf8] hover:text-white`}
             >
               <Icons />
             </span>
@@ -23,6 +24,6 @@ function SocialButtons() {
       })}
     </div>
   );
-}
+};
 
-export default SocialButtons;
+export default SocialMedia;

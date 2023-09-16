@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <footer>
-      <div className="whitespace-normal pt-8 text-center text-sm font-semibold capitalize text-[#2686976] opacity-70">
-        &copy; 2023 all rights reserved by Ivan Sarabeev
+      <div className="whitespace-normal pt-8 text-center font-text text-sm font-semibold text-[#2686976] opacity-70">
+        &copy; 2023 All Rights Reserved by Ivan Sarabeev
       </div>
     </footer>
   );

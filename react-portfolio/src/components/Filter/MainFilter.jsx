@@ -5,7 +5,6 @@ import TechStack from "./Tech/TechStack";
 
 const MainFilter = () => {
   const [selectedSkill, setSelectedSkill] = useState("All");
-  const [hoveredSkill, setHoveredSkill] = useState(null);
 
   const filterSkills =
     selectedSkill !== "All"
@@ -20,15 +19,10 @@ const MainFilter = () => {
             selectedSkill={selectedSkill}
             setSelectedSkill={setSelectedSkill}
           />
-          <div className="flex flex-wrap items-center justify-evenly gap-x-5 gap-y-2 p-2 md:justify-around md:gap-x-6 md:gap-y-4 ">
-            {filterSkills.map((skill, index) => {
+          <div className="flex flex-wrap items-center justify-evenly gap-x-5 gap-y-2 p-2 md:justify-around md:gap-x-8 md:gap-y-4 ">
+            {filterSkills.map((techItem, index) => {
               return (
-                <TechStack
-                  key={index}
-                  skill={skill}
-                  hoveredSkill={hoveredSkill}
-                  setHoveredSkill={setHoveredSkill}
-                />
+                <TechStack key={index} index={index} techItem={techItem} />
               );
             })}
           </div>

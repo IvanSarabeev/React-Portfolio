@@ -52,6 +52,7 @@ const Header = () => {
       <button
         type="button"
         onClick={handleToggle}
+        aria-label="Hamburger-menu"
         className="absolute right-5 top-3.5 rounded bg-gradient-to-tr from-[#00a4f7] to-[#01f79a] p-1.5 transition-all delay-500 duration-500 ease-in-out md:hidden"
       >
         {isOpen ? <IconXMark /> : <IconNavbar />}

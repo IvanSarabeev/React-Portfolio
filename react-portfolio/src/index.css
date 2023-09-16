@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,600;1,600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,6 +28,6 @@
   }
 
   .sub-heading {
-    @apply relative flex items-center px-6 font-heading text-3xl font-semibold after:absolute after:left-[12rem] after:h-[0.125rem] after:w-24 after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-48 md:after:left-[13rem];
+    @apply relative flex items-center px-6 font-pageheading text-3xl font-semibold after:absolute after:left-[12rem] after:h-[0.125rem] after:w-24 after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-48 md:text-4xl md:after:left-[13rem];
   }
 }

@@ -49,7 +49,7 @@ const Location = () => {
                   opacity-100 transition-all duration-300 hover:bg-gradient-to-b hover:from-[#3358f4] hover:to-[#1d8cf8] `}
                 >
                   <Icons />
-                  <h4 className="mt-1 font-title text-base font-medium">
+                  <h4 className="mt-1 font-pageheading text-base font-normal">
                     {item.title}
                   </h4>
                 </Link>

@@ -2,11 +2,7 @@ import React from "react";
 
 const Vite = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-11 w-11 md:h-14 md:w-14"
-      viewBox="0 0 256 257"
-    >
+    <svg className="h-11 w-11 md:h-14 md:w-14" viewBox="0 0 256 257">
       <defs>
         <linearGradient
           id="logosVitejs0"

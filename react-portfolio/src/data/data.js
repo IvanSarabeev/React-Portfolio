@@ -59,6 +59,7 @@ import PowerBI from "../assets/icons/PowerBI"
 import Postman from "../assets/icons/Postman"
 import API from "../assets/icons/API"
 import { ReactComponent as ReactRouter } from "../assets/svgs/react-router-stacked-color.svg"
+import Redux from '../assets/icons/Redux'
 
 const data = {
     headerLinks: [
@@ -190,6 +191,11 @@ const data = {
             area: "Front-end",
         },
         {
+            title: "Redux",
+            icon: <Redux />,
+            area: "Front-end",
+        },
+        {
             title: "Motion",
             icon: <Motion />,
             area: "Front-end",
@@ -286,89 +292,74 @@ const data = {
     ],
     personalSkills: [
         {
-            num: 1,
-            btnIndex: 1,
-            btnVisibility: true,
-            title: "Teamworker",
+            title: "Collaborative Project Experience",
             description: "I have been working on a project for \"IT-Masterclass №10\", in collaboration with other fellow programmers, in particularly developing functional specifications, through APIs and other react libraries."
         },
         {
-            num: 2,
-            btnIndex: 2,
-            btnVisibility: true,
-            title: "Adaptable",
-            description: "I have had to use new techs or libraries, according to the goals of the project. In addition I've worked with several people in developing in feature in the same branch and others..."
+            title: "Adaptation to Technologies and Collaborative Development",
+            description: "I have had to use new techs or libraries, according to the goals of the project. In addition I've worked with several people in developing in feature in the same branch and others."
         },
         {
-            num: 3,
-            btnIndex: 3,
-            btnVisibility: true,
-            title: "Learner",
-            description: "Since the beginning of 2023, I have been proatively engaged in learing new technologies such as: React.js, some advance Javascripts funcionalities & concepts and other UI libraries."
+            title: "My Journey into the Tech and React.js",
+            description: "Since the beginning of 2023, I have been proactively engaged in learing new technologies such as: React.js, Javascripts funcionalities, concepts and UI libraries like Tailwind."
         },
         {
-            num: 4,
-            btnIndex: 4,
-            btnVisibility: true,
-            title: "Proactive",
-            description: "I'am a person who is ready to take an initiative and to never give up. I would easily say that it's thanks to my sports career."
+            title: "Proactive and Tenacious",
+            description: "I'm a person who is ready to take an initiative and to never give up. I would easily say that it's thanks to my sports career."
         },
         {
-            num: 5,
-            btnIndex: 5,
-            btnVisibility: true,
-            title: "Organized",
-            description: "I'am organized person who is always prepared in advance, regardless of the occacion and the event.",
+            title: "Organizational skills and preparedness",
+            description: "I'm organized person who is always prepared in advance, regardless of the occacion and the event.",
         },
     ],
     projects: [
         {
             title: "Mish-Mash",
             description: "I was contacted by a client from the UK, ho expressed interest in my developments. After extensive discussions and communication with the customer, we have finally reached this result.",
+            demoLink: "https://mishmashgrillmeal.com/",
+            codeLink: "https://github.com/IvanSarabeev/Mish-Mash",
             tech: [<ReactJS />, <ReactRouter />, <Tailwind />, <Motion />],
             Imgs: [
                 { id: 1, url: MishMashProject },
                 { id: 2, url: MishMashProject2 },
                 { id: 3, url: MishMashProject3 },
             ],
-            demoLink: "https://mishmashgrillmeal.com/",
-            codeLink: "https://github.com/IvanSarabeev/Mish-Mash",
         },
         {
             title: "E-Commerce",
-            description: "I created the project with the goal of being able to practice without the usage of state managment libraries. This is a project that I would like to re-write by using a diffrent API and at the same time using state managment library like (MobX or Redux Toolkit). ",
+            description: "I created the project with the goal of being able to practice without the usage of state managment libraries. This is a project that I would like to re-write by using a diffrent API and at the same time, I would apply state managment library like (MobX or Redux Toolkit). ",
+            demoLink: "https://mishmashgrillmeal.com/",
+            codeLink: "https://github.com/IvanSarabeev/E-Commerce",
             tech: [<ReactJS />, <Tailwind />, <API />, <ReactRouter />],
             Imgs: [
                 { id: 1, url: StoreProject },
                 { id: 2, url: StoreProject2 },
                 { id: 3, url: StoreProject3 },
             ],
-            demoLink: "https://mishmashgrillmeal.com/",
-            codeLink: "https://github.com/IvanSarabeev/E-Commerce",
         },
         {
             title: "Hello-UE",
             description: "I was participaiting in a project for \"IT-Masterclass №10\", in collaboration with other fellow programmers, we were developing functional specifications, through many API request and react libraries and many more JavaScript functionalities.",
+            demoLink: "not avaible due to MIT License & Permissions",
+            codeLink: "https://github.com/IvanSarabeev/hello-ue",
             tech: [<ReactJS />, <Tailwind />, <API />, <ReactRouter />, <NodeJS />],
             Imgs: [
                 { id: 1, url: UeVarnaProject },
                 { id: 2, url: UeVarnaProject2 },
                 { id: 3, url: UeVarnaProject3 }
             ],
-            demoLink: "not avaible due to MIT License & Permissions",
-            codeLink: "https://github.com/IvanSarabeev/hello-ue",
         },
         {
             title: "HC - Varna",
             description: "I am happy to share that I've developed the website of our hockey club. I had the idea to focus on interactive design and a friendly interface that makes it easy to navigate and use for any user. The website provides information about the club and its events, supporting communication between the fans. \n I'm planning on changing the entire website by using React, Tailwind and Flowbite for the UI.",
+            demoLink: "http://www.hcvarna.bg/",
+            codeLink: "https://github.com/IvanSarabeev/Hockey-Club-Varna",
             tech: [<Html />, <Css />, <JavaScript />,],
             Imgs: [
                 { id: 1, url: HcVarnaProject },
                 { id: 2, url: HcVarnaProject2 },
                 { id: 3, url: HcVarnaProject3 }
             ],
-            demoLink: "http://www.hcvarna.bg/",
-            codeLink: "https://github.com/IvanSarabeev/Hockey-Club-Varna",
         },
         // {
         //     title: "Weather-Application",
@@ -394,14 +385,14 @@ const data = {
         {
             title: "Real Estate",
             description: "I have developed this mockup template, because in near future I would like to try new tech languagues like - Node.js & MongoDB or Next.js.",
+            demoLink: "https://real-estates-ood.netlify.app/",
+            codeLink: "https://github.com/IvanSarabeev/RealEstate-web-starterpack",
             tech: [<ReactJS />, <Css />, <Motion />, <Vite />],
             Imgs: [
                 { id: 1, url: EstateProject },
                 { id: 2, url: EstateProject2 },
                 { id: 3, url: EstateProject3 }
             ],
-            demoLink: "https://real-estates-ood.netlify.app/",
-            codeLink: "https://github.com/IvanSarabeev/RealEstate-web-starterpack",
         }
     ],
     certificate: [

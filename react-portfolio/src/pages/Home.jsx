@@ -45,7 +45,7 @@ const Home = () => {
               initial={opacityAnimation.initial}
               animate={opacityAnimation.animate}
               transition={opacityAnimation.transition}
-              className="flex flex-col justify-center space-y-2.5 px-6 pt-4 text-justify font-pargraph text-sm leading-7 tracking-normal text-[#2686976] sm:text-base md:pt-8 xl:text-justify"
+              className="flex flex-col justify-center space-y-2.5 px-6 pt-4 text-justify font-paragraph text-sm font-normal leading-7 tracking-normal text-[#2686976] sm:text-base md:pt-8 xl:text-justify"
             >
               <p className="indent-2">
                 Hello, I'm Ivan Sarabeev, a passionate Software Developer and
@@ -56,7 +56,7 @@ const Home = () => {
                 elegant and user-friednly solutions, driven by my passion for
                 creating beautiful and intuitive web experience.
               </p>
-              <p className="mt-2.5">
+              <p className="mt-2.5 indent-2 lg:indent-0">
                 I am dedicated to effectively communicating your message and
                 brand identity through creative and innovative web solutions. I
                 take pride in my work, such as the development of{" "}
@@ -78,7 +78,7 @@ const Home = () => {
               initial={opacityAnimation.initial}
               animate={opacityAnimation.animate}
               transition={opacityAnimation.transition}
-              className="py-5 pl-5 font-text text-3xl font-medium lg:pt-0"
+              className="py-5 pl-5 font-text text-2xl font-medium lg:pt-0 lg:text-3xl"
             >
               What I do!
             </motion.h3>
@@ -89,7 +89,7 @@ const Home = () => {
               })}
             </div>
             <div className="px-2 pb-0 sm:px-5 md:px-10 lg:mt-10 lg:px-7">
-              <h3 className="py-5 font-text text-4xl font-medium lg:pt-0">
+              <h3 className="pl-5 pt-5 font-text text-2xl font-medium lg:pt-0 lg:text-3xl">
                 Awards & Certificates
               </h3>
               <div className="mt-2 flex flex-col flex-wrap items-center justify-center gap-x-10 sm:mt-4 sm:flex-row sm:justify-center sm:gap-y-6 lg:flex-nowrap">

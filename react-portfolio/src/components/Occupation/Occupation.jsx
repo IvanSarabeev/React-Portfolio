@@ -29,7 +29,7 @@ const Occupation = ({ item, Icons }) => {
             <Icons className={`${item.textColor} h-8 w-8 object-contain`} />
             {item.title}
           </h3>
-          <p className="my-2 text-justify indent-1 font-pargraph text-sm leading-7 tracking-normal text-[#2686976] antialiased sm:text-base md:text-left md:indent-2">
+          <p className="my-2 text-justify indent-1 font-paragraph text-sm leading-6 tracking-normal text-[#2686976] antialiased sm:text-base md:indent-2 md:leading-7 lg:text-left">
             {item.text}
           </p>
         </motion.div>

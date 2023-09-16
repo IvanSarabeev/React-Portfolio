@@ -27,12 +27,12 @@ const ProfileCard = () => {
           className="absolute inset-x-0 top-[-20%] mx-auto aspect-square h-52 w-48 rounded-[20px] object-cover drop-shadow-xl md:h-56 md:w-52 lg:h-60 lg:w-56"
         />
         <div className="pb-8 pt-16 md:pt-24">
-          <motion.h1 className="mb-1 mt-6 font-heading text-2xl md:text-3xl">
+          <motion.h1 className="mb-1 mt-6 font-pageheading text-2xl md:text-3xl">
             Ivan Sarabeev
           </motion.h1>
-          <h3 className="mb-4 px-5 py-1.5 font-text capitalize text-[#2686976] lg:text-lg">
+          <h4 className="mb-4 px-5 py-1.5 font-title capitalize text-[#2686976] lg:text-lg">
             Front-End Web Developer
-          </h3>
+          </h4>
           <SocialButtons />
           <article className="mt-7 rounded-2xl bg-slate-100 p-4 lg:p-7">
             {data.personalInfo.map((item, index) => {

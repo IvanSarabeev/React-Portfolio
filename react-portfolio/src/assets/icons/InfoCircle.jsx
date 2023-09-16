@@ -1,6 +1,6 @@
 import React from "react";
 
-const ArrowTopRight = () => {
+const InfoCircle = () => {
   return (
     <>
       <svg
@@ -13,11 +13,11 @@ const ArrowTopRight = () => {
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+          d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
         />
       </svg>
     </>
   );
 };
 
-export default ArrowTopRight;
+export default InfoCircle;

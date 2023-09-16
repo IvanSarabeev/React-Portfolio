@@ -13,7 +13,7 @@ const TitleFilter = ({ selectedSkill, setSelectedSkill }) => {
               selectedSkill === item
                 ? "text-[#1d8cf8]"
                 : "text-slate-800 opacity-80 hover:text-[#fa5252]"
-            } mx-auto cursor-pointer font-title text-lg font-semibold md:mx-1 md:text-xl`}
+            } mx-auto cursor-pointer font-pageheading text-lg font-semibold md:mx-1 md:text-xl`}
             onClick={() => setSelectedSkill(item)}
           >
             {item}

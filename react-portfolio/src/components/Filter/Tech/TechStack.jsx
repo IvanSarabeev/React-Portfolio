@@ -1,21 +1,24 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeInAnimation } from "../../fadeInAnimation";
 
-const TechStack = ({ skill, hoveredSkill, setHoveredSkill }) => {
+const TechStack = ({ techItem, index }) => {
   return (
     <>
-      <div
-        onMouseEnter={() => setHoveredSkill(skill)}
-        onMouseLeave={() => setHoveredSkill(null)}
+      <motion.div
+        variants={fadeInAnimation}
+        initial="initial"
+        animate="animate"
+        whileInView="animate"
+        viewport={{ once: true }}
+        transition={{ type: "spring", duration: 0.7 }}
+        whileHover={{ scale: 1.25 }}
+        custom={index}
+        key={index}
+        className="flex flex-col items-center justify-self-center"
       >
-        <div className="flex flex-col items-center justify-self-center">
-          <div>{skill.icon}</div>
-          {hoveredSkill === skill ? (
-            <h5 className="font-title text-sm font-medium md:text-base lg:text-lg">
-              {skill.title}
-            </h5>
-          ) : null}
-        </div>
-      </div>
+        {techItem.icon}
+      </motion.div>
     </>
   );
 };

@@ -3,11 +3,7 @@ import React from "react";
 const framerMotion = () => {
   return (
     <>
-      <svg
-        viewBox="3.7 3.7 43.6 43.6"
-        className="h-11 w-11 md:h-14 md:w-14"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg viewBox="3.7 3.7 43.6 43.6" className="h-11 w-11 md:h-14 md:w-14">
         <path
           d="m47.3 3.7v21.8l-10.9 10.9-10.9 10.9-10.9-10.9 10.9-10.9v.1-.1z"
           fill="#59529d"

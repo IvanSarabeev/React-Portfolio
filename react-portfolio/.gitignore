@@ -3,6 +3,8 @@
 # dependencies
 /node_modules
 /.pnp
+/api
+/store.js
 .pnp.js
 
 # testing

@@ -6,7 +6,6 @@ const ArrowDown = () => {
       <svg
         className="absolute right-[5%] top-[10%] z-10 h-5 w-4 text-gray-900 md:right-[2%] md:top-[10%] "
         aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 14 8"
       >

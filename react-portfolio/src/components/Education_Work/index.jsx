@@ -16,7 +16,7 @@ const index = () => {
           className="flex items-center gap-x-2"
         >
           <UilGraduationCap className="h-6 w-6 text-[#011a49] md:h-8 md:w-8" />
-          <h3 className="font-title text-xl text-[#010409] lg:text-2xl">
+          <h3 className="font-paragraph text-xl text-[#010409] lg:text-2xl">
             Education
           </h3>
         </motion.span>
@@ -32,7 +32,7 @@ const index = () => {
           className="flex items-center gap-x-2"
         >
           <UilSuitcase className="h-6 w-6 text-[#362f78] md:h-8 md:w-8" />
-          <h3 className="font-title text-xl text-[#010409] lg:text-2xl">
+          <h3 className="font-paragraph text-xl text-[#010409] lg:text-2xl">
             Experience
           </h3>
         </motion.span>
