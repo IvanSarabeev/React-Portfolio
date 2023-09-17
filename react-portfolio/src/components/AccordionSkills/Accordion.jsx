@@ -19,7 +19,7 @@ const Accordion = ({ item }) => {
         <h5
           className={`${
             isActive
-              ? "my-2.5 w-full text-[#3ba1e6] underline underline-offset-1 opacity-100"
+              ? "my-2.5 w-full text-[#3ba1e6] opacity-100"
               : "my-2 text-slate-700/40 opacity-80"
           }my-2 font-pageheading text-xl font-medium md:text-2xl`}
         >

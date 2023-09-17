@@ -2,14 +2,15 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { UilEnvelopeCheck, UilEnvelopeHeart } from "@iconscout/react-unicons";
 import { serviceID, templateID, publicKey } from "../../api/store";
-import Alert from "./Notification/Alert";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Form = () => {
   const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [isAlertVisible, setIsAlertVisible] = useState(true);
+  const [isSend, setIsSend] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,12 +35,16 @@ const Form = () => {
           console.error("Error sending", error);
         });
 
-      setIsAlertVisible(true);
+      setIsSend(true);
+      toast.success(
+        `Thank you for taking of your time, to submit the form. ${email}`,
+        {
+          position: toast.POSITION.BOTTOM_RIGHT,
+        }
+      );
+    } else {
+      setIsSend(false);
     }
-  };
-
-  const handleAlertVisiblity = () => {
-    setIsAlertVisible(false);
   };
 
   return (
@@ -64,7 +69,7 @@ const Form = () => {
             htmlFor="name"
             className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform font-pageheading text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-105 peer-focus:font-medium peer-focus:text-[#FF6464]"
           >
-            Name *
+            Your Name *
           </label>
         </div>
         <div className="group relative z-0 mb-8 mt-10 w-full">
@@ -82,7 +87,7 @@ const Form = () => {
             htmlFor="name"
             className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform font-pageheading text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-105 peer-focus:font-medium peer-focus:text-[#5185D4]"
           >
-            Email *
+            Your Email *
           </label>
         </div>
         <div className="group relative z-0 mb-8 mt-10 w-full">
@@ -103,18 +108,20 @@ const Form = () => {
             Message *
           </label>
         </div>
-        <button
-          type="submit"
-          className="mb-2 mr-2 mt-6 inline-flex items-center gap-x-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2.5 text-center text-base font-medium text-white hover:bg-gradient-to-bl focus:outline-none focus:ring-2 focus:ring-cyan-300 aria-checked:bg-sky-600"
-        >
-          {!isAlertVisible ? <UilEnvelopeCheck /> : <UilEnvelopeHeart />}
-          Submit
-        </button>
-
-        <Alert
-          isAlertVisible={isAlertVisible}
-          isClosed={handleAlertVisiblity}
-        />
+        <div>
+          <button
+            type="submit"
+            className="mb-2 mr-2 mt-6 inline-flex items-center gap-x-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2.5 text-center text-base font-medium text-white hover:bg-gradient-to-bl focus:outline-none focus:ring-2 focus:ring-cyan-300 aria-checked:bg-sky-600"
+          >
+            {isSend ? (
+              <UilEnvelopeHeart className="h-5 w-5" />
+            ) : (
+              <UilEnvelopeCheck className="h-5 w-5" />
+            )}
+            Submit
+          </button>
+          <ToastContainer limit={1} />
+        </div>
       </form>
     </>
   );
