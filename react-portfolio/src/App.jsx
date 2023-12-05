@@ -6,6 +6,7 @@ import Contacts from "./pages/Contacs";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { inject } from "@vercel/analytics";
+import ErrorPage from "./pages/Error";
 
 const App = () => {
   const location = useLocation();
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/resume" element={<Resume />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </motion.div>
     </AnimatePresence>
