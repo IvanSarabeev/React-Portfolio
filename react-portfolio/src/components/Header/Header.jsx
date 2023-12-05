@@ -34,7 +34,7 @@ const Header = () => {
       }}
       transition={{ duration: 0.35, type: "spring", ease: "easeInOut" }}
       animate={hidden ? "hidden" : "visible"}
-      className="fixed z-50 w-full items-center justify-between border-b-2 border-gray-600 bg-exp8-background bg-cover bg-no-repeat px-5 py-4 transition-all delay-1000 ease-in-out md:static md:flex md:border-none md:px-8"
+      className="padding-container fixed z-50 w-full items-center justify-between border-b-2 border-gray-600 bg-exp8-background bg-cover bg-no-repeat px-5 py-4 transition-all delay-1000 ease-in-out md:static md:flex md:border-none md:px-8"
     >
       <span className="flex items-center gap-2">
         <img

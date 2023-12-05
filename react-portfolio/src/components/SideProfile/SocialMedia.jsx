@@ -1,9 +1,10 @@
+import React from "react";
 import data from "../../constants/data";
 import { Link } from "react-router-dom";
 
-function SocialButtons() {
+function SocialMedia() {
   return (
-    <div className="flex justify-center space-x-3">
+    <>
       {data.socialLinks.map((links, index) => {
         const Icons = links.icon;
         return (
@@ -14,15 +15,15 @@ function SocialButtons() {
             aria-label="social-media navigation"
           >
             <span
-              className={`${links.color} flex h-10 w-10 items-center justify-center rounded-lg bg-[#f3f6f6] hover:bg-[#1d8cf8] hover:text-white`}
+              className={`${links.color} flexCenter h-10 w-10 rounded-lg bg-[#f3f6f6] hover:bg-[#1d8cf8] hover:text-white`}
             >
-              <Icons />
+              <Icons height={20} width={20} />
             </span>
           </Link>
         );
       })}
-    </div>
+    </>
   );
 }
 
-export default SocialButtons;
+export default SocialMedia;

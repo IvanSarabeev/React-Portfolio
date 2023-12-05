@@ -70,4 +70,8 @@
   .regular-14 {
     @apply text-sm font-normal;
   }
+
+  .download-btn {
+    @apply mx-auto mt-6 flex items-center justify-center gap-x-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none focus:ring-2 focus:ring-cyan-300 aria-checked:bg-sky-600 lg:text-base;
+  }
 }

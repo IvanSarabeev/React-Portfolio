@@ -2,7 +2,6 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
     extend: {
@@ -16,7 +15,4 @@ module.exports = {
       'bounce': "bounce 2s linear infinite"
     },
   },
-  plugins: [
-    require('flowbite/plugin')
-  ],
 }

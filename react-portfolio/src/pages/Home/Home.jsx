@@ -25,7 +25,7 @@ const Home = () => {
     <>
       <TransitionEffect />
       <Layout>
-        <div className="mx-auto mt-6 flex flex-col lg:mt-56 2xl:justify-center">
+        <div className="max-container mt-6 flex flex-col lg:mt-56 2xl:justify-center">
           <Location />
           <section className="container">
             <div className="px-5 pt-12 sm:px-5 md:px-10 lg:px-14">
