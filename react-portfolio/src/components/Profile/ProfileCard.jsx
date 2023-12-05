@@ -13,7 +13,7 @@ const ProfileCard = () => {
   }
 
   return (
-    <section className="sticky top-44 mx-auto mb-6 mt-60 w-10/12 sm:w-10/12 md:mt-44 md:w-9/12 lg:block lg:w-[350px] xl:w-[400px]">
+    <section className="sticky top-80 mx-auto mb-6 mt-60 w-10/12 sm:w-10/12 md:w-9/12 lg:block lg:max-w-sm xl:max-w-md 2xl:max-w-lg">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

@@ -1,5 +1,5 @@
 import React from "react";
-import Blobz from "../assets/images/blob-haikei.png";
+import Blobz from "../../assets/images/blob-haikei.png";
 import Layout from "../../components/Layout/Layout";
 import Location from "../../components/Location";
 import EmailForm from "../../components/Contact/EmailForm";
