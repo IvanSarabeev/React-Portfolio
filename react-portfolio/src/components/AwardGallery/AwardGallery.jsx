@@ -4,19 +4,16 @@ const AwardGallery = ({ item }) => {
   return (
     <>
       <div>
-        <div className="mt-4 flex flex-col items-center justify-between leading-6 sm:mt-0">
+        <div className="flexCenter mt-4 flex-col sm:mt-0">
           <img
             src={item.icon}
             alt={item.title}
             loading="lazy"
+            decoding="async"
             className="object-fit aspect-square h-36 w-52"
           />
-          <h6 className="mb-1 mt-3 font-paragraph text-sm font-medium text-[#2686976]">
-            {item.text}
-          </h6>
-          <h5 className="font-text text-base font-semibold text-[#2686976]">
-            {item.title}
-          </h5>
+          <h6 className="regular-14 mb-1 mt-3 text-black/40">{item.text}</h6>
+          <h5 className="regular-16 text-black/80">{item.title}</h5>
         </div>
       </div>
     </>

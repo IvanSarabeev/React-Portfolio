@@ -4,7 +4,7 @@ import Location from "../../components/Location";
 import PersonalInfo from "../../components/Education_Work/index";
 import MainFilter from "../../components/Filter/MainFilter";
 import SectionAccordion from "../../components/AccordionSkills/index";
-import TransitionEffect from "../../components/TransitionEffect";
+import TransitionEffect from "../../components/Animations/TransitionEffect";
 import { UilAtom, UilIllustration } from "@iconscout/react-unicons";
 import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
@@ -37,7 +37,7 @@ const Resume = () => {
                 className="flex items-center gap-x-2"
               >
                 <UilAtom className="h-6 w-6 animate-spin-slow text-[#5ccfee] md:h-8 md:w-8" />
-                <h3 className="font-paragraph text-xl font-semibold lg:pt-0 lg:text-2xl">
+                <h3 className="bold-20 font-semibold lg:pt-0 lg:text-2xl">
                   Tech Stack
                 </h3>
               </motion.span>
@@ -46,7 +46,7 @@ const Resume = () => {
             <aside className="mx-auto mt-16">
               <span className="flex items-center gap-x-2">
                 <UilIllustration className="h-6 w-6 animate-bounce text-[#3ba1e6] md:h-8 md:w-8" />
-                <h3 className="font-paragraph text-xl font-semibold lg:pt-0 lg:text-2xl">
+                <h3 className="bold-20 font-semibold lg:pt-0 lg:text-2xl">
                   Soft Skills
                 </h3>
               </span>

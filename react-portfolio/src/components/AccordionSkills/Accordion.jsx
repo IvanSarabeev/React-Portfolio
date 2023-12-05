@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import IconArrowTop from "../../assets/icons/ArrowTop";
+import IconArrowBottom from "../../assets/icons/ArrowDown";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Accordion = ({ item }) => {
@@ -26,7 +27,7 @@ const Accordion = ({ item }) => {
           {item.title}
         </h5>
         <button type="button" onClick={handleToggle}>
-          <IconArrowTop />
+          {isActive ? <IconArrowBottom /> : <IconArrowTop />}
         </button>
       </span>
       <AnimatePresence>
@@ -36,7 +37,7 @@ const Accordion = ({ item }) => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             transition={{ duration: 0.4, type: "spring", bounce: 0.4 }}
-            className="mb-2 cursor-text overflow-clip break-words px-4 text-justify indent-1 font-paragraph text-sm tracking-normal opacity-80 sm:text-base md:text-left md:indent-2 md:text-lg"
+            className="regular-14 sm:regular-16 md:regular-18 mb-2 cursor-text overflow-clip break-words px-4 text-justify indent-1 tracking-normal opacity-80 md:text-left md:indent-2"
           >
             {item.description}
           </motion.p>

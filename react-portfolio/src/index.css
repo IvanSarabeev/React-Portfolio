@@ -28,6 +28,46 @@
   }
 
   .sub-heading {
-    @apply relative flex items-center px-6 font-pageheading text-3xl font-semibold after:absolute after:left-[12rem] after:h-[0.125rem] after:w-24 after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-48 md:text-4xl md:after:left-[13rem];
+    @apply relative flex items-center px-6 text-3xl font-semibold after:absolute after:left-[12rem] after:h-[0.125rem] after:w-24 after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-48 md:text-4xl md:after:left-[13rem];
+  }
+
+  .max-container {
+    @apply mx-auto max-w-[1440px];
+  }
+
+  .padding-container {
+    @apply px-6 md:px-20 xl:px-28;
+  }
+
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexStart {
+    @apply flex items-start justify-start;
+  }
+
+  .flexEnd {
+    @apply flex items-end justify-end;
+  }
+
+  .bold-20 {
+    @apply text-xl font-normal;
+  }
+
+  .regular-18 {
+    @apply text-lg font-normal;
+  }
+
+  .regular-16 {
+    @apply text-base font-normal;
+  }
+
+  .regular-14 {
+    @apply text-sm font-normal;
   }
 }

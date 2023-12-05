@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer>
-      <div className="whitespace-normal pt-8 text-center font-text text-sm font-semibold text-[#2686976] opacity-70">
+      <div className="regular-14 xl:regular-16 whitespace-normal pt-8 text-center text-black/90">
         &copy; 2023 All Rights Reserved by Ivan Sarabeev
       </div>
     </footer>

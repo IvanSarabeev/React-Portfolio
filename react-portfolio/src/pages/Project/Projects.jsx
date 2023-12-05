@@ -3,7 +3,7 @@ import data from "../../constants/data";
 import Layout from "../../components/Layout/Layout";
 import Location from "../../components/Location";
 import ProjectCard from "../../components/Projects/ProjectCard";
-import TransitionEffect from "../../components/TransitionEffect";
+import TransitionEffect from "../../components/Animations/TransitionEffect";
 import Footer from "../../components/Footer/Footer";
 
 function Projects() {

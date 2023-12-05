@@ -45,7 +45,7 @@ const ProjectCard = ({ item, currentImg }) => {
               initial="initial"
               animate="animate"
               transition={{ delay: 1.35, bounce: 0.4 }}
-              className="my-1 text-center font-pageheading text-xl font-semibold leading-6 lg:text-2xl"
+              className="font-pageheading my-1 text-center text-xl font-semibold leading-6 lg:text-2xl"
             >
               {item.title}
             </motion.h3>
@@ -54,7 +54,7 @@ const ProjectCard = ({ item, currentImg }) => {
               initial="initial"
               animate="animate"
               transition={{ delay: 1.5, bounce: 0.4 }}
-              className="mb-0 text-justify indent-2 font-paragraph text-base leading-6 antialiased lg:indent-3"
+              className="regular-16 mb-0 text-justify indent-2 antialiased lg:indent-3"
             >
               {item.description}
             </motion.p>
@@ -63,7 +63,7 @@ const ProjectCard = ({ item, currentImg }) => {
               initial="initial"
               animate="animate"
               transition={{ delay: 1.65, bounce: 0.4 }}
-              className="text-center font-title text-base font-medium lg:text-lg"
+              className="regular-16 lg:regular-18 text-center"
             >
               Тechnology used
             </motion.h5>

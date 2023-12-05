@@ -25,11 +25,11 @@ const Occupation = ({ item, Icons }) => {
         className={`${item.color} flex flex-col rounded-xl p-6 opacity-80 transition-all duration-500 ease-in-out hover:scale-110 hover:rounded-2xl hover:opacity-100 hover:ring-2 hover:ring-neutral-400`}
       >
         <motion.div className="space-y-2">
-          <h3 className="flex items-center gap-4 font-title text-xl font-semibold">
+          <h3 className="bold-20 flex items-center gap-4 font-semibold">
             <Icons className={`${item.textColor} h-8 w-8 object-contain`} />
             {item.title}
           </h3>
-          <p className="my-2 text-justify indent-1 font-paragraph text-sm leading-6 tracking-normal text-[#2686976] antialiased sm:text-base md:indent-2 md:leading-7 lg:text-left">
+          <p className="regular-14 sm:regular-16 my-2 text-justify indent-1 tracking-normal text-black/80 antialiased md:indent-2 lg:text-left">
             {item.text}
           </p>
         </motion.div>

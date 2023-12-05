@@ -63,11 +63,11 @@ const Form = () => {
             required={true}
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="peer block w-full appearance-none border-0 border-b-2 border-[#B5B5B5] bg-transparent px-0 py-2.5 font-text text-sm text-black autofill:bg-transparent focus:border-[#FF6464] focus:outline-none focus:ring-0"
+            className="regular-14 peer block w-full appearance-none border-0 border-b-2 border-[#B5B5B5] bg-transparent px-0 py-2.5 text-black autofill:bg-transparent focus:border-[#FF6464] focus:outline-none focus:ring-0"
           />
           <label
             htmlFor="name"
-            className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform font-pageheading text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-105 peer-focus:font-medium peer-focus:text-[#FF6464]"
+            className="font-pageheading absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-105 peer-focus:font-medium peer-focus:text-[#FF6464]"
           >
             Your Name *
           </label>
@@ -81,11 +81,11 @@ const Form = () => {
             placeholder=""
             required={true}
             onChange={(e) => setEmail(e.target.value)}
-            className="peer block w-full appearance-none border-0 border-b-2 border-[#B5B5B5] bg-transparent px-0 py-2.5 font-text text-lg autofill:text-red-900 focus:border-[#5185D4] focus:outline-none focus:ring-0 "
+            className="regular-18 peer block w-full appearance-none border-0 border-b-2 border-[#B5B5B5] bg-transparent px-0 py-2.5 autofill:text-red-900 focus:border-[#5185D4] focus:outline-none focus:ring-0 "
           />
           <label
             htmlFor="name"
-            className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform font-pageheading text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-105 peer-focus:font-medium peer-focus:text-[#5185D4]"
+            className="font-pageheading absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-105 peer-focus:font-medium peer-focus:text-[#5185D4]"
           >
             Your Email *
           </label>
@@ -99,11 +99,11 @@ const Form = () => {
             placeholder=""
             required={true}
             onChange={(e) => setMessage(e.target.value)}
-            className="peer block w-full appearance-none border-0 border-b-2 border-[#B5B5B5] bg-transparent px-0 py-2.5 font-text text-sm text-black focus:border-[#73f256] focus:outline-none focus:ring-0"
+            className="regular-14 peer block w-full appearance-none border-0 border-b-2 border-[#B5B5B5] bg-transparent px-0 py-2.5 text-black focus:border-[#73f256] focus:outline-none focus:ring-0"
           />
           <label
             htmlFor="name"
-            className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform font-pageheading text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-105 peer-focus:font-medium peer-focus:text-[#73f256]"
+            className="font-pageheading absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-8 peer-focus:scale-105 peer-focus:font-medium peer-focus:text-[#73f256]"
           >
             Message *
           </label>

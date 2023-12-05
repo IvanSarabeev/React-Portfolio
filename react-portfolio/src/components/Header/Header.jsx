@@ -4,6 +4,7 @@ import StarLogo from "../../assets/images/star.png";
 import IconNavbar from "../../assets/icons/Navbar";
 import IconXMark from "../../assets/icons/Xmark";
 import Navbar from "./Navbar";
+import Button from "../HTML/Button";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 const Header = () => {
@@ -40,23 +41,24 @@ const Header = () => {
           src={StarLogo}
           alt="logo"
           loading="lazy"
+          decoding="async"
           className="aspect-auto h-9 w-9 animate-bounce object-contain md:h-12 md:w-12"
         />
         <img
           src={NameImg}
           alt="title"
           loading="lazy"
+          decoding="async"
           className="aspect-auto h-9 w-52 object-contain md:h-12 md:w-56"
         />
       </span>
-      <button
-        type="button"
+      <Button
         onClick={handleToggle}
         aria-label="Hamburger-menu"
         className="absolute right-5 top-3.5 rounded bg-gradient-to-tr from-[#00a4f7] to-[#01f79a] p-1.5 transition-all delay-500 duration-500 ease-in-out md:hidden"
       >
         {isOpen ? <IconXMark /> : <IconNavbar />}
-      </button>
+      </Button>
       {isOpen && <Navbar />}
     </motion.header>
   );

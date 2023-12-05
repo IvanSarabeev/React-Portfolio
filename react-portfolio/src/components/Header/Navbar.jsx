@@ -37,7 +37,7 @@ const Navbar = () => {
                   locationPath.pathname === link.href
                     ? "text-[#01f79a] opacity-100"
                     : "text-gray-200"
-                } whitespace-nowrap pl-3.5 font-pageheading font-semibold opacity-80 hover:opacity-100`}
+                } whitespace-nowrap pl-3.5 font-semibold opacity-80 hover:opacity-100`}
               >
                 {link.title}
               </Link>

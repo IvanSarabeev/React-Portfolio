@@ -10,12 +10,7 @@ module.exports = {
         'exp8-background': "url('../src/assets/images/ex8.avif')",
       }
     },
-    fontFamily: {
-      pageheading: ['Zilla Slab', "serif"],
-      title: ['Times New Roman', 'serif'],
-      text: ['Roboto', 'Halvetica Neue', 'sans-serif'],
-      paragraph: ['Synonym', 'system-ui', 'sans-serif'],
-    },
+    fontFamily: { "inter": "Inter, sans-serif" },
     animation: {
       'spin-slow': 'spin 10s linear infinite',
       'bounce': "bounce 2s linear infinite"

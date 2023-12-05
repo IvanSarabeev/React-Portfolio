@@ -16,9 +16,7 @@ const index = () => {
           className="flex items-center gap-x-2"
         >
           <UilGraduationCap className="h-6 w-6 text-[#011a49] md:h-8 md:w-8" />
-          <h3 className="font-paragraph text-xl text-[#010409] lg:text-2xl">
-            Education
-          </h3>
+          <h3 className="bold-20 text-[#010409] lg:text-2xl">Education</h3>
         </motion.span>
         {data.education.map((edu, index) => {
           return <Education key={index} index={index} edu={edu} />;
@@ -32,9 +30,7 @@ const index = () => {
           className="flex items-center gap-x-2"
         >
           <UilSuitcase className="h-6 w-6 text-[#362f78] md:h-8 md:w-8" />
-          <h3 className="font-paragraph text-xl text-[#010409] lg:text-2xl">
-            Experience
-          </h3>
+          <h3 className="bold-20 text-[#010409] lg:text-2xl">Experience</h3>
         </motion.span>
         {data.experience.map((exp, index) => {
           return <Experience key={index} index={index} exp={exp} />;

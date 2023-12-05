@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeInAnimation } from "../../fadeInAnimation";
+import { fadeInAnimation } from "../../Animations/fadeInAnimation";
 
 const TechStack = ({ techItem, index }) => {
   return (

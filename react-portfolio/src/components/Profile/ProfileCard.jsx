@@ -6,6 +6,7 @@ import CVFile from "../../assets/files/Ivan-Mihaylov-Sarabeev.pdf";
 import SocialButtons from "./SocialButtons";
 import IconDownload from "../../assets/icons/IconDownload";
 import { motion } from "framer-motion";
+import Button from "../HTML/Button";
 
 const ProfileCard = () => {
   function downloadCV() {
@@ -23,14 +24,15 @@ const ProfileCard = () => {
         <img
           alt="avatar"
           loading="lazy"
+          decoding="async"
           src={AvatarImg}
           className="absolute inset-x-0 top-[-20%] mx-auto aspect-square h-52 w-48 rounded-[20px] object-cover drop-shadow-xl md:h-56 md:w-52 lg:h-60 lg:w-56"
         />
         <div className="pb-8 pt-16 md:pt-24">
-          <motion.h1 className="mb-1 mt-6 font-pageheading text-2xl md:text-3xl">
+          <motion.h1 className="font-pageheading mb-1 mt-6 text-2xl md:text-3xl">
             Ivan Sarabeev
           </motion.h1>
-          <h2 className="mb-4 px-5 py-1.5 font-title capitalize text-[#2686976] lg:text-lg">
+          <h2 className="lg:bold-20 mb-4 px-5 py-1.5 capitalize italic">
             Front-End Web Developer
           </h2>
           <SocialButtons />
@@ -40,14 +42,14 @@ const ProfileCard = () => {
               return <CardBox key={index} item={item} Icons={Icons} />;
             })}
           </article>
-          <button
+          <Button
             type="button"
             onClick={() => downloadCV()}
             className="mb-2 mr-2 mt-6 inline-flex items-center gap-x-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2.5 text-center text-base font-medium text-white hover:bg-gradient-to-bl focus:outline-none focus:ring-2 focus:ring-cyan-300 aria-checked:bg-sky-600"
           >
             <IconDownload />
             Download CV
-          </button>
+          </Button>
         </div>
       </motion.div>
     </section>
