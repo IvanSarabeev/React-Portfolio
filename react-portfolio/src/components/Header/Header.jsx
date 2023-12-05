@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import NameImg from "../assets/images/title.png";
 import StarLogo from "../assets/images/star.png";
-import IconNavbar from "../assets/icons/Navbar";
-import IconXMark from "../assets/icons/Xmark";
+import IconNavbar from "../../assets/icons/Navbar";
+import IconXMark from "../../assets/icons/Xmark";
 import Navbar from "./Navbar";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 

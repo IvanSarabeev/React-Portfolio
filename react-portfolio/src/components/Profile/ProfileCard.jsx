@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../../data/data";
+import data from "../../constants/data";
 import CardBox from "./CardBox";
 import AvatarImg from "../../assets/images/profile.png";
 import CVFile from "../../assets/files/Ivan-Mihaylov-Sarabeev.pdf";

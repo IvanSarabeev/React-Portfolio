@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import data from "../data/data";
-import Layout from "../components/Layout";
-import Location from "../components/Location";
-import ProjectCard from "../components/Projects/ProjectCard";
-import TransitionEffect from "../components/TransitionEffect";
-import Footer from "../components/Footer";
+import data from "../../constants/data";
+import Layout from "../../components/Layout/Layout";
+import Location from "../../components/Location";
+import ProjectCard from "../../components/Projects/ProjectCard";
+import TransitionEffect from "../../components/TransitionEffect";
+import Footer from "../../components/Footer/Footer";
 
 function Projects() {
   const [activeIndex, setActiveIndex] = useState(0);

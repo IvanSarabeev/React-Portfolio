@@ -1,13 +1,13 @@
 import React from "react";
-import Location from "../components/Location";
-import data from "../data/data";
-import Layout from "../components/Layout";
-import Footer from "../components/Footer";
+import Location from "../../components/Location";
+import data from "../../constants/data";
+import Layout from "../../components/Layout/Layout";
+import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import TransitionEffect from "../components/TransitionEffect";
-import AwardGallery from "../components/AwardGallery/AwardGallery";
-import Occupation from "../components/Occupation/Occupation";
+import TransitionEffect from "../../components/TransitionEffect";
+import AwardGallery from "../../components/AwardGallery/AwardGallery";
+import Occupation from "../../components/Occupation/Occupation";
 
 const Home = () => {
   const opacityAnimation = {

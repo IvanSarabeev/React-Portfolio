@@ -1,4 +1,4 @@
-import data from "../data/data";
+import data from "../../constants/data";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 

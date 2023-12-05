@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import data from "../../data/data";
+import data from "../../constants/data";
 import TitleFilter from "./Title/TitleFilter";
 import TechStack from "./Tech/TechStack";
 

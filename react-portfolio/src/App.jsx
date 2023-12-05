@@ -1,12 +1,12 @@
 import React from "react";
-import Home from "./pages/Home";
-import Resume from "./pages/Resume";
-import Projects from "./pages/Projects";
-import Contacts from "./pages/Contacs";
+import Home from "./pages/Home/Home";
+import Resume from "./pages/Resume/Resume";
+import Projects from "./pages/Project/Projects";
+import Contacts from "./pages/Contact/Contacs";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { inject } from "@vercel/analytics";
-import ErrorPage from "./pages/Error";
+import ErrorPage from "./pages/Error/Error";
 
 const App = () => {
   const location = useLocation();

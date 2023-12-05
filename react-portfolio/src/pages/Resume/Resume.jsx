@@ -1,12 +1,12 @@
 import React from "react";
-import Layout from "../components/Layout";
-import Location from "../components/Location";
-import PersonalInfo from "../components/Education_Work/index";
-import MainFilter from "../components/Filter/MainFilter";
-import SectionAccordion from "../components/AccordionSkills/index";
-import TransitionEffect from "../components/TransitionEffect";
+import Layout from "../../components/Layout/Layout";
+import Location from "../../components/Location";
+import PersonalInfo from "../../components/Education_Work/index";
+import MainFilter from "../../components/Filter/MainFilter";
+import SectionAccordion from "../../components/AccordionSkills/index";
+import TransitionEffect from "../../components/TransitionEffect";
 import { UilAtom, UilIllustration } from "@iconscout/react-unicons";
-import Footer from "../components/Footer";
+import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
 
 const Resume = () => {

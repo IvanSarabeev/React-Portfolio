@@ -1,10 +1,10 @@
 import React from "react";
 import Blobz from "../assets/images/blob-haikei.png";
-import Layout from "../components/Layout";
-import Location from "../components/Location";
-import EmailForm from "../components/Contact/EmailForm";
-import Footer from "../components/Footer";
-import TransitionEffect from "../components/TransitionEffect";
+import Layout from "../../components/Layout/Layout";
+import Location from "../../components/Location";
+import EmailForm from "../../components/Contact/EmailForm";
+import Footer from "../../components/Footer/Footer";
+import TransitionEffect from "../../components/TransitionEffect";
 import { motion } from "framer-motion";
 
 function Contacts() {

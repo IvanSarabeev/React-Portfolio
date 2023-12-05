@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../../data/data";
+import data from "../../constants/data";
 import Education from "./Education";
 import Experience from "./Experience";
 import { motion } from "framer-motion";
