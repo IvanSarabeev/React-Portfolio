@@ -14,12 +14,12 @@ const ProfileCard = () => {
   }
 
   return (
-    <section className="sticky inset-x-auto top-52 mx-auto mb-0 mt-80 block h-screen w-10/12 flex-1 sm:w-10/12 md:w-9/12 lg:sticky lg:mb-20 lg:max-w-sm xl:mt-64 xl:max-w-md 2xl:max-w-lg">
+    <section className="inset-x-auto top-52 mx-auto mb-0 mt-64 block h-screen w-10/12 flex-1 sm:w-10/12 md:sticky md:w-9/12 lg:sticky lg:mb-20 lg:mt-80 lg:max-w-sm xl:mt-64 xl:max-w-md 2xl:max-w-lg">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.15 }}
-        className="relative w-full rounded-3xl bg-slate-300 px-6 text-center lg:mb-0 lg:mt-0"
+        className="border-2-[#111111] relative w-full rounded-3xl bg-gradient-to-tr from-violet-200/40 from-40% to-sky-300/30 px-6 text-center text-white shadow-2xl lg:mb-0 lg:mt-0"
       >
         <img
           alt="avatar"
@@ -28,38 +28,31 @@ const ProfileCard = () => {
           src={AvatarImg}
           className="absolute inset-x-0 top-[-20%] mx-auto aspect-square h-52 w-48 rounded-[20px] object-cover drop-shadow-xl md:h-56 md:w-52 lg:h-60 lg:w-56"
         />
-        <div className="pb-8 pt-16 md:pt-24">
+        <aside className="pb-8 pt-16 md:pt-24">
           <motion.h1 className="mb-1 mt-6 text-2xl md:text-3xl">
             Ivan Sarabeev
           </motion.h1>
-          <h2 className="lg:bold-20 mb-4 px-5 py-1.5 capitalize">
-            Front-End Developer
+          <h2 className="regular-18 xl:bold-20 mb-4 px-5 py-1.5 tracking-wider">
+            Front-end Developer
           </h2>
-          <nav className="flexCenter gap-2">
+          <span className="flexCenter mx-auto gap-x-4">
             <SocialMedia />
-          </nav>
-          <aside className="mt-7 rounded-2xl bg-slate-100 p-4 lg:p-7">
+          </span>
+          <article className="mx-auto mt-2 max-w-md rounded-2xl p-4 shadow-2xl drop-shadow-2xl lg:p-6">
             {data.personalInfo.map((item, index) => {
               const Icons = item.icon;
-              return (
-                <ProfileInfo
-                  ProfileInfo
-                  key={index}
-                  item={item}
-                  Icons={Icons}
-                />
-              );
+              return <ProfileInfo key={index} item={item} Icons={Icons} />;
             })}
-          </aside>
+          </article>
           <Button
             type="button"
-            className="download-btn"
+            className="primary-btn"
             onClick={() => handlePdfDownload()}
           >
             <IconDownload height={20} width={20} />
-            Download CV
+            Resume
           </Button>
-        </div>
+        </aside>
       </motion.div>
     </section>
   );

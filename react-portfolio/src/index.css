@@ -20,7 +20,11 @@
 
 @layer components {
   .container {
-    @apply mx-auto mb-8 flex min-h-screen w-11/12 flex-col justify-center rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[750px] xl:w-[850px] 2xl:w-[950px];
+    @apply mx-auto mb-8 flex min-h-screen w-11/12 flex-col justify-center rounded-3xl border-[1px] border-solid border-black/90 bg-gradient-to-tr from-violet-200/40 from-40% to-sky-300/30 pb-6 text-[#FFFFFF] text-opacity-95 shadow-2xl selection:bg-white selection:text-slate-900 lg:w-[750px] xl:w-[850px] 2xl:w-[950px];
+  }
+
+  .container-padding {
+    @apply px-5 pt-12 sm:px-5 md:px-10 lg:px-14;
   }
 
   .blob-circle {
@@ -28,7 +32,7 @@
   }
 
   .sub-heading {
-    @apply relative flex items-center px-6 text-3xl font-semibold after:absolute after:left-[12rem] after:h-[0.125rem] after:w-24 after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-48 md:text-4xl md:after:left-[13rem];
+    @apply relative flex items-center px-6 text-3xl font-semibold after:absolute after:left-[12rem] after:h-[0.125rem] after:w-24 after:bg-gradient-to-tr after:from-[#1d8cf8] after:to-[#DD2476] sm:after:w-48 md:text-4xl md:after:left-[13rem] lg:text-4xl;
   }
 
   .max-container {
@@ -71,7 +75,11 @@
     @apply text-sm font-normal;
   }
 
-  .download-btn {
-    @apply mx-auto mt-6 flex items-center justify-center gap-x-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none focus:ring-2 focus:ring-cyan-300 aria-checked:bg-sky-600 lg:text-base;
+  .primary-btn {
+    @apply mt-4 inline-flex items-center rounded-lg bg-gradient-to-bl from-purple-500 from-40% via-violet-600 via-60% to-sky-700 to-90% px-5 py-2.5 text-center text-sm font-medium text-white shadow-lg shadow-violet-500/50 transition-all delay-150 ease-in-out focus:outline-none focus:ring-4 focus:ring-purple-300 dark:shadow-xl dark:shadow-purple-800/80 dark:focus:ring-purple-800;
+  }
+
+  .border-one {
+    @apply border-[1px] border-solid border-[#EAEAEA];
   }
 }

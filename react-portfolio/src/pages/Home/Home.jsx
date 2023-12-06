@@ -1,13 +1,13 @@
 import React from "react";
-import Location from "../../components/Location";
+import Location from "../../components/Navigation/MenuNavigation";
 import data from "../../constants/data";
 import Layout from "../../components/Layout/Layout";
 import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import TransitionEffect from "../../components/Animations/TransitionEffect";
-import AwardGallery from "../../components/AwardGallery/AwardGallery";
-import Occupation from "../../components/Occupation/Occupation";
+import AwardGallery from "./components/AwardGallery/AwardGallery";
+import Occupation from "./components/Occupation/Occupation";
 
 const Home = () => {
   const opacityAnimation = {
@@ -28,7 +28,7 @@ const Home = () => {
         <div className="max-container mt-6 flex flex-col lg:mt-56 2xl:justify-center">
           <Location />
           <section className="container">
-            <div className="px-5 pt-12 sm:px-5 md:px-10 lg:px-14">
+            <div className="container-padding">
               <motion.h2
                 initial={{ opacity: 0, y: "100%" }}
                 animate={{ opacity: 1, y: "0%" }}
@@ -48,8 +48,8 @@ const Home = () => {
                 className="regular-14 sm:regular-16 flex flex-col justify-center space-y-2.5 px-6 pt-4 text-justify tracking-normal text-[#2686976] md:pt-8 xl:text-justify"
               >
                 <p className="indent-2">
-                  Hello, I'm Ivan Sarabeev, a passionate Software Developer and
-                  Assistant Ice Hockey coach from Varna, Bulgaria. I am
+                  Hello, I'm Ivan Sarabeev, a passionate Front-end Developer and
+                  a assistant Ice Hockey coach from Varna, Bulgaria. I'm
                   enthusiastic about embarking on my proffessional journey in
                   web development and constatnly seeking new challenges and
                   growth opportunities. My goal is to transform complex problems
@@ -61,15 +61,14 @@ const Home = () => {
                   brand identity through creative and innovative web solutions.
                   I take pride in my work, such as the development of{" "}
                   <Link
-                    to="http://www.hcvarna.bg/"
+                    to="https://rent-vanlife.netlify.app/"
                     target="_blank"
-                    className="font-bold underline hover:text-[#1d8cf8] hover:underline-offset-4"
+                    className="regular-16 lg:regular-18 font-bold underline first-letter:text-4xl first-letter:uppercase hover:text-[#1d8cf8] hover:underline-offset-4"
                   >
-                    HCVarna
+                    VanLife
                   </Link>
-                  , a website dedicated to our hockey family, showcasing our
-                  team's achievments and fostering strong connections within the
-                  community.
+                  , a website dedicated to to a full-stack journey, showcasing
+                  my current experience.
                 </p>
               </motion.div>
             </div>
@@ -89,7 +88,7 @@ const Home = () => {
                 })}
               </div>
               <div className="px-2 pb-0 sm:px-5 md:px-10 lg:mt-10 lg:px-7">
-                <h3 className="pl-5 pt-5 text-2xl font-medium lg:pt-0 lg:text-3xl">
+                <h3 className="pt-5 text-2xl font-medium lg:pt-0 lg:text-3xl">
                   Awards & Certificates
                 </h3>
                 <div className="flexCenter mt-2 flex-col flex-wrap gap-x-10 sm:mt-4 sm:flex-row sm:gap-y-6 lg:flex-nowrap">

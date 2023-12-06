@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'exp8-background': "url('../src/assets/images/ex8.avif')",
+        // 'exp8-background': "url('../src/assets/images/previewbg.png')",
+        'exp8-background': "url('../src/assets/images/tech-bg.jpg')",
       }
     },
     fontFamily: { "inter": "Inter, sans-serif" },

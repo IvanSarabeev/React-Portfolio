@@ -1,7 +1,7 @@
 import React from "react";
 import Blobz from "../../assets/images/blob-haikei.png";
 import Layout from "../../components/Layout/Layout";
-import Location from "../../components/Location";
+import MenuNavigation from "../../components/Navigation/MenuNavigation";
 import EmailForm from "../../components/Contact/EmailForm";
 import Footer from "../../components/Footer/Footer";
 import TransitionEffect from "../../components/Animations/TransitionEffect";
@@ -13,7 +13,7 @@ function Contacts() {
       <TransitionEffect />
       <Layout />
       <div className="mx-auto mt-6 flex flex-col lg:mt-56 2xl:justify-center">
-        <Location />
+        <MenuNavigation />
         <section className="relative z-10 mx-auto mb-8 flex h-auto w-auto flex-col justify-center rounded-3xl bg-slate-200 px-5 pb-6 selection:bg-slate-500 selection:text-slate-900 sm:w-96 sm:max-w-full md:w-[650px] md:px-0 lg:w-[750px] xl:w-[850px] 2xl:w-[950px]">
           <img
             src={Blobz}

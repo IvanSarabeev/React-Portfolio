@@ -3,10 +3,12 @@ import Home from "./pages/Home/Home";
 import Resume from "./pages/Resume/Resume";
 import Projects from "./pages/Project/Projects";
 import Contacts from "./pages/Contact/Contacs";
+import ErrorPage from "./pages/Error/ErrorPage";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { inject } from "@vercel/analytics";
-import ErrorPage from "./pages/Error/Error";
+
+// Need to remove Flowbite, Flowbite+React, ReactToastify from dependancyes
 
 const App = () => {
   const location = useLocation();

@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../../components/Layout/Layout";
-import Location from "../../components/Location";
+import Location from "../../components/Navigation/MenuNavigation";
 import PersonalInfo from "../../components/Education_Work/index";
 import MainFilter from "../../components/Filter/MainFilter";
 import SectionAccordion from "../../components/AccordionSkills/index";

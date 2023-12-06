@@ -15,7 +15,7 @@ function SocialMedia() {
             aria-label="social-media navigation"
           >
             <span
-              className={`${links.color} flexCenter h-10 w-10 rounded-lg bg-[#f3f6f6] hover:bg-[#1d8cf8] hover:text-white`}
+              className={`${links.color} flexCenter h-10 w-10 rounded-lg bg-[#f7f7f7] hover:${links.hoverBg} hover:text-black`}
             >
               <Icons height={20} width={20} />
             </span>

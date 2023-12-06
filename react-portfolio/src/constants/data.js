@@ -92,16 +92,19 @@ const data = {
     socialLinks: [
         {
             icon: UilFacebookF,
+            hoverBg: "bg-[#1d8cf8]",
             color: "text-[#1773EA]",
             href: "https://www.facebook.com/ivan.sarabeev",
         },
         {
             icon: UilGithub,
+            hoverBg: "bg-[#111111]",
             color: "text-[#010409]",
             href: "https://github.com/IvanSarabeev",
         },
         {
             icon: UilLinkedin,
+            hoverBg: "bg-[#1d8cf8]",
             color: "text-[#0072b1]",
             href: "https://www.linkedin.com/in/ivansarabeev/",
         }
@@ -109,7 +112,7 @@ const data = {
     personalInfo: [
         {
             title: "Birthday",
-            text: "Dec 08, 1999",
+            text: "Born: 08/12/1999",
             color: "text-[#C17CEB]",
             icon: UilUser
         },
@@ -139,30 +142,42 @@ const data = {
             title: "UI/UX Design",
             text: "I am drawn to the art of creating visually captivating interfaces that not only look beautiful but also enhance usability, making technology more intuitive and accessible for users. This is the main reason why I decided to pursue web development, rather than software engineering.",
             icon: UilPagelines,
-            color: "bg-[#fcf4ff]",
-            textColor: "text-[#6AB5B9]"
+            svgColor: "text-[#3D2E9E]"
         },
         {
             title: "Hobbies",
             text: "Ever since I was young, I have been drawn to the fast-paced and dynamic nature of the sport. Spending time on the ice, honing my skills and strategizing with teammates, brings me immense joy and fulfillment. It has taught me valuable lessons in teamwork, perseverance, and discipline, which I apply both on and off the ice.",
             icon: UilTrophy,
-            color: "bg-[#fefaf0]",
-            textColor: "text-[#C17CEB]"
+            svgColor: "text-[#E93B81]"
         }, {
             title: "Time Management",
             text: "I am striving in optimizing productivity and achieving goals by organizing tasks, setting priorities, and maintaining a balanced schedule to ensure efficient use of time.",
             icon: UilSlidersVAlt,
-            color: "bg-[#fff0f8]",
-            textColor: "text-[#E93B81]"
+            svgColor: "text-[#E93B81]"
         },
         {
             title: "Web Development",
             text: "Web development allows me to combine my creativity and technical skills to build visually appealing and functional websites that enhance user experiences.",
             icon: UilBracketsCurly,
-            color: "bg-[#f3faff]",
-            textColor: "text-[#1773EA]"
+            svgColor: "text-[#1773EA]"
         },
-
+    ],
+    certificate: [
+        {
+            title: "IT Master Class №10",
+            text: "Upcoming ...",
+            icon: Certificate,
+        },
+        {
+            title: "Computer Literacy",
+            text: "Mon - 2019",
+            icon: MonCertificate,
+        },
+        {
+            title: "Tournament 22/23",
+            text: "Newest Trophies",
+            icon: Trophy,
+        }
     ],
     tech: [
         {
@@ -361,27 +376,6 @@ const data = {
                 { id: 3, url: HcVarnaProject3 }
             ],
         },
-        // {
-        //     title: "Weather-Application",
-        //     description: "I have developed \"React Weather Forecast Application\" which provides current weather information and weather forecasts. I've used React.js and fetched data from open weather API provider.",
-        //     tech: [<ReactJS />, <Tailwind />, <API />],
-        //     Imgs: [
-        //         {
-        //             id: 1,
-        //             url: "../images/estate-one.png",
-        //         },
-        //         {
-        //             id: 2,
-        //             url: "../images/estate-two.png",
-        //         },
-        //         {
-        //             id: 3,
-        //             url: "../images/estate-three.png"
-        //         }
-        //     ],
-        //     demoLink: "not avaible",
-        //     codeLink: "https://github.com/IvanSarabeev/React-Weather-Forecast-Application"
-        // },
         {
             title: "Real Estate",
             description: "I have developed this mockup template, because in near future I would like to try new tech languagues like - Node.js & MongoDB or Next.js.",
@@ -395,22 +389,5 @@ const data = {
             ],
         }
     ],
-    certificate: [
-        {
-            title: "IT Master Class №10",
-            text: "Upcoming ...",
-            icon: Certificate,
-        },
-        {
-            title: "Computer Literacy",
-            text: "Mon - 2018",
-            icon: MonCertificate,
-        },
-        {
-            title: "Tournament 22/23",
-            text: "International Champ",
-            icon: Trophy,
-        }
-    ]
 }
 export default data;

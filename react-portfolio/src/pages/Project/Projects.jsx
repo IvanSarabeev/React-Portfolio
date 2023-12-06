@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import data from "../../constants/data";
 import Layout from "../../components/Layout/Layout";
-import Location from "../../components/Location";
+import MenuNavigation from "../../components/Navigation/MenuNavigation";
 import ProjectCard from "../../components/Projects/ProjectCard";
 import TransitionEffect from "../../components/Animations/TransitionEffect";
 import Footer from "../../components/Footer/Footer";
@@ -24,7 +24,7 @@ function Projects() {
       <TransitionEffect />
       <Layout />
       <div className="mx-auto mt-6 flex flex-col lg:mt-52 2xl:justify-center">
-        <Location />
+        <MenuNavigation />
         <section className="mx-auto mb-8 flex min-h-screen w-11/12 flex-col justify-center rounded-3xl bg-slate-200 pb-6 selection:bg-slate-500 selection:text-slate-900 lg:w-[750px] xl:w-[850px] 2xl:w-[950px]">
           <div className="px-5 pt-12 sm:px-5 md:px-10 lg:px-14">
             <h2 className="sub-heading">Projects</h2>
