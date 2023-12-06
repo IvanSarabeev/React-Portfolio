@@ -11,8 +11,8 @@ import {
     UilBracketsCurly,
     UilSlidersVAlt,
     UilPagelines,
-
 } from '@iconscout/react-unicons'
+
 //Images
 import UniLogo from "../assets/images/uni-logo.png"
 import HighSchool from "../assets/images/sports-school.jpg"
@@ -57,9 +57,12 @@ import GitHub from "../assets/icons/GitHub"
 import VSCode from "../assets/icons/vsCode"
 import PowerBI from "../assets/icons/PowerBI"
 import Postman from "../assets/icons/Postman"
-import API from "../assets/icons/API"
+import IconLogoVercel from '../assets/icons/Vercel'
+import { ReactComponent as Lodash } from "../assets/svgs/lodash-svgrepo-com.svg";
+import { ReactComponent as Netlify } from "../assets/svgs/netlify-svgrepo-com.svg";
+import { ReactComponent as MirageJs } from "../assets/svgs/mirage.svg";
 import { ReactComponent as ReactRouter } from "../assets/svgs/react-router-stacked-color.svg"
-import Redux from '../assets/icons/Redux'
+import IconTypescript from '../assets/icons/TypeScript'
 
 const data = {
     headerLinks: [
@@ -201,19 +204,29 @@ const data = {
             area: "Front-end",
         },
         {
+            title: "TypeScript",
+            icon: <IconTypescript />,
+            area: "Front-end",
+        },
+        {
             title: "React",
             icon: <ReactJS />,
             area: "Front-end",
         },
         {
-            title: "Redux",
-            icon: <Redux />,
+            title: "Lodash",
+            icon: <Lodash />,
             area: "Front-end",
         },
         {
             title: "Motion",
             icon: <Motion />,
             area: "Front-end",
+        },
+        {
+            title: "Mirage",
+            icon: <MirageJs />,
+            area: "Back-end",
         },
         {
             title: "PHP",
@@ -229,6 +242,17 @@ const data = {
             title: "MySQL",
             icon: <MySQL />,
             area: "Back-end",
+        },
+
+        {
+            title: "Vercel",
+            icon: <IconLogoVercel />,
+            area: "Other",
+        },
+        {
+            title: "Netlify",
+            icon: <Netlify />,
+            area: "Other",
         },
         {
             title: "Git",
@@ -260,47 +284,47 @@ const data = {
         {
             title: "Master's degree",
             year: "2022 - present",
-            color: "bg-[#fcf4ff]",
+            bgColor: "bg-slate-300/40",
             icon: UniLogo,
             establishment: "University of Economics - Varna",
         },
         {
             title: "Bachelor's degree",
             year: "2018 - 2022",
-            color: "bg-[#f3faff]",
+            bgColor: "bg-white/40",
             icon: UniLogo,
             establishment: "University of Economics - Varna"
         },
         {
             title: "High school",
             year: "2014 - 2018",
-            color: "bg-[#fcf4ff]",
+            bgColor: "bg-slate-300/40",
             icon: HighSchool,
             establishment: 'Sport school - "G. Benkovski"'
         }
     ],
     experience: [
         {
-            title: "Skates instructor",
-            period: "2020 - present",
-            location: "Varna",
-            bgColor: "bg-[#f3faff]",
-            icon: MunicipalityLogo,
-            company: "Municipality",
-        },
-        {
             title: "Ice hockey coach",
             period: "2021 - present",
             location: "Varna",
-            bgColor: "bg-[#fcf4ff]",
+            bgColor: "bg-white/40",
             icon: HockeyAvatar,
             company: "HC-Varna",
+        },
+        {
+            title: "Skates instructor",
+            period: "2020 - present",
+            location: "Varna",
+            bgColor: "bg-slate-300/40",
+            icon: MunicipalityLogo,
+            company: "Municipality",
         },
         {
             title: "Currency Cashier",
             period: "2019 - 2020",
             location: "Varna",
-            bgColor: "bg-[#f3faff]",
+            bgColor: "bg-white/40",
             icon: TourisumLogo,
             company: "Briella",
         }
@@ -345,7 +369,7 @@ const data = {
             description: "I created the project with the goal of being able to practice without the usage of state managment libraries. This is a project that I would like to re-write by using a diffrent API and at the same time, I would apply state managment library like (MobX or Redux Toolkit). ",
             demoLink: "https://mishmashgrillmeal.com/",
             codeLink: "https://github.com/IvanSarabeev/E-Commerce",
-            tech: [<ReactJS />, <Tailwind />, <API />, <ReactRouter />],
+            tech: [<ReactJS />, <Tailwind />, <ReactRouter />],
             Imgs: [
                 { id: 1, url: StoreProject },
                 { id: 2, url: StoreProject2 },
@@ -357,7 +381,7 @@ const data = {
             description: "I was participaiting in a project for \"IT-Masterclass №10\", in collaboration with other fellow programmers, we were developing functional specifications, through many API request and react libraries and many more JavaScript functionalities.",
             demoLink: "not avaible due to MIT License & Permissions",
             codeLink: "https://github.com/IvanSarabeev/hello-ue",
-            tech: [<ReactJS />, <Tailwind />, <API />, <ReactRouter />, <NodeJS />],
+            tech: [<ReactJS />, <Tailwind />, <ReactRouter />, <NodeJS />],
             Imgs: [
                 { id: 1, url: UeVarnaProject },
                 { id: 2, url: UeVarnaProject2 },

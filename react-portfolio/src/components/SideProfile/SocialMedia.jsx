@@ -12,13 +12,10 @@ function SocialMedia() {
             key={index}
             to={links.href}
             target="_blank"
-            aria-label="social-media navigation"
+            aria-label="social-media"
+            className={`flexCenter h-10 w-10 rounded-lg bg-slate-500/30 shadow-md transition-all ease-in-out hover:bg-slate-100 hover:text-white`}
           >
-            <span
-              className={`${links.color} flexCenter h-10 w-10 rounded-lg bg-[#f7f7f7] hover:${links.hoverBg} hover:text-black`}
-            >
-              <Icons height={20} width={20} />
-            </span>
+            <Icons height={20} width={20} className={`${links.color}`} />
           </Link>
         );
       })}

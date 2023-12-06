@@ -7,17 +7,17 @@ const TitleFilter = ({ selectedSkill, setSelectedSkill }) => {
     <>
       {filterNames.map((item, index) => {
         return (
-          <span
+          <h3
             key={index}
             className={`${
               selectedSkill === item
-                ? "text-[#1d8cf8]"
-                : "text-slate-800 opacity-80 hover:text-[#fa5252]"
-            } mx-auto cursor-pointer font-pageheading text-lg font-semibold md:mx-1 md:text-xl`}
+                ? "text-white"
+                : "text-[#1d8cf8] underline-offset-4 hover:text-slate-200/60 hover:underline"
+            } regular-18 cursor-pointer px-1 font-bold transition-all delay-75 ease-in-out`}
             onClick={() => setSelectedSkill(item)}
           >
             {item}
-          </span>
+          </h3>
         );
       })}
     </>

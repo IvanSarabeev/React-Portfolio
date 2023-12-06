@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../../components/Layout/Layout";
-import Location from "../../components/Navigation/MenuNavigation";
-import PersonalInfo from "../../components/Education_Work/index";
-import MainFilter from "../../components/Filter/MainFilter";
+import MenuNavigation from "../../components/Navigation/MenuNavigation";
+import Experience from "./components/Experience/index";
+import TechFilter from "./components/Filter/TechFilter";
 import SectionAccordion from "../../components/AccordionSkills/index";
 import TransitionEffect from "../../components/Animations/TransitionEffect";
 import { UilAtom, UilIllustration } from "@iconscout/react-unicons";
@@ -11,13 +11,12 @@ import { motion } from "framer-motion";
 
 const Resume = () => {
   return (
-    <div className="flex min-h-screen w-full flex-col gap-4 bg-exp8-background bg-cover bg-fixed bg-no-repeat lg:flex-row">
+    <>
       <TransitionEffect />
-      <Layout />
-      <div className="mx-auto mt-6 flex flex-col lg:mt-56 2xl:justify-center">
-        <Location />
-        <section className="container">
-          <div className="px-5 pt-12 sm:px-5 md:px-10 lg:px-14">
+      <Layout>
+        <div className="max-container mt-6 flex flex-col lg:mt-56 2xl:justify-center">
+          <MenuNavigation />
+          <section className="container">
             <motion.h2
               initial={{ opacity: 0, y: "-100%" }}
               animate={{ opacity: 1, y: "0%" }}
@@ -26,37 +25,45 @@ const Resume = () => {
             >
               Resume
             </motion.h2>
-          </div>
-          <section className="px-5 pb-2 sm:px-5 md:px-10 lg:mt-10 lg:px-14 lg:pb-6">
-            <PersonalInfo />
-            <aside className="mx-auto mt-16">
-              <motion.span
-                initial={{ opacity: 0, x: "-100%" }}
-                animate={{ opacity: 1, x: "0%" }}
-                transition={{ delay: 1.06, type: "spring", bounce: 0.2 }}
-                className="flex items-center gap-x-2"
-              >
-                <UilAtom className="h-6 w-6 animate-spin-slow text-[#5ccfee] md:h-8 md:w-8" />
-                <h3 className="bold-20 font-semibold lg:pt-0 lg:text-2xl">
-                  Tech Stack
-                </h3>
-              </motion.span>
-              <MainFilter />
-            </aside>
-            <aside className="mx-auto mt-16">
-              <span className="flex items-center gap-x-2">
-                <UilIllustration className="h-6 w-6 animate-bounce text-[#3ba1e6] md:h-8 md:w-8" />
-                <h3 className="bold-20 font-semibold lg:pt-0 lg:text-2xl">
-                  Soft Skills
-                </h3>
-              </span>
-              <SectionAccordion />
-            </aside>
+            <section className="container-padding">
+              <aside className="grid grid-cols-1 justify-center gap-4 align-middle sm:grid-cols-2 lg:gap-8">
+                <Experience />
+              </aside>
+              <aside className="mx-auto mt-8 flex flex-col items-start justify-center">
+                <motion.span
+                  initial={{ opacity: 0, x: "-100%" }}
+                  animate={{ opacity: 1, x: "0%" }}
+                  transition={{ delay: 1.06, type: "spring", bounce: 0.2 }}
+                  className="flex items-center justify-start gap-x-2"
+                >
+                  <UilAtom
+                    height={28}
+                    width={28}
+                    className="animate-spin-slow text-[#5ccfee]"
+                  />
+                  <h3 className="bold-20 font-bold xl:text-2xl">Tech Stack</h3>
+                </motion.span>
+                <div className="flexStart mt-2 h-fit w-full flex-auto flex-col flex-wrap rounded-2xl p-2 shadow-2xl md:p-4 lg:p-6">
+                  <TechFilter />
+                </div>
+              </aside>
+              <article className="mx-auto mt-8">
+                <span className="flex items-center justify-start gap-x-2">
+                  <UilIllustration
+                    height={28}
+                    width={28}
+                    className="animate-bounce text-[#3ba1e6]"
+                  />
+                  <h3 className="bold-20 font-bold xl:text-2xl">Soft Skills</h3>
+                </span>
+                <SectionAccordion />
+              </article>
+            </section>
+            <Footer />
           </section>
-          <Footer />
-        </section>
-      </div>
-    </div>
+        </div>
+      </Layout>
+    </>
   );
 };
 

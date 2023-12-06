@@ -1,7 +1,7 @@
 import React from "react";
-import Location from "../../components/Navigation/MenuNavigation";
-import data from "../../constants/data";
 import Layout from "../../components/Layout/Layout";
+import MenuNavigation from "../../components/Navigation/MenuNavigation";
+import data from "../../constants/data";
 import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -26,52 +26,50 @@ const Home = () => {
       <TransitionEffect />
       <Layout>
         <div className="max-container mt-6 flex flex-col lg:mt-56 2xl:justify-center">
-          <Location />
+          <MenuNavigation />
           <section className="container">
-            <div className="container-padding">
-              <motion.h2
-                initial={{ opacity: 0, y: "100%" }}
-                animate={{ opacity: 1, y: "0%" }}
-                transition={{
-                  delay: 1.2,
-                  ease: "easeInOut",
-                  type: "spring",
-                }}
-                className="sub-heading"
-              >
-                About Me
-              </motion.h2>
-              <motion.div
-                initial={opacityAnimation.initial}
-                animate={opacityAnimation.animate}
-                transition={opacityAnimation.transition}
-                className="regular-14 sm:regular-16 flex flex-col justify-center space-y-2.5 px-6 pt-4 text-justify tracking-normal text-[#2686976] md:pt-8 xl:text-justify"
-              >
-                <p className="indent-2">
-                  Hello, I'm Ivan Sarabeev, a passionate Front-end Developer and
-                  a assistant Ice Hockey coach from Varna, Bulgaria. I'm
-                  enthusiastic about embarking on my proffessional journey in
-                  web development and constatnly seeking new challenges and
-                  growth opportunities. My goal is to transform complex problems
-                  into elegant and user-friednly solutions, driven by my passion
-                  for creating beautiful and intuitive web experience.
-                </p>
-                <p className="mt-2.5 indent-2 lg:indent-0">
-                  I am dedicated to effectively communicating your message and
-                  brand identity through creative and innovative web solutions.
-                  I take pride in my work, such as the development of{" "}
-                  <Link
-                    to="https://rent-vanlife.netlify.app/"
-                    target="_blank"
-                    className="regular-16 lg:regular-18 font-bold underline first-letter:text-4xl first-letter:uppercase hover:text-[#1d8cf8] hover:underline-offset-4"
-                  >
-                    VanLife
-                  </Link>
-                  , a website dedicated to to a full-stack journey, showcasing
-                  my current experience.
-                </p>
-              </motion.div>
-            </div>
+            <motion.h2
+              initial={{ opacity: 0, y: "100%" }}
+              animate={{ opacity: 1, y: "0%" }}
+              transition={{
+                delay: 1.2,
+                ease: "easeInOut",
+                type: "spring",
+              }}
+              className="sub-heading"
+            >
+              About Me
+            </motion.h2>
+            <motion.div
+              initial={opacityAnimation.initial}
+              animate={opacityAnimation.animate}
+              transition={opacityAnimation.transition}
+              className="regular-14 sm:regular-16 container-padding flex flex-col justify-center space-y-2.5 pt-4 text-justify tracking-normal text-[#2686976] md:pt-8 xl:text-justify"
+            >
+              <p className="indent-1 xl:indent-2">
+                Hello, I'm Ivan Sarabeev, a passionate Front-end Developer and a
+                assistant Ice Hockey coach from Varna, Bulgaria. I'm
+                enthusiastic about embarking on my proffessional journey in web
+                development and constatnly seeking new challenges and growth
+                opportunities. My goal is to transform complex problems into
+                elegant and user-friednly solutions, driven by my passion for
+                creating beautiful and intuitive web experience.
+              </p>
+              <p className="mt-2.5 indent-1 xl:indent-2">
+                I'm dedicated to effectively communicating your message and
+                brand identity through creative and innovative web solutions. I
+                take pride in my work, such as the development of{" "}
+                <Link
+                  to="https://rent-vanlife.netlify.app/"
+                  target="_blank"
+                  className="regular-16 lg:regular-18 font-bold underline first-letter:text-4xl first-letter:uppercase hover:text-[#1d8cf8] hover:underline-offset-4"
+                >
+                  VanLife
+                </Link>
+                , a website dedicated to to a full-stack journey, showcasing my
+                current experience.
+              </p>
+            </motion.div>
             <article className="px-5 pb-2 sm:px-5 md:px-10 lg:mt-10 lg:px-14 lg:pb-6">
               <motion.h3
                 initial={opacityAnimation.initial}
@@ -102,7 +100,6 @@ const Home = () => {
           </section>
         </div>
       </Layout>
-      {/* </div> */}
     </>
   );
 };
