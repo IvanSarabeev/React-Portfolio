@@ -20,21 +20,24 @@ import MunicipalityLogo from "../assets/images/og-varna.jpg"
 import HockeyAvatar from "../assets/images/avatar.jpg"
 import TourisumLogo from "../assets/images/tourisum.jpg"
 //Project Images
+import VanLife from "../assets/images/van-one.png"
+import VanLifeTwo from "../assets/images/van-two.png"
+import VanLifeThree from "../assets/images/van-three.png"
+import Watchlist from "../assets/images/watchlist-one.png"
+import WatchlistTwo from "../assets/images/watchlist-two.png"
+import WatchlistThree from "../assets/images/watchlist-three.png"
+import Todo from "../assets/images/todo-one.png"
+import TodoTwo from "../assets/images/todo-two.png"
+import TodoThree from "../assets/images/todo-three.png"
 import MishMashProject from "../assets/images/mish-mash-one.png"
 import MishMashProject2 from "../assets/images/mish-mash-two.png"
 import MishMashProject3 from "../assets/images/mish-mash-three.png"
-import StoreProject from "../assets/images/e-store.png";
-import StoreProject2 from "../assets/images/e-store-two.png";
-import StoreProject3 from "../assets/images/e-store-three.png";
 import UeVarnaProject from "../assets/images/ue-one.png"
 import UeVarnaProject2 from "../assets/images/ue-two.png"
 import UeVarnaProject3 from "../assets/images/ue-three.png"
 import HcVarnaProject from "../assets/images/hc-one.png"
 import HcVarnaProject2 from "../assets/images/hc-two.png"
 import HcVarnaProject3 from "../assets/images/hc-three.png"
-import EstateProject from "../assets/images/estate-one.png"
-import EstateProject2 from "../assets/images/estate-two.png"
-import EstateProject3 from "../assets/images/estate-three.png"
 //Certificate Images
 import Certificate from "../assets/images/certificate.jpg"
 import MonCertificate from "../assets/images/mon-logo.png"
@@ -50,12 +53,10 @@ import PHP from "../assets/icons/PHP"
 import MySQL from "../assets/icons/MySQL"
 import Firebase from "../assets/icons/Firebase"
 import Git from "../assets/icons/Git"
-import Vite from "../assets/icons/Vite"
 import Motion from "../assets/icons/Motion"
 import NodeJS from "../assets/icons/NodeJS"
 import GitHub from "../assets/icons/GitHub"
 import VSCode from "../assets/icons/vsCode"
-import PowerBI from "../assets/icons/PowerBI"
 import Postman from "../assets/icons/Postman"
 import IconLogoVercel from '../assets/icons/Vercel'
 import { ReactComponent as Lodash } from "../assets/svgs/lodash-svgrepo-com.svg";
@@ -348,8 +349,44 @@ const data = {
     ],
     projects: [
         {
+            title: "VanLife",
+            description: "Welcome to VanLife, your go-to platform for renting vans and exploring the open road. This React-based website offers a seamless experience for both renters and hosts. Users can navigate through the Home, About, Vans, and Host sections that requiress authentication process to ensures a secure environment.",
+            demoLink: "https://rent-vanlife.netlify.app/",
+            codeLink: "https://github.com/IvanSarabeev/VanLife",
+            tech: [<ReactJS />, <ReactRouter />, <Tailwind />, <IconTypescript />, <Lodash />, <Netlify />],
+            Imgs: [
+                { id: 1, url: VanLife },
+                { id: 2, url: VanLifeTwo },
+                { id: 3, url: VanLifeThree },
+            ],
+        },
+        {
+            title: "Movie Watchlist",
+            description: "Searching app with minamalystic design, where you can find your favourite movie, also you get to search seemlessly and flawlessly, accross a collection of movies and if you don't have time, you can save them for later by adding them to your collection.",
+            demoLink: "https://movie-watchlist-delta-pied.vercel.app/",
+            codeLink: "https://github.com/IvanSarabeev/Movie-Watchlist",
+            tech: [<ReactJS />, <ReactRouter />, <Tailwind />, <IconTypescript />, <IconLogoVercel />],
+            Imgs: [
+                { id: 1, url: Watchlist },
+                { id: 2, url: WatchlistTwo },
+                { id: 3, url: WatchlistThree },
+            ],
+        },
+        {
+            title: "To-Do App",
+            description: "I have developed this mockup template, because in near future I would like to try new tech languagues like - Node.js & MongoDB or Next.js.",
+            demoLink: "https://real-estates-ood.netlify.app/",
+            codeLink: "https://github.com/IvanSarabeev/RealEstate-web-starterpack",
+            tech: [<ReactJS />, <IconTypescript />, <Tailwind />, <IconLogoVercel />,],
+            Imgs: [
+                { id: 1, url: Todo },
+                { id: 2, url: TodoTwo },
+                { id: 3, url: TodoThree }
+            ],
+        },
+        {
             title: "Mish-Mash",
-            description: "I was contacted by a client from the UK, ho expressed interest in my developments. After extensive discussions and communication with the customer, we have finally reached this result.",
+            description: "Mish Mash Fast Food**: Elevating Fast Food through Innovation 🚀 - 🍟 A UK-based online fast-food platform designed for convenience and flavor. - 💻 Tech Stack: React and Tailwind for a responsive UI. - 🌍 Leveraging Netlify for lightning-fast hosting.",
             demoLink: "https://mishmashgrillmeal.com/",
             codeLink: "https://github.com/IvanSarabeev/Mish-Mash",
             tech: [<ReactJS />, <ReactRouter />, <Tailwind />, <Motion />],
@@ -357,18 +394,6 @@ const data = {
                 { id: 1, url: MishMashProject },
                 { id: 2, url: MishMashProject2 },
                 { id: 3, url: MishMashProject3 },
-            ],
-        },
-        {
-            title: "E-Commerce",
-            description: "I created the project with the goal of being able to practice without the usage of state managment libraries. This is a project that I would like to re-write by using a diffrent API and at the same time, I would apply state managment library like (MobX or Redux Toolkit). ",
-            demoLink: "https://mishmashgrillmeal.com/",
-            codeLink: "https://github.com/IvanSarabeev/E-Commerce",
-            tech: [<ReactJS />, <Tailwind />, <ReactRouter />],
-            Imgs: [
-                { id: 1, url: StoreProject },
-                { id: 2, url: StoreProject2 },
-                { id: 3, url: StoreProject3 },
             ],
         },
         {
@@ -395,18 +420,6 @@ const data = {
                 { id: 3, url: HcVarnaProject3 }
             ],
         },
-        {
-            title: "Real Estate",
-            description: "I have developed this mockup template, because in near future I would like to try new tech languagues like - Node.js & MongoDB or Next.js.",
-            demoLink: "https://real-estates-ood.netlify.app/",
-            codeLink: "https://github.com/IvanSarabeev/RealEstate-web-starterpack",
-            tech: [<ReactJS />, <Css />, <Motion />, <Vite />],
-            Imgs: [
-                { id: 1, url: EstateProject },
-                { id: 2, url: EstateProject2 },
-                { id: 3, url: EstateProject3 }
-            ],
-        }
     ],
 }
 export default data;

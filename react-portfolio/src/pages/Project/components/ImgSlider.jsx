@@ -29,7 +29,7 @@ const ImgSlider = ({ item, currentImg }) => {
         animate="center"
         exit="exit"
         transition={{ duration: 0.6 }}
-        className="mb-8 mt-4 aspect-video h-52 w-full rounded-xl object-cover object-center sm:max-w-full lg:max-h-80 lg:max-w-sm"
+        className="mx-auto mb-8 mt-4 aspect-video h-52 w-full rounded-xl object-cover object-center sm:max-w-full lg:max-h-80 lg:max-w-sm"
       />
     </>
   );
