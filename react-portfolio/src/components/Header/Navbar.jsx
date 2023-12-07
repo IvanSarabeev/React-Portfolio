@@ -28,12 +28,7 @@ const Navbar = () => {
 
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-        className="absolute right-0 top-0 flex h-screen w-full  flex-col items-end bg-black bg-opacity-50 md:hidden"
-      >
+      <motion.div className="absolute right-0 top-0 flex h-screen w-full  flex-col items-end bg-black bg-opacity-50 md:hidden">
         <div className="relative flex h-full w-[80%] flex-col items-center overflow-y-scroll bg-[#112240] px-4 py-10">
           <div className="flex flex-col items-center gap-7">
             <motion.ul
