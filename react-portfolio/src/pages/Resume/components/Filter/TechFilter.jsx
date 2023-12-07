@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import data from "../../../../constants/data";
 import Title from "./components/Title";
-import { fadeInAnimation } from "../../../../components/Animations/fadeInAnimation";
+import { fadeInAnimation } from "../../../../utils/fadeInAnimation";
 
 const TechFilter = () => {
   const [selectedSkill, setSelectedSkill] = useState("All");

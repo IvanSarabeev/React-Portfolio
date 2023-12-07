@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeInAnimation } from "../../../../components/Animations/fadeInAnimation";
+import { fadeInAnimation } from "../../../../utils/fadeInAnimation";
 
 const Experience = ({ item, index }) => {
   return (

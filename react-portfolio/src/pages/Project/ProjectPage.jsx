@@ -3,7 +3,7 @@ import data from "../../constants/data";
 import Layout from "../../components/Layout/Layout";
 import MenuNavigation from "../../components/Navigation/MenuNavigation";
 import ProjectLayout from "./components/ProjectLayout";
-import TransitionEffect from "../../components/Animations/TransitionEffect";
+import TransitionEffect from "../../utils/TransitionEffect";
 import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
 

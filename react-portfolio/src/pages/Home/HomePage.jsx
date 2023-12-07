@@ -5,7 +5,7 @@ import data from "../../constants/data";
 import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import TransitionEffect from "../../components/Animations/TransitionEffect";
+import TransitionEffect from "../../utils/TransitionEffect";
 import AwardGallery from "./components/AwardGallery/AwardGallery";
 import Occupation from "./components/Occupation/Occupation";
 

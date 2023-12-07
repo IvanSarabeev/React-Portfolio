@@ -4,7 +4,7 @@ import MenuNavigation from "../../components/Navigation/MenuNavigation";
 import Experience from "./components/Experience/index";
 import TechFilter from "./components/Filter/TechFilter";
 import SectionAccordion from "./components/AccordionSkills/index";
-import TransitionEffect from "../../components/Animations/TransitionEffect";
+import TransitionEffect from "../../utils/TransitionEffect";
 import { UilAtom, UilIllustration } from "@iconscout/react-unicons";
 import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
