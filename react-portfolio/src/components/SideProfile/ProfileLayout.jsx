@@ -13,7 +13,7 @@ const ProfileCard = () => {
   }
 
   return (
-    <section className="inset-x-auto top-52 mx-auto mb-0 mt-64 block h-screen w-10/12  ring-0 sm:w-10/12 md:sticky md:w-9/12 lg:sticky lg:mb-20 lg:mt-80 lg:max-w-sm xl:mt-64 xl:max-w-md 2xl:max-w-lg">
+    <section className="inset-x-auto top-52 mx-auto mb-0 mt-64 block h-fit w-10/12 ring-0 sm:w-10/12 md:w-9/12 lg:sticky lg:mb-20 lg:mt-80 lg:h-screen lg:max-w-sm xl:mt-64 xl:max-w-md 2xl:max-w-lg">
       <div className="relative w-full rounded-3xl bg-gradient-to-tr from-violet-200/40 from-40% to-sky-300/30 px-6 text-center text-white shadow-2xl lg:mb-0 lg:mt-0">
         <img
           alt="avatar"

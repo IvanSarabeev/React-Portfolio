@@ -274,11 +274,6 @@ const data = {
             icon: <VSCode />,
             area: "Other",
         },
-        {
-            title: "Power BI",
-            icon: <PowerBI />,
-            area: "Other",
-        },
     ],
     education: [
         {

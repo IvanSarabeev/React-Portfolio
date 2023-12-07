@@ -8,8 +8,6 @@ const Experience = ({ item, index }) => {
       variants={fadeInAnimation}
       initial="initial"
       animate="animate"
-      whileInView="animate"
-      whileHover={{ scale: 1.05, radius: 12, opacity: 1 }}
       viewport={{ once: false }}
       custom={index}
       key={item.index}

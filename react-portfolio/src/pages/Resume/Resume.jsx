@@ -3,7 +3,7 @@ import Layout from "../../components/Layout/Layout";
 import MenuNavigation from "../../components/Navigation/MenuNavigation";
 import Experience from "./components/Experience/index";
 import TechFilter from "./components/Filter/TechFilter";
-import SectionAccordion from "../../components/AccordionSkills/index";
+import SectionAccordion from "./components/AccordionSkills/index";
 import TransitionEffect from "../../components/Animations/TransitionEffect";
 import { UilAtom, UilIllustration } from "@iconscout/react-unicons";
 import Footer from "../../components/Footer/Footer";
@@ -43,7 +43,7 @@ const Resume = () => {
                   />
                   <h3 className="bold-20 font-bold xl:text-2xl">Tech Stack</h3>
                 </motion.span>
-                <div className="flexStart mt-2 h-fit w-full flex-auto flex-col flex-wrap rounded-2xl p-2 shadow-2xl md:p-4 lg:p-6">
+                <div className="flexStart mt-2 h-fit w-full flex-auto flex-col flex-wrap rounded-2xl p-2 shadow-xl md:p-4 lg:p-6">
                   <TechFilter />
                 </div>
               </aside>
@@ -52,7 +52,7 @@ const Resume = () => {
                   <UilIllustration
                     height={28}
                     width={28}
-                    className="animate-bounce text-[#3ba1e6]"
+                    className="animate-bounce text-[#5ccfee]"
                   />
                   <h3 className="bold-20 font-bold xl:text-2xl">Soft Skills</h3>
                 </span>

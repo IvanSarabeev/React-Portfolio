@@ -22,10 +22,10 @@ const Occupation = ({ item, Icons }) => {
         variants={groupingVariant}
         initial="hidden"
         animate="visible"
-        className="flex flex-col rounded-xl bg-white p-6 opacity-80 ring-0 transition-all duration-500 ease-in-out hover:scale-110 hover:opacity-100"
+        className="flex flex-col rounded-xl bg-white/40 p-6 opacity-90 ring-0 transition-all duration-500 ease-in-out hover:rounded-[14px] hover:bg-slate-300/40 hover:opacity-100 hover:ring-2 hover:ring-white/40"
       >
         <motion.div className="flexStart flex-col gap-y-2">
-          <h3 className="bold-20 flexStart gap-x-2 font-bold text-[#101010]">
+          <h3 className="bold-20 flexStart gap-x-2 font-bold">
             <Icons
               height={32}
               width={32}
@@ -33,7 +33,7 @@ const Occupation = ({ item, Icons }) => {
             />
             {item.title}
           </h3>
-          <p className="regular-14 sm:regular-16 my-2 text-justify indent-1 tracking-normal text-black/80 antialiased md:indent-2">
+          <p className="regular-14 sm:regular-16 my-2 text-justify indent-1 tracking-normal antialiased md:indent-2">
             {item.text}
           </p>
         </motion.div>

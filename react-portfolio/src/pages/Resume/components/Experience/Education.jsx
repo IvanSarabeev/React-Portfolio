@@ -9,9 +9,7 @@ const Education = ({ item, index }) => {
         variants={fadeInAnimation}
         initial="initial"
         animate="animate"
-        whileInView="animate"
         viewport={{ once: false }}
-        whileHover={{ scale: 1.05, radius: 12, opacity: 1 }}
         custom={index}
         key={item.index}
         className={`${item.bgColor} my-3 flex flex-col rounded-xl opacity-80 transition-all duration-300 ease-in-out md:my-4`}
