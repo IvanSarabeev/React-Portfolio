@@ -44,7 +44,7 @@ const HomePage = () => {
               initial={opacityAnimation.initial}
               animate={opacityAnimation.animate}
               transition={opacityAnimation.transition}
-              className="regular-14 sm:regular-16 container-padding flex flex-col justify-center space-y-2.5 pt-4 text-justify tracking-normal text-[#2686976] md:pt-8 xl:text-justify"
+              className="regular-14 sm:regular-16 padding-container flex flex-col justify-center pt-4 text-justify tracking-normal text-[#2686976] md:pt-8 xl:text-justify"
             >
               <p className="indent-1 xl:indent-2">
                 Hello, I'm Ivan Sarabeev, a passionate Front-end Developer and a

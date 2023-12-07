@@ -8,7 +8,7 @@ const Xmark = () => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="h-6 w-6 text-rose-600"
+        className="h-6 w-6 bg-violet-400/40 "
       >
         <path
           strokeLinecap="round"
