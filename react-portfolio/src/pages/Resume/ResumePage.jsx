@@ -9,7 +9,7 @@ import { UilAtom, UilIllustration } from "@iconscout/react-unicons";
 import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
 
-const Resume = () => {
+const ResumePage = () => {
   return (
     <>
       <TransitionEffect />
@@ -67,4 +67,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default ResumePage;

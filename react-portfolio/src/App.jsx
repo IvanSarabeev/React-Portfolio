@@ -1,8 +1,8 @@
 import React from "react";
-import Home from "./pages/Home/Home";
-import Resume from "./pages/Resume/Resume";
-import Projects from "./pages/Project/Projects";
-import Contacts from "./pages/Contact/Contacs";
+import HomePage from "./pages/Home/HomePage";
+import ResumePage from "./pages/Resume/ResumePage";
+import ProjectPage from "./pages/Project/ProjectPage";
+import ContactPage from "./pages/Contact/ContactPage";
 import ErrorPage from "./pages/Error/ErrorPage";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
@@ -27,10 +27,10 @@ const App = () => {
         }}
       >
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/resume" element={<ResumePage />} />
+          <Route path="/projects" element={<ProjectPage />} />
+          <Route path="/contacts" element={<ContactPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </motion.div>

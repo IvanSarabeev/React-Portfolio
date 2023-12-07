@@ -7,7 +7,7 @@ import Footer from "../../components/Footer/Footer";
 import TransitionEffect from "../../components/Animations/TransitionEffect";
 import { motion } from "framer-motion";
 
-function Contacts() {
+function ContactPage() {
   return (
     <div className="flex min-h-screen w-full flex-col gap-4 bg-exp8-background bg-cover bg-fixed bg-no-repeat lg:flex-row">
       <TransitionEffect />
@@ -41,4 +41,4 @@ function Contacts() {
   );
 }
 
-export default Contacts;
+export default ContactPage;

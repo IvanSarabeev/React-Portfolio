@@ -9,7 +9,7 @@ import TransitionEffect from "../../components/Animations/TransitionEffect";
 import AwardGallery from "./components/AwardGallery/AwardGallery";
 import Occupation from "./components/Occupation/Occupation";
 
-const Home = () => {
+const HomePage = () => {
   const opacityAnimation = {
     initial: { opacity: 0, x: "100%" },
     animate: { opacity: 1, x: "0%" },
@@ -104,4 +104,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
