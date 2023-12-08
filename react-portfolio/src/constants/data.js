@@ -327,23 +327,23 @@ const data = {
     ],
     personalSkills: [
         {
-            title: "Collaborative Project Experience",
+            title: "Collaborative Experience",
             description: "I have been working on a project for \"IT-Masterclass №10\", in collaboration with other fellow programmers, in particularly developing functional specifications, through APIs and other react libraries."
         },
         {
-            title: "Adaptation to Technologies and Collaborative Development",
+            title: "Technologies and Development",
             description: "I have had to use new techs or libraries, according to the goals of the project. In addition I've worked with several people in developing in feature in the same branch and others."
         },
         {
-            title: "My Journey into the Tech and React.js",
+            title: "Journey into the Web",
             description: "Since the beginning of 2023, I have been proactively engaged in learing new technologies such as: React.js, Javascripts funcionalities, concepts and UI libraries like Tailwind."
         },
         {
-            title: "Proactive and Tenacious",
+            title: "Proactive & Tenacious",
             description: "I'm a person who is ready to take an initiative and to never give up. I would easily say that it's thanks to my sports career."
         },
         {
-            title: "Organizational skills and preparedness",
+            title: "Organizational Skills",
             description: "I'm organized person who is always prepared in advance, regardless of the occacion and the event.",
         },
     ],

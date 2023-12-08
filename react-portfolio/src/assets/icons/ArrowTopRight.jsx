@@ -8,7 +8,7 @@ const ArrowTopRight = () => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="h-6 w-6"
+        className="h-4 w-4 md:h-6 md:w-6"
       >
         <path
           strokeLinecap="round"

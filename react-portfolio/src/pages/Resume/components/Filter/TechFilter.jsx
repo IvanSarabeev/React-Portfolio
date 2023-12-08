@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import data from "../../../../constants/data";
-import Title from "./components/Title";
+import Title from "./Title";
 import { fadeInAnimation } from "../../../../utils/fadeInAnimation";
 
 const TechFilter = () => {

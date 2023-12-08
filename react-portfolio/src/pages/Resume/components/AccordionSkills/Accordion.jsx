@@ -34,7 +34,7 @@ const Accordion = ({ item }) => {
             isActive
               ? "my-2.5 text-gray-900 opacity-100"
               : "my-2 text-slate-900 opacity-90"
-          }my-2 bold-20 font-bold`}
+          } regular-14 md:regular-16 xl:regular-18 2xl:bold-20 my-2 font-bold`}
         >
           {item.title}
         </h5>

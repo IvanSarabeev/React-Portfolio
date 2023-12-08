@@ -6,8 +6,8 @@ import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import TransitionEffect from "../../utils/TransitionEffect";
-import AwardGallery from "./components/AwardGallery/AwardGallery";
-import Occupation from "./components/Occupation/Occupation";
+import AwardGallery from "./components/AwardGallery";
+import Occupation from "./components/Occupation";
 
 const HomePage = () => {
   const opacityAnimation = {
@@ -44,7 +44,7 @@ const HomePage = () => {
               initial={opacityAnimation.initial}
               animate={opacityAnimation.animate}
               transition={opacityAnimation.transition}
-              className="regular-14 sm:regular-16 padding-container flex flex-col justify-center pt-4 text-justify tracking-normal text-[#2686976] md:pt-8 xl:text-justify"
+              className="regular-14 sm:regular-16 padding-container flex flex-col justify-center pt-4 text-justify tracking-normal text-[#2686976] md:pt-8 xl:px-20 xl:text-justify"
             >
               <p className="indent-1 xl:indent-2">
                 Hello, I'm Ivan Sarabeev, a passionate Front-end Developer and a
